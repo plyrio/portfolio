@@ -21,6 +21,7 @@
         rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts/Cinzel/Cinzel-VariableFont_wght.ttf">
 </head>
 
 <body>
@@ -46,24 +47,27 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contato</a>
                         </li>
-                        <li class="nav-item py-2">
-                            <div class="vr d-flex h-100 mx-2 text-white"></div>
-                            <hr class="d-none my-2 text-white-50">
+                        <li class="nav-item py-2 col-12 col-md-auto">
+                            <div class="vr d-none d-md-flex h-100 text-white"></div>
+                            <hr class="d-lg-none my-1 text-white-50">
                         </li>
                         <li class="nav-item">
-
+                            <button type="button" class="btn moon pb-md-2 pb-3" onclick="toggleDarkMode()">
+                                <i class="bi bi-moon-stars text-white"></i>
+                            </button>
+                            <button type="button" class="btn sun pb-md-2 pb-3" onclick="toggleLightMode()">
+                                <i class="bi bi-brightness-high-fill text-white"></i>
+                            </button>
                         </li>
-                        <i class="bi bi-brightness-high-fill"></i>
+                        <li class="nav-item">
+                            <button class="btn btn-outline-success" type="submit">Download CV</button>
+                        </li>
+
                     </ul>
 
-                    <button type="button" class="btn moon" onclick="toggleDarkMode()">
-                        <i class="bi bi-moon-stars text-white"></i>
-                    </button>
-                    <button type="button" class="btn sun" onclick="toggleLightMode()">
-                        <i class="bi bi-brightness-high-fill text-white"></i>
-                    </button>
 
-                    <button class="btn btn-outline-success" type="submit">Download CV</button>
+
+
                 </div>
             </div>
         </nav>
