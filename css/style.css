@@ -5,12 +5,49 @@
   font-family: "Inter";
 }
 
-.navbar-brand {
-  font-family: "Cinzel";
+#antes {
+  z-index: 10;
+  transition: all 0.7s ease-in-out;
 }
 
-img {
-  width: 280;
+#depois {
+  z-index: 10;
+  transition: all 0.7s ease-in-out;
+  opacity: 0.98;
+}
+
+.navbar-brand {
+  font-family: "Cinzel";
+  text-shadow: #ccc 10px 0 10px;
+  font-size: 20px;
+}
+
+.foto-perfil {
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .foto-perfil {
+    width: 50vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .foto-perfil {
+    margin-right: 0px !important;
+  }
+}
+
+.bi-dot {
+  color: #1cb43d;
+}
+
+.footer div p {
+  font-family: "Cinzel";
+  opacity: 75%;
+}
+
+i {
+  font-size: 24px;
+  line-height: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
