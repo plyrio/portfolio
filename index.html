@@ -14,6 +14,10 @@
         defer></script>
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +45,7 @@
                             <a class="nav-link" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Trabalhos</a>
@@ -70,7 +74,8 @@
             </div>
         </nav>
     </header>
-    <main class="container position-relative">
+    <main class="container position-relative mb-5">
+
         <section class="hero container" id="hero">
             <div class="container">
                 <div class="row g-4 my-5">
@@ -90,12 +95,12 @@
                                 minima laudantium cupiditate est!</p>
                         </div>
                         <div class="group my-4">
-                            <div class="location my-2">
+                            <div class="location my-2 ">
                                 <i class="bi bi-geo-alt"></i>
                                 Vila Velha - ES
                             </div>
                             <div class="hire my-2">
-                                <i class="bi bi-dot"></i>
+                                <i class="bi bi-dot spinner-grow text-success"></i>
                                 Disponivel para novos projetos
                             </div>
                         </div>
@@ -109,160 +114,153 @@
             </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="about container" id="about">
             <div class="container">
                 <div class="row">
                     <div class="row">
-                        <h3>Sobre</h3>
+                        <h1>
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">Sobre</a>
+                        </h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="col">
+                        <div class="pic-container">
+                            <img src="./img/eudeoculos.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="content">
+                            <h4>Curiosidades sobre mim? Aqui você terá isso:</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ullam incidunt distinctio
+                                odio repellendus maiores iste eos, magni in, porro eaque facere officia dolor suscipit
+                                doloremque officiis
+                                molestias tenetur placeat esse repellat corrupti eius minima excepturi aliquid? Dicta
+                                cumque tempore eos fuga tempora ea excepturi laudantium blanditiis at, facilis
+                                voluptatem inventore ex pldeleniti et sed
+                                laudantium, ad tenetur est modi officiis obcaecati! Beatae.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="skills" id="skills">
-
+        <section class="skills container" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <h1>
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">Habilidades</a>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <h5>As habilidades, ferramentas e tecnologias que eu realmente domino:</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row mx-auto text-center">
+                        <div class="row text-center">
+                            <div class="col">
+                                <i class="bi-vimeo text-primary"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-youtube text-danger"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-facebook text-success"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-instagram text-warning "></i>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <i class="bi-github text-info"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-discord text-light"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-google text-secondary"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-whatsapp text-dark"></i>
+                                <p>gfdgd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="works" id="works">
+        <section class="works container" id="works">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <h1>
+                            <a name="" id="" class="btn btn-primary" href="#" role="button">Projetos</a>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <h5>Aqui está um rápido resumo das minhas experiências mais recentes:</h5>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="row">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- projeto 1 -->
+                            <div class="swiper-slide">
+                                <div class="card my-5">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./img/projeto1.jpeg" class="img-fluid img-card rounded-start"
+                                                alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">API RESTful - CRUD</h5>
+                                                <p class="card-text">Uma API RESTful foi desenvolvida utilizando o framework Express para lidar com requisições e respostas. O MongoDB, com a
+                                                ODM Mongoose, foi escolhido como banco de dados, operando no MongoDB Atlas. O Nodemon foi instalado como dependência de
+                                                desenvolvimento para atualizar o código em tempo real. A API segue padrões CRUD, utiliza verbos HTTP adequados, retorna
+                                                respostas em JSON com status correto e implementa validações simples para simular cenários do "mundo real". Testes foram
+                                                realizados utilizando o software Postman</p>
+
+                                                <a href="https://github.com/plyrio/API_RESTful_Express_MongoDB" target="_blank" class="btn btn-primary">Visitar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- projeto 2 -->
+                            <div class="swiper-slide">
+                                <div class="card my-5">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="./img/eudeoculos.jpg" class="img-fluid img-card rounded-start"
+                                                alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a natural lead-in to additional
+                                                    content. This content is a little bit longer.</p>
+
+                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
         </section>
 
         <section class="contact" id="contact">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A adipisci numquam dicta aut? Animi fugiat quis
-                veritatis
-                aspernatur aperiam, quas doloribus velit, soluta unde, natus perspiciatis deleniti esse iste nisi vitae.
-                Aliquid
-                animi at aliquam, molestiae facilis libero blanditiis pariatur ex optio omnis dignissimos nesciunt,
-                temporibus odit
-                deleniti laborum. Ipsa neque quisquam qui impedit iste ipsum assumenda alias nostrum accusantium, fugit
-                necessitatibus error sed veniam autem possimus harum magni, repudiandae at maxime beatae iure blanditiis
-                labore
-                exercitationem? Dicta autem, totam numquam est rerum ad necessitatibus soluta magnam sequi accusamus
-                possimus
-                eligendi reprehenderit laudantium corrupti doloribus aliquam odit reiciendis consequuntur fugiat at,
-                facere a! Quos
-                qui nostrum minus odio sit esse sunt, eaque cum repellendus, molestias ipsa voluptatum corporis rem!
-                Suscipit fugiat
-                earum aliquam voluptatem atque assumenda reprehenderit obcaecati error facilis! Sit quibusdam deserunt
-                placeat odit
-                necessitatibus perspiciatis optio cupiditate a id atque illum sed sequi vel assumenda autem, nisi at,
-                quidem
-                dolorum, obcaecati reiciendis itaque architecto. Adipisci sed dignissimos fugit expedita quisquam
-                accusamus unde
-                dolorem recusandae corrupti repudiandae libero, rem deserunt tempore voluptatibus? Quam, magni!
-                Eligendi,
-                accusantium? Atque ipsam unde quisquam, in nesciunt veritatis modi saepe deserunt ratione sequi
-                architecto vitae
-                magni earum nulla iste distinctio eum, id qui repellendus quos? Excepturi dolores nulla nobis eaque
-                voluptatem magni
-                cumque quas corrupti eligendi repellendus, qui, soluta et autem odio necessitatibus vero labore dolor
-                modi repellat
-                recusandae ducimus beatae? Quas consequatur beatae earum dolor, cum voluptatibus. Voluptatibus quod quas
-                enim
-                tempora quia dicta optio nostrum deleniti officiis aliquid! Pariatur tempora voluptatum ut enim earum
-                sint aliquid
-                optio, aperiam impedit at nesciunt excepturi error laborum inventore numquam harum odio repellendus
-                velit, corrupti
-                mollitia voluptatem quia rerum neque modi. Saepe omnis dolorum placeat quam! Eius nisi pariatur culpa
-                hic delectus
-                dignissimos. Id, assumenda magnam a in enim quisquam explicabo natus consequuntur, quas ratione, iusto
-                odio
-                excepturi soluta sequi sunt saepe perspiciatis? Inventore, natus consequatur. Vitae, maiores incidunt!
-                Molestiae,
-                exercitationem laudantium aspernatur quas adipisci dolor! Minima illo doloribus dolores quae placeat
-                veritatis hic
-                molestias facilis, temporibus non pariatur. Veritatis aliquam veniam quaerat aliquid dolore voluptatem
-                molestiae
-                culpa tenetur, est ad animi cumque minus enim natus, laborum amet corporis dolores ipsum sapiente, cum
-                repudiandae!
-                Reiciendis similique, iusto, nemo tenetur molestias enim corporis impedit neque eos quidem voluptate
-                quibusdam.
-                Reprehenderit voluptas praesentium numquam quisquam accusantium velit sunt. Nesciunt, ut esse itaque
-                sed, molestias
-                tenetur laudantium placeat non neque blanditiis rerum laborum. Tempore explicabo vel delectus inventore
-                id velit
-                dicta tempora eveniet quibusdam ea nesciunt, consequuntur culpa ad provident repudiandae fugiat.
-                Eligendi similique
-                eos consequuntur adipisci eius alias, a soluta in aspernatur asperiores tempora iste quis deleniti,
-                debitis itaque
-                possimus! Quas fugit id accusamus dolore minima similique aliquid minus dolor corrupti sapiente. Iure
-                facilis fugit
-                fugiat possimus aut eum repudiandae! In ex aspernatur minima dolores illum quasi, dolorem nesciunt
-                praesentium!
-                Animi recusandae corrupti est a? In aperiam labore voluptates inventore cupiditate pariatur expedita
-                quidem
-                distinctio, ea ab iusto quibusdam enim sapiente magni sequi atque natus ex, illo nisi quas, ipsa
-                architecto
-                accusamus doloremque dicta! Quod voluptatem sequi rem aspernatur. Aliquam dolorem consectetur natus
-                corporis,
-                reiciendis pariatur repellat ut provident atque consequuntur, esse facere eveniet nihil? Sint totam
-                earum nesciunt
-                corporis temporibus alias iure autem ipsam assumenda veniam iste dicta ex velit ducimus ab reiciendis et
-                perferendis
-                eius animi, ratione fugit aliquid ad amet placeat! Dicta omnis eius voluptas voluptatibus facere alias,
-                placeat
-                delectus, modi, possimus quas ad perspiciatis minima laudantium minus ea a! Obcaecati maxime culpa ea
-                dolore,
-                exercitationem quos similique fugiat possimus suscipit totam qui voluptatibus corporis omnis ut,
-                accusamus delectus
-                nisi perferendis non pariatur et est sequi dolorum? Dolore velit, tempore saepe nemo suscipit doloribus
-                eligendi
-                sapiente, perspiciatis maxime earum sed numquam fugiat! Qui ratione veniam in officia facere illum
-                tempora! Modi
-                adipisci aspernatur dolorem excepturi et aliquam totam illum, culpa nesciunt est ipsa quod magnam quia
-                odit qui
-                temporibus voluptatibus fuga! Voluptate vel ea, eius a perspiciatis, amet perferendis consequuntur
-                eveniet incidunt
-                delectus esse. Cumque placeat optio ea velit aut quis voluptatum ullam maxime in perspiciatis, itaque
-                obcaecati.
-                Laudantium nam animi fugit quibusdam, eum iusto pariatur. Ex suscipit inventore odit quos perferendis
-                cum error quae
-                in odio animi minima quam reiciendis dignissimos aliquam, consequuntur tenetur mollitia. Laboriosam
-                aliquid eos,
-                dolor architecto amet itaque voluptas reiciendis? Debitis, modi molestiae iusto, maiores perspiciatis
-                autem mollitia
-                id nemo similique at distinctio atque libero odio perferendis, aspernatur aliquam? Ab debitis pariatur
-                commodi,
-                porro veritatis, culpa eligendi cumque tempora incidunt in est harum. Error dolore, nulla nemo repellat
-                blanditiis
-                rerum ipsum totam quasi dicta! Ipsam, nobis eum ut, quia cupiditate debitis rerum illum et explicabo ea
-                natus qui,
-                dolorum odit officia! Laboriosam commodi officiis ullam repellat est a quae ipsa, alias voluptatem natus
-                dolores
-                accusamus molestias at officia corrupti libero. Eligendi optio, quia esse officiis minus voluptate enim
-                ea
-                voluptatibus, blanditiis aperiam repellat debitis eveniet minima reiciendis at reprehenderit a sed
-                suscipit?
-                Corrupti magnam excepturi, nisi eum exercitationem quo accusamus quas similique quod unde, voluptatem
-                sit! Quod vel
-                harum, dolores eos maxime quisquam animi laborum nemo sit ipsum saepe, doloribus voluptatum similique
-                eligendi
-                praesentium at velit ea nulla aliquid cumque! Ipsa, consequatur commodi, eligendi ratione, aliquam
-                excepturi eaque
-                cumque nemo praesentium ipsum voluptatibus amet dolores assumenda corrupti. Aliquam iure ab amet
-                obcaecati qui earum
-                eum reprehenderit, dolorum magni eos odit quis at sit, aut praesentium sapiente dignissimos rerum
-                placeat enim,
-                repudiandae expedita. Mollitia sit sed quisquam, rem vitae nesciunt, odio placeat repudiandae doloremque
-                enim
-                nostrum sint, quod natus possimus illo eveniet? Rerum ratione tenetur incidunt, necessitatibus
-                laudantium atque
-                minima commodi aperiam nemo qui sit veritatis cupiditate similique provident quibusdam et molestias
-                impedit?
-                Quibusdam aliquid quia ipsum veniam nam officia culpa voluptates autem possimus ab, harum ullam debitis.
-                Recusandae
-                laudantium doloribus in porro sed tempore rem quo ipsam ullam dolor quasi molestias excepturi maiores
-                rerum
-                cupiditate ad, reprehenderit illum modi, cum temporibus itaque. Similique id perspiciatis impedit
-                voluptate libero
-                accusantium aspernatur aliquid culpa beatae? Delectus quasi vero officiis accusantium dicta ea ad,
-                architecto
-                laboriosam alias eveniet veritatis aliquid pariatur enim itaque eligendi maiores, quos perspiciatis
-                facere? Aut
-                omnis iure exercitationem ut!</p>
+
         </section>
     </main>
 
