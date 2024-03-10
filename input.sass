@@ -8,14 +8,13 @@
 
 #antes 
   z-index: 10
-  transition: all 0.7s ease-in-out
-
+  transition: all 0.9s ease-in-out  
 
 #depois 
   z-index: 10
-  transition: all 0.7s ease-in-out
-  opacity: 0.98
-
+  opacity: 0.95
+  transition: all 0.9s ease-in-out
+  
 
 .navbar-brand
     font-family: variables.$font-stack1
@@ -33,6 +32,10 @@
         @media (min-width:768px)
             margin-right: 0px !important
 
+section
+    margin: 10vh
+
+
 .spinner-grow
     width: 15px
     height: 15px
@@ -44,36 +47,28 @@
   width: 15px
   height: 15px
 
-
-
-.swiper 
-      width: 100%
-      height: 100%
-    
+.swiper
+    width: 100%
+    height: 100%
+      
 
 .swiper-slide 
     text-align: center
-    font-size: 18px
     background: #fff
-    display: flex
     justify-content: center
     align-items: center
+    color: #000000
+    display: block
+    
     
 
-.swiper-slide img 
-    display: block
-    width: 100%
-    height: 100%
+p
+    max-height: 100%
+    text-overflow: ellipsis
+    overflow: auto
+    
 
-// .img-card
-//     display: flex
-//     @media screen 
 
-//         @media (min-width:992px) 
-//             height: 50vh
-
-//         @media (max-width:768px)
-//             max-height: 75%
             
 
 
