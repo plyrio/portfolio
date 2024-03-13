@@ -13,7 +13,7 @@ function toggleLightMode() {
 
 // fazer a navbar ficar transparente
 window.onscroll = scroll;
-const element = document.querySelector('#antes' || 'depois');
+const element = document.querySelector('#antes' || '#depois');
 
 function scroll() {
     var scrollTop = window.pageYOffset;

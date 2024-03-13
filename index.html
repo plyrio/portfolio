@@ -30,52 +30,62 @@
     <script src="./script/index.js" defer></script>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100 bg-gddefault text-gd600">
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark mb-4 bg-dark fixed-top" id="antes">
-            <div class="container">
-                <a class="navbar-brand" href="#">Pedro lyrio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md fixed-top" id="antes">
+            <div class="container-fluid">
+                <a class="navbar-brand text-gd900" href="#">Pedro lyrio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse text-center" id="navbarCollapse">
-                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#works">Trabalhos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contato</a>
-                        </li>
-                        <li class="nav-item py-2 col-12 col-md-auto">
-                            <div class="vr d-none d-md-flex h-100 text-white"></div>
-                            <hr class="d-lg-none my-1 text-white-50">
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="btn moon pb-md-2 pb-3" onclick="toggleDarkMode()">
-                                <i class="bi bi-moon-stars text-white"></i>
-                            </button>
-                            <button type="button" class="btn sun pb-md-2 pb-3" onclick="toggleLightMode()">
-                                <i class="bi bi-brightness-high-fill text-white"></i>
-                            </button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="btn btn-outline-success" type="submit">Download CV</button>
-                        </li>
-
-                    </ul>
+                <div class="offcanvas offcanvas-top text-bg-dark container-fluid" tabindex="-1" id="offcanvasTop"
+                    aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand offcanvas-title" id="offcanvasTopLabel" href="#">Pedro lyrio</a>
+                        <button type="button" class="btn-close btn-fechar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="offcanvas-body text-center">
+                        
+                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-gd600" href="#about">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-gd600" href="#skills">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-gd600" href="#works">Trabalhos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-gd600" href="#contact">Contato</a>
+                            </li>
+                            <li class="nav-item py-2 col-12 col-md-auto">
+                                <div class="vr d-none d-md-flex h-100 text-white"></div>
+                                <hr class="d-lg-none my-1 text-white-50">
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn moon pb-md-2 pb-3 text-gd600" onclick="toggleDarkMode()">
+                                    <i class="bi bi-moon-stars text-white"></i>
+                                </button>
+                                <button type="button" class="btn sun pb-md-2 pb-3 text-gd600" onclick="toggleLightMode()">
+                                    <i class="bi bi-brightness-high-fill text-white"></i>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn bg-gd900 text-gd50" type="submit">Download CV</button>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="container-fluid position-relative text-bg-dark">
+    <main class="container-fluid position-relative">
 
         <section class="hero" id="hero">
             <div class="container">
@@ -88,7 +98,7 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="content">
-                            <h1>Oi, Eu sou o Pedro</h1>
+                            <h1 class="text-gd900">Oi, Eu sou o Pedro</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, rem. Perferendis,
                                 consectetur! Incidunt in voluptatem voluptas quae laboriosam! Cum, maxime quidem beatae
                                 facere earum at nostrum quisquam? Maxime quibusdam voluptatibus nemo, sunt ducimus amet,
@@ -116,7 +126,7 @@
         </section>
 
         <section class="about" id="about">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="row">
                         <h1>
@@ -147,7 +157,7 @@
         </section>
 
         <section class="skills" id="skills">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="row">
                         <h1>
@@ -195,7 +205,7 @@
         </section>
 
         <section class="works" id="works">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="row">
                         <h1>
@@ -208,7 +218,7 @@
                 </div>
                 <!-- Swiper -->
                 <div class="row">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper mySwiper">
@@ -256,17 +266,21 @@
                                             </div>
                                             <div class="row row-col position-relative bottom-0">
                                                 <div class="col"><img src="./img/tecs/icons8-nó-js-32.png" alt=""></div>
-                                                <div class="col"><img src="./img/tecs/icons8-expresso-js-32.png" alt="./img/tecs/"></div>
-                                                <div class="col"><img src="./img/tecs/icons8-carteiro-api-32.png" alt=""></div>
-                                                <div class="col"><img src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png" alt=""></div>
+                                                <div class="col"><img src="./img/tecs/icons8-expresso-js-32.png"
+                                                        alt="./img/tecs/"></div>
+                                                <div class="col"><img src="./img/tecs/icons8-carteiro-api-32.png"
+                                                        alt=""></div>
+                                                <div class="col"><img
+                                                        src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png"
+                                                        alt=""></div>
                                                 <div class="col"></div>
                                                 <div class="col"></div>
 
 
-                                                
-                                                
-                                                
-                                                
+
+
+
+
                                             </div>
                                         </div>
                                         <!-- Projeto 3 -->

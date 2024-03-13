@@ -1,3 +1,107 @@
+.bg-gddefault {
+  background-color: #030412;
+}
+
+.text-gddefault {
+  color: #030412;
+}
+
+.bg-gd50 {
+  background-color: #111827;
+}
+
+.text-gd50 {
+  color: #111827;
+}
+
+.bg-gd100 {
+  background-color: #1f2937;
+}
+
+.text-gd100 {
+  color: #1f2937;
+}
+
+.bg-gd200 {
+  background-color: #374151;
+}
+
+.text-gd200 {
+  color: #374151;
+}
+
+.bg-gd300 {
+  background-color: #4b5563;
+}
+
+.text-gd300 {
+  color: #4b5563;
+}
+
+.bg-gd400 {
+  background-color: #6b7280;
+}
+
+.text-gd400 {
+  color: #6b7280;
+}
+
+.bg-gd500 {
+  background-color: #9ca3af;
+}
+
+.text-gd500 {
+  color: #9ca3af;
+}
+
+.bg-gd600 {
+  background-color: #d1d5db;
+}
+
+.text-gd600 {
+  color: #d1d5db;
+}
+
+.bg-gd700 {
+  background-color: #e5e7eb;
+}
+
+.text-gd700 {
+  color: #e5e7eb;
+}
+
+.bg-gd800 {
+  background-color: #f3f4f6;
+}
+
+.text-gd800 {
+  color: #f3f4f6;
+}
+
+.bg-gd900 {
+  background-color: #f9fafb;
+}
+
+.text-gd900 {
+  color: #f9fafb;
+}
+
+.bg-gd950 {
+  background-color: #ffffff;
+}
+
+.text-gd950 {
+  color: #ffffff;
+}
+
+.bg-esmerald500 {
+  background-color: #10b981;
+}
+
+.text-esmerald500 {
+  color: #10b981;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,8 +116,14 @@
 
 #depois {
   z-index: 10;
-  opacity: 0.95;
+  opacity: 1;
   transition: all 0.9s ease-in-out;
+  backdrop-filter: blur(24px);
+}
+
+.offcanvas.show {
+  height: 60vh;
+  max-height: 100vh;
 }
 
 .navbar-brand {
@@ -37,7 +147,8 @@
 }
 
 section {
-  margin: 10vh;
+  display: block;
+  margin-top: 10vh;
 }
 
 .spinner-grow {

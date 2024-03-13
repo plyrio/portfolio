@@ -12,8 +12,13 @@
 
 #depois 
   z-index: 10
-  opacity: 0.95
+  opacity: 1
   transition: all 0.9s ease-in-out
+  backdrop-filter:  blur(24px)
+
+.offcanvas.show 
+    height: 60vh
+    max-height: 100vh  
   
 
 .navbar-brand
@@ -33,7 +38,8 @@
             margin-right: 0px !important
 
 section
-    margin: 10vh
+    display: block
+    margin-top: 10vh
 
 
 .spinner-grow
