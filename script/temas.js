@@ -1,14 +1,19 @@
 
 // Mudar tema da pagina
-function toggleDarkMode() {
-    document.body.classList.add('dark-mode');
-    document.body.classList.remove('light-mode');
+function toggleTheme() {
+    const element = document.querySelector('#dark-light');
+
+    if (element.classList.contains('bi-moon-stars')) {
+        //Mudar para Dark
+        element.classList.remove('bi-moon-stars');
+        element.classList.add('bi-brightness-high-fill');
+    } else if (element.classList.contains('bi-brightness-high-fill')) {
+        //Mudar para Light
+        element.classList.remove('bi-brightness-high-fill');
+        element.classList.add('bi-moon-stars');
+    }
 }
 
-function toggleLightMode() {
-    document.body.classList.add('light-mode');
-    document.body.classList.remove('dark-mode');
-}
 
 
 // fazer a navbar ficar transparente

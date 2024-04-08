@@ -33,7 +33,7 @@
 <body class="d-flex flex-column min-vh-100 bg-gddefault text-gd600">
     <header>
         <nav class="navbar navbar-expand-md fixed-top" id="antes">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand text-gd900" href="#">Pedro lyrio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
                     aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,12 +66,12 @@
                                 <hr class="d-lg-none my-1 text-white-50">
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn moon pb-md-2 pb-3 text-gd600" onclick="toggleDarkMode()">
-                                    <i class="bi bi-moon-stars text-white"></i>
+                                <button type="button" class="btn moon pb-md-2 pb-3 text-gd600" onclick="toggleTheme()">
+                                    <i class="bi bi-moon-stars text-white" id="dark-light"></i>
                                 </button>
-                                <button type="button" class="btn sun pb-md-2 pb-3 text-gd600" onclick="toggleLightMode()">
+                                <!-- <button type="button" class="btn sun pb-md-2 pb-3 text-gd600" onclick="toggleLightMode()">
                                     <i class="bi bi-brightness-high-fill text-white"></i>
-                                </button>
+                                </button> -->
                             </li>
                             <li class="nav-item">
                                 <button class="btn bg-gd900 text-gd50" type="submit">Download CV</button>
@@ -126,7 +126,7 @@
         </section>
 
         <section class="about" id="about">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="row">
                         <h1>
@@ -157,7 +157,7 @@
         </section>
 
         <section class="skills" id="skills">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="row">
                         <h1>
@@ -205,7 +205,7 @@
         </section>
 
         <section class="works" id="works">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="row">
                         <h1>
