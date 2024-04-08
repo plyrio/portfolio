@@ -148,7 +148,7 @@
 
 section {
   display: block;
-  margin-top: 10vh;
+  padding-top: 7vh;
 }
 
 .spinner-grow {
@@ -179,10 +179,8 @@ section {
   display: block;
 }
 
-p {
-  max-height: 100%;
-  text-overflow: ellipsis;
-  overflow: auto;
+.hero-p {
+  text-align: justify;
 }
 
 .footer div p {

@@ -30,9 +30,9 @@
     <script src="./script/index.js" defer></script>
 </head>
 
-<body class="d-flex flex-column min-vh-100 bg-gddefault text-gd600">
+<body class="d-flex flex-column min-vh-100 text-gd600">
     <header>
-        <nav class="navbar navbar-expand-md fixed-top" id="antes">
+        <nav class="navbar navbar-expand-md fixed-top border-bottom" id="antes">
             <div class="container">
                 <a class="navbar-brand text-gd900" href="#">Pedro lyrio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
@@ -66,7 +66,7 @@
                                 <hr class="d-lg-none my-1 text-white-50">
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn moon pb-md-2 pb-3 text-gd600" onclick="toggleTheme()">
+                                <button type="button" class="btn moon pb-md-2 pb-3 text-gd600 mx-1" onclick="toggleTheme()">
                                     <i class="bi bi-moon-stars text-white" id="dark-light"></i>
                                 </button>
                                 <!-- <button type="button" class="btn sun pb-md-2 pb-3 text-gd600" onclick="toggleLightMode()">
@@ -85,9 +85,9 @@
         </nav>
     </header>
 
-    <main class="container-fluid position-relative">
+    <main class="bg-gddefault">
 
-        <section class="hero" id="hero">
+        <section class="hero bg-gddefault mx-5" id="hero">
             <div class="container">
                 <div class="row g-4 my-5">
                     <div class="col-12 col-md-6 order-md-last">
@@ -98,12 +98,9 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="content">
-                            <h1 class="text-gd900">Oi, Eu sou o Pedro</h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, rem. Perferendis,
-                                consectetur! Incidunt in voluptatem voluptas quae laboriosam! Cum, maxime quidem beatae
-                                facere earum at nostrum quisquam? Maxime quibusdam voluptatibus nemo, sunt ducimus amet,
-                                omnis, est cupiditate blanditiis modi fuga voluptas neque possimus dolor rerum. Ea
-                                minima laudantium cupiditate est!</p>
+                            <h1 class="text-gd900 text-center">Oi, Eu sou o Pedro</h1>
+                            <p class="hero-p">Olá! Sou [Seu Nome], um motorista de caminhão dedicado e comprometido, além de ser um orgulhoso marido e pai. Atualmente, estou em um emocionante processo de transição de carreira, buscando expandir meus horizontes e me desenvolver ainda mais. Estou cursando Análise e Desenvolvimento de Sistemas, dando os primeiros passos rumo a uma carreira na área de tecnologia. Sempre tive interesse pela TI e agora estou transformando essa paixão em ação. Estou
+                            pronto para enfrentar novos desafios, aprender constantemente e contribuir de forma significativa para projetos de desenvolvimento de software. Estou ansioso para compartilhar minha jornada e meus projetos neste portfólio. Seja bem-vindo(a) e sinta-se à vontade para explorar e entrar em contato comigo!</p>
                         </div>
                         <div class="group my-4">
                             <div class="location my-2 ">
@@ -125,43 +122,65 @@
             </div>
         </section>
 
-        <section class="about" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="row">
+        <section class="about bg-gd50" id="about">
+            <div class="text-center">
                         <h1>
-                            <a name="" id="" class="btn btn-primary" href="#" role="button">Sobre</a>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Sobre</a>
                         </h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="pic-container">
-                            <img src="./img/eudeoculos.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col">
+            </div>
+            <div class="container">
+                <div class="row g-4 my-5">
+                    <div class="col-12 col-md-6 order-md-last">
                         <div class="content">
-                            <h4>Curiosidades sobre mim? Aqui você terá isso:</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ullam incidunt distinctio
-                                odio repellendus maiores iste eos, magni in, porro eaque facere officia dolor suscipit
-                                doloremque officiis
-                                molestias tenetur placeat esse repellat corrupti eius minima excepturi aliquid? Dicta
-                                cumque tempore eos fuga tempora ea excepturi laudantium blanditiis at, facilis
-                                voluptatem inventore ex pldeleniti et sed
-                                laudantium, ad tenetur est modi officiis obcaecati! Beatae.</p>
+                            <h4 class="text-gd900 text-center">Curiosidades sobre mim? Aqui você terá isso:</h4>
+                            <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor incondicional
+                                por animais. Cães
+                                e
+                                gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível. Quando não estou
+                                cuidando deles,
+                                você
+                                provavelmente me encontrará imerso em jogos online. Os MMORPGs, como Lineage 2 e Path of Exile, são
+                                meu refúgio
+                                virtual,
+                                onde posso explorar mundos fantásticos e desfrutar de desafios emocionantes.
+                                <br><br>
+                                Além disso, sou apaixonado por programação e resolver problemas. A capacidade de criar soluções e
+                                desenvolver
+                                projetos
+                                úteis sempre me fascinou. É por isso que estou empenhado em minha jornada acadêmica em Análise e
+                                Desenvolvimento de
+                                Sistemas - é a minha maneira de aprimorar minhas habilidades e seguir minha paixão pela tecnologia.
+                                <br><br>
+                                E quando não estou imerso em linhas de código, me arrisco como um mecânico amador. Gosto de colocar
+                                as mãos na massa
+                                e
+                                resolver problemas mecânicos simples em casa. Sou daqueles maridos e pais que gostam de tentar
+                                resolver tudo dentro
+                                de
+                                casa, seja consertando um vazamento na pia ou fazendo pequenos reparos no carro.
+                                <br><br>
+                                Essas são apenas algumas das muitas facetas que compõem quem sou. Espero que tenha gostado de
+                                conhecer um pouco mais
+                                sobre mim!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="pic-container">
+                            <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio" class="img-fluid img-thumbnail mx-auto">
                         </div>
                     </div>
                 </div>
+            
             </div>
         </section>
 
-        <section class="skills" id="skills">
+        <section class="skills bg-gddefault" id="skills">
             <div class="container">
                 <div class="row">
-                    <div class="row">
+                    <div class="row text-center">
                         <h1>
-                            <a name="" id="" class="btn btn-primary" href="#" role="button">Habilidades</a>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Habilidades</a>
                         </h1>
                     </div>
                     <div class="row">
@@ -204,12 +223,12 @@
             </div>
         </section>
 
-        <section class="works" id="works">
+        <section class="works bg-gd50" id="works">
             <div class="container">
                 <div class="row">
-                    <div class="row">
+                    <div class="row text-center">
                         <h1>
-                            <a name="" id="" class="btn btn-primary" href="#" role="button">Projetos</a>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Projetos</a>
                         </h1>
                     </div>
                     <div class="row">
@@ -302,8 +321,21 @@
                 </div>
         </section>
 
-        <section class="contact" id="contact">
-
+        <section class="contact bg-gddefault" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="row text-center">
+                        <h1>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Habilidades</a>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <h5>Contato</h5>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
         </section>
     </main>
 
