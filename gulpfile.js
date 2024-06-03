@@ -8,6 +8,7 @@ import browserSync from 'browser-sync';
 import { deleteAsync } from 'del';
 import autoprefixer from 'gulp-autoprefixer';
 import imagemin from 'gulp-imagemin';
+import ghPages from 'gh-pages';
 
 const sass = gulpSass(dartSass);
 const bs = browserSync.create();
@@ -82,6 +83,5 @@ const paths = {
                                                                                                                                                                                                                                                             // Tarefa padrão para iniciar o servidor e assistir a mudanças
                                                                                                                                                                                                                                                             export const watch = gulp.series(build, serve);
 
-                                                                                                                                                                                                                                                            // Exportar tarefas padrão
-                                                                                                                                                                                                                                                            export default watch;
+                                                                                                                                                                                                                                                            // Tarefa para deploy no GitHub Pages
                                                                                                                                                                                                                                                             
