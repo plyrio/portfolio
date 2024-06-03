@@ -2,12 +2,13 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "gulpfile.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp watch",
     "build": "gulp"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
