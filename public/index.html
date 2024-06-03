@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Plyrio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+        defer></script>
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+</head>
+
+<body class="d-flex flex-column min-vh-100 text-gd600 theme-light">
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top border-bottom" id="antes">
+            <div class="container">
+                <a class="navbar-brand text-gd900" href="#">Pedro lyrio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-top text-bg-dark container-fluid" tabindex="-1" id="offcanvasTop"
+                    aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand offcanvas-title" id="offcanvasTopLabel" href="#">Pedro lyrio</a>
+                        <button type="button" class="btn-close btn-fechar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="offcanvas-body text-center">
+                        
+                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-gd600" href="#about">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-gd600" href="#skills">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-gd600" href="#works">Trabalhos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-gd600" href="#contact">Contato</a>
+                            </li>
+                            <li class="nav-item py-2 col-12 col-md-auto">
+                                <div class="vr d-none d-md-flex h-100 text-white"></div>
+                                <hr class="d-lg-none my-1 text-white-50">
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn-moon mb-md-2 mb-3 text-gd600 mx-1" onclick="toggleTheme()" id="theme-toggle">
+                                    <i class="bi bi-moon-stars text-white" id="dark-light"></i>
+                                </button>
+                                <!-- <button type="button" class="btn sun pb-md-2 pb-3 text-gd600" onclick="toggleLightMode()">
+                                    <i class="bi bi-brightness-high-fill text-white"></i>
+                                </button> -->
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn bg-gd900 text-gd50" type="submit">Download CV</button>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-gddefault">
+
+        <section class="hero bg-gddefault mx-5" id="hero">
+            <div class="container">
+                <div class="row g-4 my-5">
+                    <div class="col-12 col-md-6 order-md-last">
+                        <div class="pic-container">
+                            <img src="./assets/img/eu.jpg" alt="Imagem de Plyrio"
+                                class="img-fluid img-thumbnail foto-perfil mx-auto">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="content">
+                            <h1 class="text-gd900 text-center">Oi, Eu sou o Pedro</h1>
+                            <p class="hero-p">Olá! Sou [Seu Nome], um motorista de caminhão dedicado e comprometido, além de ser um orgulhoso marido e pai. Atualmente, estou em um emocionante processo de transição de carreira, buscando expandir meus horizontes e me desenvolver ainda mais. Estou cursando Análise e Desenvolvimento de Sistemas, dando os primeiros passos rumo a uma carreira na área de tecnologia. Sempre tive interesse pela TI e agora estou transformando essa paixão em ação. Estou
+                            pronto para enfrentar novos desafios, aprender constantemente e contribuir de forma significativa para projetos de desenvolvimento de software. Estou ansioso para compartilhar minha jornada e meus projetos neste portfólio. Seja bem-vindo(a) e sinta-se à vontade para explorar e entrar em contato comigo!</p>
+                        </div>
+                        <div class="group my-4">
+                            <div class="location my-2 ">
+                                <i class="bi bi-geo-alt"></i>
+                                Vila Velha - ES
+                            </div>
+                            <div class="hire my-2">
+                                <i class="bi bi-dot spinner-grow text-success"></i>
+                                Disponivel para novos projetos
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#"><i class="bi bi-github"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about bg-gd50" id="about">
+            <div class="text-center">
+                        <h1>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Sobre</a>
+                        </h1>
+            </div>
+            <div class="container">
+                <div class="row g-4 my-5">
+                    <div class="col-12 col-md-6 order-md-last">
+                        <div class="content">
+                            <h4 class="text-gd900 text-center">Curiosidades sobre mim? Aqui você terá isso:</h4>
+                            <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor incondicional
+                                por animais. Cães
+                                e
+                                gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível. Quando não estou
+                                cuidando deles,
+                                você
+                                provavelmente me encontrará imerso em jogos online. Os MMORPGs, como Lineage 2 e Path of Exile, são
+                                meu refúgio
+                                virtual,
+                                onde posso explorar mundos fantásticos e desfrutar de desafios emocionantes.
+                                <br><br>
+                                Além disso, sou apaixonado por programação e resolver problemas. A capacidade de criar soluções e
+                                desenvolver
+                                projetos
+                                úteis sempre me fascinou. É por isso que estou empenhado em minha jornada acadêmica em Análise e
+                                Desenvolvimento de
+                                Sistemas - é a minha maneira de aprimorar minhas habilidades e seguir minha paixão pela tecnologia.
+                                <br><br>
+                                E quando não estou imerso em linhas de código, me arrisco como um mecânico amador. Gosto de colocar
+                                as mãos na massa
+                                e
+                                resolver problemas mecânicos simples em casa. Sou daqueles maridos e pais que gostam de tentar
+                                resolver tudo dentro
+                                de
+                                casa, seja consertando um vazamento na pia ou fazendo pequenos reparos no carro.
+                                <br><br>
+                                Essas são apenas algumas das muitas facetas que compõem quem sou. Espero que tenha gostado de
+                                conhecer um pouco mais
+                                sobre mim!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="pic-container">
+                            <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio" class="img-fluid img-thumbnail mx-auto">
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <section class="skills bg-gddefault" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="row text-center">
+                        <h1>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Habilidades</a>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <h5>As habilidades, ferramentas e tecnologias nas quais sou realmente bom:</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row mx-auto text-center">
+                        <div class="row text-center">
+                            <div class="col">
+                                <i class="bi-vimeo text-primary"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-youtube text-danger"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-facebook text-success"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-instagram text-warning "></i>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col">
+                                <i class="bi-github text-info"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-discord text-light"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-google text-secondary"></i>
+                            </div>
+                            <div class="col">
+                                <i class="bi-whatsapp text-dark"></i>
+                                <p>gfdgd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works bg-gd50" id="works">
+            <div class="container">
+                <div class="row">
+                    <div class="row text-center">
+                        <h1>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Projetos</a>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <h5>Aqui está um rápido resumo das minhas experiências mais recentes:</h5>
+                    </div>
+                </div>
+                <!-- Swiper -->
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- Projeto 1 -->
+                                        <div class="swiper-slide card">
+                                            <img src="./img/projeto1.jpeg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">API RESTful - CRUD</h5>
+                                                <p class="card-text">Uma API RESTful foi desenvolvida utilizando o
+                                                    framework
+                                                    Express para lidar com requisições e respostas. O MongoDB, com a
+                                                    ODM Mongoose, foi escolhido como banco de dados, operando no MongoDB
+                                                    Atlas. O Nodemon foi instalado como dependência de
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                                                    similique impedit ut distinctio labore cumque, doloremque earum
+                                                    ullam assumenda molestias ea veniam facilis non error dolorum, velit
+                                                    at reiciendis. Blanditiis itaque ad ut cumque id nisi neque
+                                                    nesciunt? Aliquam cum in quaerat facere dolore minima similique ea
+                                                    ex, laborum quibusdam.
+                                                </p>
+                                                <p class="card-text fixed-bottom">
+                                                <div class="row row-cols-4 ">
+                                                    <img src="./img/tecs/icons8-nó-js-32.png" alt="">
+                                                    <img src="./img/tecs/icons8-expresso-js-32.png" alt="./img/tecs/">
+                                                    <img src="./img/tecs/icons8-carteiro-api-32.png" alt="">
+                                                    <img src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png"
+                                                        alt="">
+                                                </div>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Projeto 2 -->
+                                        <div class="swiper-slide card position-relative">
+                                            <img src="./img/projeto1.jpeg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">API RESTful - CRUD</h5>
+                                                <p class="card-text ">Uma API RESTful foi desenvolvida
+                                                    utilizando o framework
+                                                    Express para lidar com requisições e respostas. O MongoDB, com a
+                                                    ODM Mongoose, foi escolhido como banco de dados, operando no
+                                                    MongoDBndo real". Testes foram
+                                                    realizados utilizando o software Postman</p>
+                                            </div>
+                                            <div class="row row-col position-relative bottom-0">
+                                                <div class="col"><img src="./img/tecs/icons8-nó-js-32.png" alt=""></div>
+                                                <div class="col"><img src="./img/tecs/icons8-expresso-js-32.png"
+                                                        alt="./img/tecs/"></div>
+                                                <div class="col"><img src="./img/tecs/icons8-carteiro-api-32.png"
+                                                        alt=""></div>
+                                                <div class="col"><img
+                                                        src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png"
+                                                        alt=""></div>
+                                                <div class="col"></div>
+                                                <div class="col"></div>
+
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- Projeto 3 -->
+                                        <div class="swiper-slide"></div>
+                                        <!-- Projeto 4 -->
+                                        <div class="swiper-slide">Slide 4</div>
+                                        <!-- Projeto 5 -->
+                                        <div class="swiper-slide">Slide 5</div>
+
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+        <section class="contact bg-gddefault" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="row text-center">
+                        <h1>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Habilidades</a>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <h5>Contato</h5>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-bg-dark border-top">
+        <div class="py-3 text-center">
+            <p>Desenvolvido por Pedro lyrio DEV &copy; Copyright 2024</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
