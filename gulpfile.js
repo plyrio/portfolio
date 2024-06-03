@@ -79,9 +79,9 @@ const build = gulp.series(clean, gulp.parallel(styles, scripts, images));
 const watch = gulp.series(build, serve);
 
 // Exportar tarefas
-exports.clean = clean;
-exports.styles = styles;
-exports.scripts = scripts;
-exports.images = images;
-exports.build = build;
-exports.watch = watch;
+module.exports.default = clean;
+module.exports.default = styles;
+module.exports.default = scripts;
+module.exports.default = images;
+module.exports.default = build;
+module.exports.default = watch;
