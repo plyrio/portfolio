@@ -1,9 +1,7 @@
-@use 'variables';
-@use 'mixins';
-@use 'components';
-@use 'themes';
-
-
+@use "variables";
+@use "mixins";
+@use "components";
+@use "themes";
 
 // Aplicar cores para o tema escuro
 @include mixins.apply-theme-colors(themes.$dark-colors);
@@ -15,94 +13,94 @@
   @include mixins.apply-theme-colors(themes.$light-colors);
 }
 
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: variables.$font-stack2;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: variables.$font-stack2;
 }
 
 #antes {
-    z-index: 10;
-    transition: all 0.7s ease-in-out;
+  z-index: 10;
+  opacity: 0.98;
+  transition: all 0.7s ease-in-out;
+  backdrop-filter: blur(24px); /* Efeito de desfoque */
 }
 
 #depois {
-    z-index: 10;
-    opacity: 0.98;
-    transition: all 0.7s ease-in-out;
-    backdrop-filter: blur(24px);
+  z-index: 10;
+  transition: all 0.7s ease-in-out;
+  backdrop-filter: blur(2px); /* Remover o efeito de desfoque */
 }
 
 .offcanvas.show {
-    height: 60vh;
-    max-height: 100vh;
+  height: 60vh;
+  max-height: 100vh;
 }
 
 .navbar-brand {
-    font-family: variables.$font-stack1;
-    text-shadow: #ccc 10px 0 10px;
-    font-size: 20px;
+  font-family: variables.$font-stack1;
+  text-shadow: #ccc 10px 0 10px;
+  font-size: 20px;
 }
 
 .foto-perfil {
-    display: flex;
+  display: flex;
 
-    @media screen {
-        @media (min-width: 992px) {
-            width: 50vh;
-        }
-
-        @media (min-width: 768px) {
-            margin-right: 0px !important;
-        }
+  @media screen {
+    @media (min-width: 992px) {
+      width: 50vh;
     }
+
+    @media (min-width: 768px) {
+      margin-right: 0px !important;
+    }
+  }
 }
 
 section {
-    display: block;
-    // margin-top: 10vh;
-    padding-top: 7vh;
+  display: block;
+  // margin-top: 10vh;
+  padding-top: 7vh;
 }
 
 .spinner-grow {
-    width: 15px;
-    height: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .bi-dot {
-    color: #1cb43d;
+  color: #1cb43d;
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
-    text-align: center;
-    background: #fff;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    display: block;
+  text-align: center;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  display: block;
 }
 
 .hero-p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .footer {
-    div {
-        p {
-            font-family: variables.$font-stack1;
-            opacity: 75%;
-        }
+  div {
+    p {
+      font-family: variables.$font-stack1;
+      opacity: 75%;
     }
+  }
 }
 
 i {
-    font-size: 24px;
-    line-height: 30px;
+  font-size: 24px;
+  line-height: 30px;
 }

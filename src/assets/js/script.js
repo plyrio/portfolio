@@ -22,21 +22,21 @@ document.querySelector('#theme-toggle').addEventListener('click', toggleTheme);
 
 // fazer a navbar ficar transparente
 window.onscroll = scroll;
-const element = document.querySelector('#antes' || '#depois');
+const element = document.querySelector('#antes', '#depois');
 
 function scroll() {
     var scrollTop = window.pageYOffset;
     if (scrollTop > 30) {
         try {
             document.getElementById('antes').id = 'depois'
-            element.classList.remove('border-bottom');
+            element.classList.add('border-bottom');
         } catch (e) {
             false
         }
     } else {
         try {
             document.getElementById('depois').id = 'antes'
-            element.classList.add('border-bottom');
+            element.classList.remove('border-bottom');
         } catch (e) {
             false
         }
