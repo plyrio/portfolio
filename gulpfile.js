@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer').default;
 const cleanCSS = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
@@ -72,8 +72,10 @@ function serve() {
     gulp.watch(paths.html.src).on('change', browserSync.reload);
 }
 
-// Tarefas
+// Tarefa para construir o projeto
 const build = gulp.series(clean, gulp.parallel(styles, scripts, images));
+
+// Tarefa padrão para iniciar o servidor e assistir a mudanças
 const watch = gulp.series(build, serve);
 
 // Exportar tarefas
@@ -81,4 +83,5 @@ exports.clean = clean;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
-exports.default = watch;
+exports.build = build;
+exports.watch = watch;
