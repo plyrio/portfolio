@@ -1,0 +1,10 @@
+@mixin apply-theme-colors($colors) {
+  @each $name, $color in $colors {
+    .bg-#{$name} {
+      background-color: $color;
+    }
+    .text-#{$name} {
+      color: $color;
+    }
+  }
+}

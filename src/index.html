@@ -24,13 +24,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:wght@100..900&display=swap"
         rel="stylesheet">
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Scripts -->
-    <script src="./script/temas.js" defer></script>
-    <script src="./script/index.js" defer></script>
+    <script src="./assets/js/script.js"></script>
 </head>
 
-<body class="d-flex flex-column min-vh-100 text-gd600">
+<body class="d-flex flex-column min-vh-100 text-gd600 theme-light">
     <header>
         <nav class="navbar navbar-expand-md fixed-top border-bottom" id="antes">
             <div class="container">
@@ -66,7 +65,7 @@
                                 <hr class="d-lg-none my-1 text-white-50">
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn moon pb-md-2 pb-3 text-gd600 mx-1" onclick="toggleTheme()">
+                                <button type="button" class="btn-moon mb-md-2 mb-3 text-gd600 mx-1" onclick="toggleTheme()" id="theme-toggle">
                                     <i class="bi bi-moon-stars text-white" id="dark-light"></i>
                                 </button>
                                 <!-- <button type="button" class="btn sun pb-md-2 pb-3 text-gd600" onclick="toggleLightMode()">
@@ -92,7 +91,7 @@
                 <div class="row g-4 my-5">
                     <div class="col-12 col-md-6 order-md-last">
                         <div class="pic-container">
-                            <img src="./img/eu.jpg" alt="Imagem de Plyrio"
+                            <img src="./assets/img/eu.jpg" alt="Imagem de Plyrio"
                                 class="img-fluid img-thumbnail foto-perfil mx-auto">
                         </div>
                     </div>
