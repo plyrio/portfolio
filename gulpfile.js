@@ -43,7 +43,7 @@ const paths = {
                                                                                                                 .pipe(sass().on('error', sass.logError))
                                                                                                                         .pipe(autoprefixer())
                                                                                                                                 .pipe(cleanCSS())
-                                                                                                                                        .pipe(rename({ suffix: '.min' }))
+                                                                                                                                        .pipe(rename('style.min.css'))
                                                                                                                                                 .pipe(gulp.dest(paths.styles.dest))
                                                                                                                                                         .pipe(bs.stream());
                                                                                                                                                         }
@@ -105,4 +105,3 @@ const paths = {
 
                                                                                                                                                                                                                                                                                                                                                         // Exportar tarefas padrão
                                                                                                                                                                                                                                                                                                                                                         export default watch;
-                                                                                                                                                                                                                                                                                                                                                        
