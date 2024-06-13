@@ -22,7 +22,7 @@ document.querySelector('#theme-toggle').addEventListener('click', toggleTheme);
 
 // fazer a navbar ficar transparente
 window.onscroll = scroll;
-const element = document.querySelector('#antes', '#depois');
+const element = document.getElementById('#antes', '#depois');
 
 function scroll() {
     var scrollTop = window.pageYOffset;
