@@ -15,7 +15,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "swiper": "^11.0.7"
+    "swiper": "^11.0.7",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

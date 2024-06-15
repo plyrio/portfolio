@@ -1,3 +1,13 @@
+import Typewriter from 'typewriter-effect/dist/core';
+
+new Typewriter('#typewriter', {
+  strings: ['Olá, eu sou o Pedro Lyrio', 'Desenvolvedor Web'],
+  autoStart: true,
+  loop: true,
+    delay: 75,
+    deletespeed: 20,
+});
+
 function toggleTheme() {
     const element = document.querySelector('#dark-light');
     const body = document.body;
