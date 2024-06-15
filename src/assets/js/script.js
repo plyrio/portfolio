@@ -1,12 +1,23 @@
-import Typewriter from 'typewriter-effect/dist/core';
+const Typewriter = require('typewriter-effect');
 
-new Typewriter('#typewriter', {
-  strings: ['Olá, eu sou o Pedro Lyrio', 'Desenvolvedor Web'],
-  autoStart: true,
+var tpwriter = document.getElementById('typewriter');
+
+var typewriter = new Typewriter(tpwriter, {
+    autostart: true,
   loop: true,
-    delay: 75,
+  delay: 75,
     deletespeed: 20,
 });
+
+typewriter
+  .pauseFor(2500)
+  .typeString('Olá, eu sou o Pedro Lyrio')
+  .pauseFor(300)
+  .deleteChars(10)
+  .typeString('<strong>Desenvolvedor Web</strong>  ')
+  .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+  .pauseFor(1000)
+  .start();
 
 function toggleTheme() {
     const element = document.querySelector('#dark-light');
