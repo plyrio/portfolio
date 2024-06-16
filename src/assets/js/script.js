@@ -1,25 +1,27 @@
+import Typewriter from 'typewriter-effect/dist/core';
 
-// script.js
+
 document.addEventListener("DOMContentLoaded", function() {
     const tpwriter = document.getElementById('typewriter');
 
-    const typewriter = new Typewriter(tpwriter, {
-        autoStart: true,
-        loop: true,
-        delay: 75,
-        deleteSpeed: 20,
-    });
+    if (tpwriter) {
+        const typewriter = new Typewriter(tpwriter, {
+            autoStart: true,
+            loop: true,
+            delay: 75,
+            deleteSpeed: 20,
+        });
 
-    typewriter
-        .pauseFor(2500)
-        .typeString('Olá, eu sou o Pedro Lyrio')
-        .pauseFor(300)
-        .deleteChars(10)
-        .typeString('<strong>Desenvolvedor Web</strong>  ')
-        .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
-        .pauseFor(1000)
-        .start();
-});
+        typewriter
+            .pauseFor(2500)
+            .typeString('Olá, eu sou o Pedro Lyrio')
+            .pauseFor(300)
+            .deleteChars(10)
+            .typeString('<strong>Desenvolvedor Web</strong>  ')
+            .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+            .pauseFor(1000)
+            .start();
+    }
 
 
 function toggleTheme() {
