@@ -1,23 +1,27 @@
 const Typewriter = require('typewriter-effect');
 
-var tpwriter = document.getElementById('typewriter');
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const tpwriter = document.getElementById('typewriter');
 
-var typewriter = new Typewriter(tpwriter, {
-    autostart: true,
-  loop: true,
-  delay: 75,
-    deletespeed: 20,
+    const typewriter = new Typewriter(tpwriter, {
+        autoStart: true,
+        loop: true,
+        delay: 75,
+        deleteSpeed: 20,
+    });
+
+    typewriter
+        .pauseFor(2500)
+        .typeString('Olá, eu sou o Pedro Lyrio')
+        .pauseFor(300)
+        .deleteChars(10)
+        .typeString('<strong>Desenvolvedor Web</strong>  ')
+        .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+        .pauseFor(1000)
+        .start();
 });
 
-typewriter
-  .pauseFor(2500)
-  .typeString('Olá, eu sou o Pedro Lyrio')
-  .pauseFor(300)
-  .deleteChars(10)
-  .typeString('<strong>Desenvolvedor Web</strong>  ')
-  .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
-  .pauseFor(1000)
-  .start();
 
 function toggleTheme() {
     const element = document.querySelector('#dark-light');
