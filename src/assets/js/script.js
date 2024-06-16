@@ -1,4 +1,4 @@
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from 'typewriter-effect';
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .pauseFor(1000)
             .start();
     }
+    });
 
 
 function toggleTheme() {
@@ -68,5 +69,3 @@ function scroll() {
         }
     }
 }
-
-
