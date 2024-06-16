@@ -20,17 +20,25 @@
   font-family: variables.$font-stack2;
 }
 
+navglass {
+  background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
 #antes {
   z-index: 10;
   opacity: 0.98;
   transition: all 0.7s ease-in-out;
-  backdrop-filter: blur(24px); /* Efeito de desfoque */
+  backdrop-filter: blur(24px);/* Efeito de desfoque */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #depois {
   z-index: 10;
   transition: all 0.7s ease-in-out;
-  backdrop-filter: blur(2px); /* Remover o efeito de desfoque */
+  backdrop-filter: blur(24px); /* Remover o efeito de desfoque */
 }
 
 .offcanvas.show {
