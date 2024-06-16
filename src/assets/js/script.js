@@ -1,4 +1,3 @@
-const Typewriter = require('typewriter-effect');
 
 // script.js
 document.addEventListener("DOMContentLoaded", function() {
