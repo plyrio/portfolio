@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    const themeToggle = document.querySelector('#theme-toggle');
+    const themeToggle = document.querySelector('#toggleTheme');
     if (themeToggle) {
         themeToggle.addEventListener('click', toggleTheme);
     }
