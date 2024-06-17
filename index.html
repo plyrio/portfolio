@@ -33,20 +33,20 @@
                 <script type="module" src="./js/script.min.js" defer></script>
 </head>
 
-<body class="d-flex flex-column min-vh-100 text-gd600 theme-dark">
-    <header class="bg-gddefault">
-        <nav class="navbar navbar-expand-md fixed-top" id="antes">
+<body class="d-flex flex-column min-vh-100 text-gd600 theme-light">
+    <header class="bg-gddefault container-fluid">
+        <nav class="navbar navglass navbar-expand-md fixed-top border-bottom" id="antes">
             <div class="container">
                 <a class="navbar-brand text-gd900" href="#">Pedro lyrio</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasend"
-                    aria-controls="offcanvasend" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end d-lg-block" tabindex="-1" id="offcanvasend"
-                    aria-labelledby="offcanvasEndLabel">
+                <div class="offcanvas offcanvas-top text-bg-dark container-fluid" tabindex="-1" id="offcanvasTop"
+                    aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
-                        <a class="navbar-brand offcanvas-title text-gd900" id="offcanvasendLabel" href="#">Pedro lyrio</a>
-                        <button type="button" class="btn-close btn-fechar text-gd600" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <a class="navbar-brand offcanvas-title" id="offcanvasTopLabel" href="#">Pedro lyrio</a>
+                        <button type="button" class="btn-close btn-fechar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     
                     <div class="offcanvas-body text-center">
@@ -65,8 +65,8 @@
                                 <a class="nav-link text-gd600" href="#contact">Contato</a>
                             </li>
                             <li class="nav-item py-2 col-12 col-md-auto">
-                                <div class="vr d-none d-md-flex h-100 text-gd100"></div>
-                                <hr class="d-lg-none my-1 text-gd100">
+                                <div class="vr d-none d-md-flex h-100 text-white"></div>
+                                <hr class="d-lg-none my-1 text-white-50">
                             </li>
                             <li class="nav-item">
                                 <button type="button" class="btn btn-moon mb-md-2 mb-3 mx-1 text-gd600" onclick="toggleTheme()" id="toggleTheme">
@@ -85,19 +85,19 @@
         </nav>
     </header>
 
-    <main class="bg-gddefault">
+    <main class="bg-gddefault container-fluid">
 
         <section class="hero bg-gddefault" id="hero">
             <div class="container">
                 
-                <div class="row g-4">
-                    <div class="col-12 col-md-4 order-md-last">
+                <div class="row g-4 my-5">
+                    <div class="col-12 col-md-6 order-md-last">
                         <div class="pic-container">
                             <img src="./img/eu.jpg" alt="Imagem de Plyrio"
                                 class="img-fluid img-thumbnail foto-perfil mx-auto">
                         </div>
                     </div>
-                    <div class="col-12 col-md-8">
+                    <div class="col-12 col-md-6">
                         <div class="content">
                             <div class="text-gd900 text-center" id="typewriter"></div>
                             
