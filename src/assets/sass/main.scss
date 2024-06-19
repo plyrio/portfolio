@@ -1,16 +1,12 @@
 @use "variables";
 @use "mixins";
-@use "components";
-@use "themes";
 
 // Aplicar cores para o tema escuro
-@include mixins.apply-theme-colors(themes.$dark-colors);
-
-// Aqui você pode adicionar estilos adicionais que não são específicos de tema
+@include mixins.apply-theme-colors(variables.$colors-dark);
 
 // Aplicar cores para o tema claro
 .theme-light {
-  @include mixins.apply-theme-colors(themes.$light-colors);
+  @include mixins.apply-theme-colors(variables.$colors-light);
 }
 
 * {
@@ -20,26 +16,34 @@
   font-family: variables.$font-stack2;
 }
 
-navglass {
-  background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, box-shadow 0.3s;
-}
-
 #antes {
   z-index: 10;
-  opacity: 0.98;
-  transition: all 0.7s ease-in-out;
-  backdrop-filter: blur(24px);/* Efeito de desfoque */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+  
 }
 
 #depois {
   z-index: 10;
-  transition: all 0.7s ease-in-out;
-  backdrop-filter: blur(24px); /* Remover o efeito de desfoque */
+  backdrop-filter: blur(48px);
 }
+.theme-dark #antes {
+  background-color: rgba(3, 4, 18, 1);
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+  }
+.theme-dark #depois {
+  background-color: rgba(3, 4, 18, 0.5);
+  box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1)
+}
+.theme-light #antes {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 3px rgba(3, 4, 18, 0.3);
+  }
+  
+.theme-light #depois {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 3px rgba(3, 4, 18, 0.1);
+}
+
 
 .offcanvas.show {
   height: 60vh;
