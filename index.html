@@ -33,21 +33,23 @@
                 <script type="module" src="./js/script.min.js" defer></script>
 </head>
 
-<body class="text-gd600 theme-dark bg-gddefault">
+<body class="text-gd600 theme-light">
     <header class="bg-gddefault">
         <nav class="navbar navbar-expand-md fixed-top" id="antes">
-            <div class="container-fluid">
+            <div class=" container-fluid">
                 <a class="navbar-brand text-gd900" href="#">Pedro lyrio</a>
-<button class="navbar-toggler text-gd600" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-gd600"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-gd900"></span>
                 </button>
-<div class="offcanvas offcanvas-end text-gd600" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas offcanvas-top text-gd600 bg-gddefault" tabindex="-1" id="offcanvasTop"
+                    aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
                         <a class="navbar-brand offcanvas-title text-gd900" id="offcanvasTopLabel" href="#">Pedro lyrio</a>
-                        <button type="button" class="btn-close text-gd900" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-fechar text-gd900" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     
-                    <div class="offcanvas-body text-center bg-gddefault">
+                    <div class="offcanvas-body text-center">
                         
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
@@ -63,12 +65,12 @@
                                 <a class="nav-link text-gd600" href="#contact">Contato</a>
                             </li>
                             <li class="nav-item col-12 col-md-auto">
-                                <div class="vr d-none d-md-flex h-90 text-gd900"></div>
-                                <hr class="d-lg-none my-1 text-gd900">
+                                <div class="vr d-none d-md-flex h-100 text-white"></div>
+                                <hr class="d-lg-none my-1 text-white-50">
                             </li>
                             <li class="nav-item">
                                 <button type="button" class="btn btn-moon mb-md-2 mb-3 mx-1 text-gd600" onclick="toggleTheme()" id="toggleTheme">
-                                    <i class="bi bi-brightness-high-fill" id="dark-light"></i>
+                                    <i class="bi bi-moon-stars" id="dark-light"></i>
                                 </button>
                             </li>
                             <li class="nav-item">
@@ -83,10 +85,11 @@
         </nav>
     </header>
 
-    <main class="bg-gddefault d-flex flex-column align-items-center justify-content-center">
+    <main class="bg-gddefault text-gd600">
 
-        <section class="hero bg-gddnnault" id="hero">
-            <div class="container-fluid">      
+        <section class="hero bg-gddefault" id="hero">
+            <div class="container-fluid">
+                
                 <div class="row g-4 my-5">
                     <div class="col-12 col-md-4 order-md-last">
                         <div class="pic-container">
@@ -121,10 +124,10 @@
             </div>
         </section>
 
-        <section class="about bg-gd50 my-3" id="about">
+        <section class="about bg-gd50" id="about">
             <div class="text-center">
                         <h1>
-                            <a class="btn text-gd600 bg-gd200" href="#" role="button">Sobre</a>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Sobre</a>
                         </h1>
             </div>
             <div class="container-fluid">
@@ -132,7 +135,7 @@
                     <div class="col-12 col-md-6 order-md-last">
                         <div class="content">
                             <h4 class="text-gd900 text-center">Curiosidades sobre mim? Aqui você terá isso:</h4>
-                            <p class="text-gd600">Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor incondicional
+                            <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor incondicional
                                 por animais. Cães
                                 e
                                 gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível. Quando não estou
@@ -174,7 +177,7 @@
             </div>
         </section>
 
-        <section class="skills bg-gddefault my-3" id="skills">
+        <section class="skills bg-gddefault" id="skills">
             <div class="container-fluid">
                 <div class="row">
                     <div class="row text-center">
@@ -190,10 +193,10 @@
                     <div class="row mx-auto text-center">
                         <div class="row text-center">
                             <div class="col">
-                                <i class="bi-vimeo text-primary"></i>
+                                <img src="./assets/img/tecs/git.ico" alt="">
                             </div>
                             <div class="col">
-                                <i class="bi-youtube text-danger"></i>
+                            <i src="./assets/img/tecs/1175109.svg">
                             </div>
                             <div class="col">
                                 <i class="bi-facebook text-success"></i>
@@ -204,7 +207,7 @@
                         </div>
                         <div class="row text-center">
                             <div class="col">
-                                <i class="bi-github text-info"></i>
+                                <i class="bi-github text-info">;</i>
                             </div>
                             <div class="col">
                                 <i class="bi-discord text-light"></i>
@@ -222,8 +225,8 @@
             </div>
         </section>
 
-        <section class="works bg-gd50 my-3" id="works">
-            <div class="container">
+        <section class="works bg-gd50" id="works">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="row text-center">
                         <h1>
@@ -260,7 +263,7 @@
                                                 </p>
                                                 <p class="card-text fixed-bottom">
                                                 <div class="row row-cols-4 ">
-                                                    <img src="./img/tecs/icons8-nó-js-32.png" alt="">
+                                                    <img src="./assets/img/tecs/1175029.svg" alt="dofot">
                                                     <img src="./img/tecs/icons8-expresso-js-32.png" alt="./img/tecs/">
                                                     <img src="./img/tecs/icons8-carteiro-api-32.png" alt="">
                                                     <img src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png"
@@ -321,15 +324,16 @@
         </section>
 
         <section class="contact bg-gddefault" id="contact">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="row text-center">
                         <h1>
-                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Habilidades</a>
+                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Contato</a>
                         </h1>
                     </div>
                     <div class="row">
                         <h5>Contato</h5>
+                        <p class="text-gd600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolorem nulla quam esse rerum, quibusdam porro ex distinctio amet velit consectetur, ratione natus dicta quae, deleniti nihil sequi sunt excepturi ab ea. Blanditiis sunt, voluptatibus unde sed inventore deserunt maiores provident quam dolor eos atque labore reprehenderit adipisci assumenda et.</p>
                     </div>
                 </div>
                 <div class="row">
