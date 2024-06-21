@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function toggleTheme() {
         const element = document.querySelector("#dark-light");
         const body = document.body;
+        const closebtn = document.querySelector("#btn-close")
 
         if (element.classList.contains("bi-moon-stars")) {
             // Mudar para Dark
@@ -23,6 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
             
             body.classList.remove("theme-light");
             body.classList.add("theme-dark");
+
+            closebtn.classList.add("btn-close-white");
+
         } else if (element.classList.contains("bi-brightness-high-fill")) {
             // Mudar para Light
             element.classList.remove("bi-bightness-high-fill");
@@ -30,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
             
             body.classList.remove("theme-dark");
             body.classList.add("theme-light");
+
+            closebtn.classList.remove("btn-close-white");
         }
     }
 
