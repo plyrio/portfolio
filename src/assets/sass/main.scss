@@ -14,21 +14,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: variables.$font-stack2;
-}
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+        
+  }
 
-#antes {
-  z-index: 10;
-  transition: background 0.3s, box-shadow 0.3s;
-}
 
 #depois {
-
   backdrop-filter: blur(48px);
-}
-
-.navbar-toggler {
-  border: none;
-  color:#fff;
 }
 
 .theme-dark {
@@ -56,13 +48,12 @@
   }
 
   .offcanvas {
-    transition: background 0.3s ease-in-out;
     height: 100vh;
   }
 
   .navbar-brand {
     font-family: variables.$font-stack1;
-    text-shadow: #ccc 3px 0 3px;
+    text-shadow: #d1d5dd 1px 0 3px;
   }
 
   .foto-perfil {
@@ -119,9 +110,4 @@
         opacity: 75%;
       }
     }
-  }
-
-  i {
-    font-size: 24px;
-    line-height: 30px;
   }
