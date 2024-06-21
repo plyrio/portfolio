@@ -27,17 +27,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Scripts -->
     <script src="./js/script.js" defer></script>
-        <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
 
-                <script type="module" src="./js/script.min.js" defer></script>
+    <script type="module" src="./js/script.min.js" defer></script>
 </head>
 
 <body class="text-gd600 theme-dark">
     <header class="bg-gddefault">
         <nav class="navbar navbar-expand-md fixed-top" id="antes">
             <div class=" container-fluid">
-                <a class="navbar-brand text-gd900" href="#">Pedro lyrio</a>
+                <a class="navbar-brand text-gd900 align-items-center" href="#">Pedro lyrio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
                     aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-gd900"></span>
@@ -45,13 +45,15 @@
                 <div class="offcanvas offcanvas-end text-gd600 bg-gddefault" tabindex="-1" id="offcanvasTop"
                     aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
-                        <a class="navbar-brand offcanvas-title text-gd900" id="offcanvasTopLabel" href="#">Pedro lyrio</a>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" id="btn-close"></button>
+                        <a class="navbar-brand offcanvas-title text-gd900" id="offcanvasTopLabel" href="#">Pedro
+                            lyrio</a>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close" id="btn-close"></button>
                     </div>
-                    
+
                     <div class="offcanvas-body text-center">
-                        
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <ul class="navbar-nav ms-auto align-items-center">
                             <li class="nav-item">
                                 <a class="nav-link text-gd600" href="#about">Sobre</a>
                             </li>
@@ -65,21 +67,28 @@
                                 <a class="nav-link text-gd600" href="#contact">Contato</a>
                             </li>
                             <li class="nav-item col-12 col-md-auto">
-                                <div class="vr d-none d-md-flex h-100 text-bg900"></div>
-                                <hr class="d-md-none my-1 text-white-50">
+                                <div class="vr d-none d-md-flex h-100 text-gd900"></div>
+                                <hr class="d-md-none text-gd900">
                             </li>
                             <li class="nav-item">
-                                <button type="button" class="btn btn-moon mb-md-2 mb-3 mx-1 text-gd600" onclick="toggleTheme()" id="toggleTheme">
+                                <button type="button" class="btn btn-moon mx-1 text-gd600 mb-3 my-md-0"
+                                    onclick="toggleTheme()" id="toggleTheme">
+
+                
+
+
+
                                     <i class="bi bi-brightness-high-fill" id="dark-light"></i>
+
                                 </button>
                             </li>
                             <li class="nav-item">
                                 <button class="btn bg-gd900 text-gd50" type="submit">Download CV</button>
                             </li>
-                        
+
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </nav>
@@ -89,7 +98,7 @@
 
         <section class="hero bg-gddefault" id="hero">
             <div class="container-fluid">
-                
+
                 <div class="row g-4 my-5">
                     <div class="col-12 col-md-4 order-md-last">
                         <div class="pic-container">
@@ -100,21 +109,31 @@
                     <div class="col-12 col-md-8">
                         <div class="content">
                             <div class="text-gd900 text-center" id="typewriter"></div>
-                            
-                            <p class="hero-p text-gd600">Olá! eu sou Pedro motorista de caminhão dedicado e comprometido, além de ser um orgulhoso marido e pai. Atualmente, estou em um emocionante processo de transição de carreira, buscando expandir meus horizontes e me desenvolver ainda mais. Estou cursando Análise e Desenvolvimento de Sistemas, dando os primeiros passos rumo a uma carreira na área de tecnologia. Sempre tive interesse pela TI e agora estou transformando essa paixão em ação. Estou
-                            pronto para enfrentar novos desafios, aprender constantemente e contribuir de forma significativa para projetos de desenvolvimento de software. Estou ansioso para compartilhar minha jornada e meus projetos neste portfólio. Seja bem-vindo(a) e sinta-se à vontade para explorar e entrar em contato comigo!</p>
+
+                            <p class="hero-p text-gd600">Olá! eu sou Pedro motorista de caminhão dedicado e
+                                comprometido, além de ser um orgulhoso marido e pai. Atualmente, estou em um emocionante
+                                processo de transição de carreira, buscando expandir meus horizontes e me desenvolver
+                                ainda mais. Estou cursando Análise e Desenvolvimento de Sistemas, dando os primeiros
+                                passos rumo a uma carreira na área de tecnologia. Sempre tive interesse pela TI e agora
+                                estou transformando essa paixão em ação. Estou
+                                pronto para enfrentar novos desafios, aprender constantemente e contribuir de forma
+                                significativa para projetos de desenvolvimento de software. Estou ansioso para
+                                compartilhar minha jornada e meus projetos neste portfólio. Seja bem-vindo(a) e sinta-se
+                                à vontade para explorar e entrar em contato comigo!</p>
                         </div>
                         <div class="group my-4">
                             <div class="location my-2 ">
                                 <p>
-                                <i class="bi bi-geo-alt"></i>
-                                Vila Velha - ES</p>
-                            
+                                    <i class="bi bi-geo-alt"></i>
+                                    Vila Velha - ES
+                                </p>
+
                             </div>
                             <div class="hire my-2">
                                 <p>
-                                <i class="bi bi-dot spinner-grow"></i>
-                                Disponivel para novos projetos</p>
+                                    <i class="bi bi-dot spinner-grow"></i>
+                                    Disponivel para novos projetos
+                                </p>
                             </div>
                         </div>
                         <div class="actions">
@@ -129,42 +148,51 @@
 
         <section class="about bg-gd50" id="about">
             <div class="text-center">
-               <h1>
-                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Sobre</a>
-                        </h1>
+                <h1>
+                    <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Sobre</a>
+                </h1>
             </div>
             <div class="container-fluid">
                 <div class="row g-4 my-5">
                     <div class="col-12 col-md-6 order-md-last">
                         <div class="content">
                             <h4 class="text-gd900 text-center">Curiosidades sobre mim? Aqui você terá isso:</h4>
-                            <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor incondicional
+                            <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor
+                                incondicional
                                 por no animais. Cães
                                 e
-                                gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível. Quando não estou
+                                gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível. Quando
+                                não estou
                                 cuidando deles,
                                 você
-                                provavelmente me encontrará imerso em jogos online. Os MMORPGs, como Lineage 2 e Path of Exile, são
+                                provavelmente me encontrará imerso em jogos online. Os MMORPGs, como Lineage 2 e Path of
+                                Exile, são
                                 meu refúgio
                                 virtual,
                                 onde posso explorar mundos fantásticos e desfrutar de desafios emocionantes.
                                 <br><br>
-                                Além disso, sou apaixonado por programação e resolver problemas. A capacidade de criar soluções e
+                                Além disso, sou apaixonado por programação e resolver problemas. A capacidade de criar
+                                soluções e
                                 desenvolver
                                 projetos
-                                úteis sempre me fascinou. É por isso que estou empenhado em minha jornada acadêmica em Análise e
+                                úteis sempre me fascinou. É por isso que estou empenhado em minha jornada acadêmica em
+                                Análise e
                                 Desenvolvimento de
-                                Sistemas - é a minha maneira de aprimorar minhas habilidades e seguir minha paixão pela tecnologia.
+                                Sistemas - é a minha maneira de aprimorar minhas habilidades e seguir minha paixão pela
+                                tecnologia.
                                 <br><br>
-                                E quando não estou imerso em linhas de código, me arrisco como um mecânico amador. Gosto de colocar
+                                E quando não estou imerso em linhas de código, me arrisco como um mecânico amador. Gosto
+                                de colocar
                                 as mãos na massa
                                 e
-                                resolver problemas mecânicos simples em casa. Sou daqueles maridos e pais que gostam de tentar
+                                resolver problemas mecânicos simples em casa. Sou daqueles maridos e pais que gostam de
+                                tentar
                                 resolver tudo dentro
                                 de
                                 casa, seja consertando um vazamento na pia ou fazendo pequenos reparos no carro.
                                 <br><br>
-                                Essas são apenas algumas das muitas facetas que compõem quem sou. Espero que tenha gostado de
+                                Essas são apenas algumas das muitas facetas que compõem quem sou. Espero que tenha
+                                gostado de
                                 conhecer um pouco mais
                                 sobre mim!
                             </p>
@@ -172,11 +200,12 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <div class="pic-container">
-                            <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio" class="img-fluid img-thumbnail mx-auto">
+                            <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio"
+                                class="img-fluid img-thumbnail mx-auto">
                         </div>
                     </div>
                 </div>
-            
+
             </div>
         </section>
 
@@ -199,7 +228,7 @@
                                 <img src="./assets/img/tecs/git.ico" alt="">
                             </div>
                             <div class="col">
-                            <i src="./assets/img/tecs/1175109.svg">
+                                <i src="./assets/img/tecs/1175109.svg">
                             </div>
                             <div class="col">
                                 <i class="bi-facebook text-success"></i>
@@ -336,7 +365,11 @@
                     </div>
                     <div class="row">
                         <h5>Contato</h5>
-                        <p class="text-gd600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolorem nulla quam esse rerum, quibusdam porro ex distinctio amet velit consectetur, ratione natus dicta quae, deleniti nihil sequi sunt excepturi ab ea. Blanditiis sunt, voluptatibus unde sed inventore deserunt maiores provident quam dolor eos atque labore reprehenderit adipisci assumenda et.</p>
+                        <p class="text-gd600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolorem nulla
+                            quam esse rerum, quibusdam porro ex distinctio amet velit consectetur, ratione natus dicta
+                            quae, deleniti nihil sequi sunt excepturi ab ea. Blanditiis sunt, voluptatibus unde sed
+                            inventore deserunt maiores provident quam dolor eos atque labore reprehenderit adipisci
+                            assumenda et.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -351,4 +384,5 @@
         </div>
     </footer>
 </body>
+
 </html>
