@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (tpwriter) {
         const typewriter = new Typewriter(tpwriter, {
             autoStart: true,
-            delay: 70,
+            delay: 120,
         });
 
         typewriter
-            .typeString("<h2>Olá, eu sou o <strong> Pedro Lyrio &#128075</strong></br><h3>Desenvolvedor Web</h3></h2>")
+            .typeString("<h1>Olá, eu sou o <strong> Pedro Lyrio &#128075</strong></h1>")
         .start();
     }
 
