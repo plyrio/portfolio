@@ -19,7 +19,6 @@
 #antes {
   z-index: 10;
   transition: background 0.3s, box-shadow 0.3s;
-  
 }
 
 #depois {
@@ -27,27 +26,37 @@
   backdrop-filter: blur(48px);
 }
 
-.theme-dark #antes {
+.theme-dark {
+   #antes {
   background-color: rgba(3, 4, 18, 1);
   box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
   }
-.theme-dark #depois {
+ #depois {
   background-color: rgba(3, 4, 18, 0.5);
   box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1)
 }
-.theme-light #antes {
+.btn-close-custom {
+  color:#d1d5dd !important;
+}
+}
+.theme-light {
+ #antes {
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 2px 3px rgba(3, 4, 18, 0.3);
   }
   
-.theme-light #depois {
+ #depois {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 2px 3px rgba(3, 4, 18, 0.1);
 }
 
+  .btn-close-custom {
+  color: #4b5563 !important;
+}
+}
 .offcanvas {
           transition: background 0.3s ease-in-out;
-          height: 100%;
+          height: 100vh;
           }
 
 .navbar-brand {
