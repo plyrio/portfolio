@@ -100,15 +100,16 @@
             <div class="container-fluid">
 
                 <div class="row my-5 g-4">
-                    <div class="col-12 col-md-4 order-md-last">
-                        <div class="pic-container shadow-img">
+                    <div class="col-12 col-md-4 order-md-last d-flex justify-content-center flew-grow align-items-center">
+                        <div class="pic-container-hero">
                             <img src="./img/eu.jpg" alt="Imagem de Plyrio"
-                                class=" foto-perfil m-auto">  
+                                class=" foto-perfil m-auto"> 
+                                <div class="shadow-img"></div> 
                         </div>
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="content">
-                            <div class="text-gd900 text-center" id="typewriter"></div>
+                            <div class="text-gd900 text-center" id="typewriter"><span class="inline-block animate-waving-hand">👋</span></div>
 
                             <p class="hero-p text-gd600">Sou um desenvolvedor full stack em formação, com foco em React e Node. Estou constantemente aprimorando minhas
                             habilidades e tenho experiência acadêmica na criação de aplicações web rápidas, acessíveis e responsivas. Sou apaixonado
@@ -196,7 +197,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <div class="pic-container">
                             <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio"
-                                class="img-fluid img-thumbnail mx-auto">
+                                class="img-fluid mx-auto">
                         </div>
                     </div>
                 </div>
@@ -280,84 +281,75 @@
                 </div>
                 <!-- Swiper -->
                 <div class="row">
-                    <div class="container-fluid">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <!-- Projeto 1 -->
-                                        <div class="swiper-slide card">
-                                            <img src="./img/projeto1.jpeg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">API RESTful - CRUD</h5>
-                                                <p class="card-text">Uma API RESTful foi desenvolvida utilizando o
-                                                    framework
-                                                    Express para lidar com requisições e respostas. O MongoDB, com a
-                                                    ODM Mongoose, foi escolhido como banco de dados, operando no MongoDB
-                                                    Atlas. O Nodemon foi instalado como dependência de
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-                                                    similique impedit ut distinctio labore cumque, doloremque earum
-                                                    ullam assumenda molestias ea veniam facilis non error dolorum, velit
-                                                    at reiciendis. Blanditiis itaque ad ut cumque id nisi neque
-                                                    nesciunt? Aliquam cum in quaerat facere dolore minima similique ea
-                                                    ex, laborum quibusdam.
-                                                </p>
-                                                <p class="card-text fixed-bottom">
-                                                <div class="row row-cols-4 ">
-                                                    <img src="./assets/img/tecs/1175029.svg" alt="dofot">
-                                                    <img src="./img/tecs/icons8-expresso-js-32.png" alt="./img/tecs/">
-                                                    <img src="./img/tecs/icons8-carteiro-api-32.png" alt="">
-                                                    <img src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png"
-                                                        alt="">
+                    <div class="container">
+                        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-4">
+                                            <div class="card">
+                                                <img src="./img/projeto1.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">API RESTful - CRUD</h5>
+                                                    <p class="card-text">
+                                                        Uma API RESTful foi desenvolvida utilizando o framework Express para lidar com
+                                                        requisições e respostas. O MongoDB, com a ODM Mongoose, foi escolhido como banco de
+                                                        dados, operando no MongoDB Atlas. O Nodemon foi instalado como dependência de
+                                                        <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                                                            similique impedit ut distinctio labore cumque, doloremque earum ullam assumenda
+                                                            molestias ea veniam facilis non error dolorum, velit at reiciendis. Blanditiis
+                                                            itaque ad ut cumque id nisi neque nesciunt? Aliquam cum in quaerat facere dolore
+                                                            minima similique ea ex, laborum quibusdam.</span>
+                                                    </p>
+                                                    <button class="btn btn-primary read-more-btn">Leia mais</button>
+                                                    <div class="card-text fixed-bottom">
+                                                        <div class="row row-cols-4">
+                                                            <img src="./assets/img/tecs/1175029.svg" alt="dofot">
+                                                            <img src="./img/tecs/icons8-expresso-js-32.png" alt="express">
+                                                            <img src="./img/tecs/icons8-carteiro-api-32.png" alt="api">
+                                                            <img src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png"
+                                                                alt="mongodb">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                </p>
+                                            </div>
+                                            <div class="card w-100">
+                                                <img src="./img/projeto1.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">API RESTful - CRUD</h5>
+                                                    <p class="card-text">Uma API RESTful foi desenvolvida utilizando o framework Express para lidar com
+                                                    requisições e respostas. O MongoDB, com a ODM Mongoose, foi escolhido como banco de
+                                                    dados, operando no MongoDB Atlas. O Nodemon foi instalado como dependência de
+                                                    <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                                                        similique impedit ut distinctio labore cumque, doloremque earum ullam assumenda
+                                                        molestias ea veniam facilis non error dolorum, velit at reiciendis. Blanditiis
+                                                        itaque ad ut cumque id nisi neque nesciunt? Aliquam cum in quaerat facere dolore
+                                                        minima similique ea ex, laborum quibusdam.</span>.</p>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <button><li class="list-group-item btn read-more-btn">An item</li></button>
+                                                    <li class="list-group-item">A second item</li>
+                                                    <li class="list-group-item">A third item</li>
+                                                </ul>
+                                                <div class="card-body">
+                                                    <a href="#" class="card-link">Card link</a>
+                                                    <a href="#" class="card-link">Another link</a>
+                                                </div>
                                             </div>
                                         </div>
-
-                                        <!-- Projeto 2 -->
-                                        <div class="swiper-slide card position-relative">
-                                            <img src="./img/projeto1.jpeg" class="card-img-top" alt="...">
-                                            <div class="card-body">
-                                                <h5 class="card-title">API RESTful - CRUD</h5>
-                                                <p class="card-text ">Uma API RESTful foi desenvolvida
-                                                    utilizando o framework
-                                                    Express para lidar com requisições e respostas. O MongoDB, com a
-                                                    ODM Mongoose, foi escolhido como banco de dados, operando no
-                                                    MongoDBndo real". Testes foram
-                                                    realizados utilizando o software Postman</p>
-                                            </div>
-                                            <div class="row row-col position-relative bottom-0">
-                                                <div class="col"><img src="./img/tecs/icons8-nó-js-32.png" alt=""></div>
-                                                <div class="col"><img src="./img/tecs/icons8-expresso-js-32.png"
-                                                        alt="./img/tecs/"></div>
-                                                <div class="col"><img src="./img/tecs/icons8-carteiro-api-32.png"
-                                                        alt=""></div>
-                                                <div class="col"><img
-                                                        src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png"
-                                                        alt=""></div>
-                                                <div class="col"></div>
-                                                <div class="col"></div>
-
-
-
-
-
-
-                                            </div>
-                                        </div>
-                                        <!-- Projeto 3 -->
-                                        <div class="swiper-slide"></div>
-                                        <!-- Projeto 4 -->
-                                        <div class="swiper-slide">Slide 4</div>
-                                        <!-- Projeto 5 -->
-                                        <div class="swiper-slide">Slide 5</div>
-
+                                       
                                     </div>
-                                    <div class="swiper-pagination"></div>
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
                                 </div>
+                                <!-- Adicione mais .carousel-item aqui para mais slides -->
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
 

@@ -68,4 +68,21 @@ window.addEventListener("scroll", function () {
             }
         }
     });
+
+    document.querySelectorAll('.read-more-btn').forEach(button => {
+        button.addEventListener('click', () => {
+            const moreText = button.previousElementSibling.querySelector('.more-text');
+            if (moreText.style.display === 'none' || moreText.style.display === '') {
+                moreText.style.display = 'inline';
+                button.textContent = 'Leia menos';
+            } else {
+                moreText.style.display = 'none';
+                button.textContent = 'Leia mais';
+            }
+        });
+    });
+
+
+
+
 });
