@@ -1,6 +1,20 @@
 @use "variables";
 @use "mixins";
 
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+
+// Importa as variáveis e utilitários personalizados
+@import "custom";
+
+:root {
+  @each $spacer, $value in $spacers {
+    --theme-spacer-#{$spacer}: #{$value};
+  }
+}
+
 // Aplicar cores para o tema escuro
 @include mixins.apply-theme-colors(variables.$colors-dark);
 
@@ -15,7 +29,6 @@
   box-sizing: border-box;
   font-family: variables.$font-stack2;
   transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
-
 }
 
 
@@ -31,15 +44,16 @@
 
   #depois {
     background-color: rgba(3, 4, 18, 0.5);
-    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1)
-  }
-  .foto-perfil {
-  border: 8px solid #030412;  
-  }
-  .shadow-img {
-  background-color: #374151;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1);
   }
 
+  .foto-perfil {
+    border: 8px solid #030412;
+  }
+
+  .shadow-img {
+    background-color: #374151;
+  }
 }
 
 .theme-light {
@@ -52,13 +66,17 @@
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 2px 3px rgba(3, 4, 18, 0.1);
   }
-   .foto-perfil {
-  border: 8px solid #ffffff;  
+
+  .foto-perfil {
+    border: 8px solid #ffffff;
   }
+
   .shadow-img {
-  background-color: #e5e7eb; //gd200
+    background-color: #e5e7eb; //gd200
   }
 }
+
+
 
 
 .offcanvas {
@@ -72,9 +90,6 @@
 }
 
 
-section {
-  padding: 1.5rem 0 1.5rem 0;
-}
 
 .spinner-grow {
   width: 15px;
@@ -86,10 +101,8 @@ section {
 }
 
 .card-text .more-text {
-    display: none;
+  display: none;
 }
-
-
 
 .footer {
   div {
@@ -101,130 +114,133 @@ section {
 }
 
 
-
-
-
-
-/* Media query para telas maiores a 768px () */
-@media screen and (min-width: 768px) {
-  section {
-    padding: 5% 0 1% 0;
-  }
-}
-
 .tech-icon {
   height: 64px;
-  width: 64px;  
+  width: 64px;
 }
 
 .tech-content:hover {
   transform: scale(1.2);
   transition: 1s;
+
   p {
     font-weight: 500;
   }
 }
 
-// .pic-container {
-//   margin: auto;
-//   display: block;
-// }
-
 // Mobile 768px
 @media screen and (max-width: 768px) {
+  .tw {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+}
 
- .foto-perfil {
-  position: absolute;
-  z-index: 10;
-  height: 280px;
-  width: 240px;
-  left: 1.25rem;
-  border: 8px solid #030412;  
-  color: transparent;
-  object-fit: cover;  
-  max-width: 100%;  
+
+  .foto-perfil {
+    position: absolute;
+    z-index: 10;
+    height: 280px;
+    width: 240px;
+    left: 1.25rem;
+    border: 8px solid #030412;
+    color: transparent;
+    object-fit: cover;
+    max-width: 100%;
   }
+
   .shadow-img {
-  position: absolute;
-  width: 280px;
-  height: 280px;
-  border:8px solid transparent;  
-  top: 1.25rem;
-  background-color: #374151;
-  border-color: transparent;
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border: 8px solid transparent;
+    top: 1.25rem;
+    background-color: #374151;
   }
 
   .pic-container-hero {
     position: relative;
     height: 300px;
     width: 280px;
-
   }
 }
 
-// Tablet
+//Tablet
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tw {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
  .foto-perfil {
-  position: absolute;
-  z-index: 10;
-  height: 280px;
-  width: 240px;
-  left: 1.25rem;
-  border: 8px solid #030412;  
-  color: transparent;
-  object-fit: cover;  
-  max-width: 100%;  
-  display: block;
-  justify-self: center;
-  }
-  .shadow-img {
-  position: absolute;
-  width: 280px;
-  height: 280px;
-  border:8px solid transparent;  
-  top: 1.25rem;
-  background-color: #374151;
-  border-color: transparent;
-  }
-
-  .pic-container {
-    position: relative;
-    height: 300px;
+    position: absolute;
+    z-index: 10;
+    height: 320px;
     width: 280px;
+    top: 0;
+    left: 0;
+    border: 8px solid #030412;
+    color: transparent;
+    object-fit: cover;
+    max-width: 100%;
+  }
 
+  .shadow-img {
+    position: absolute;
+    width: 280px;
+    height: 320px;
+    border: 8px solid transparent;
+    bottom: 0;
+    right: 0;
+    background-color: #374151;
+  }
+
+  .pic-container-hero {
+    position: relative;
+    height: 360px;
+    width: 320px;
   }
 }
 
 
-
+//Telas Grandes
 @media screen and (min-width: 1024px) {
- .foto-perfil {
-  position: absolute;
-  z-index: 10;
-  height: 280px;
-  width: 240px;
-  left: 1.25rem;
-  border: 8px solid #030412;  
-  color: transparent;
-  object-fit: cover;  
-  max-width: 100%;  
-  display: block;
-  justify-self: center;
-  }
-  .shadow-img {
-  position: absolute;
-  width: 280px;
-  height: 280px;
-  border:8px solid transparent;  
-  top: 1.25rem;
-  background-color: #374151;
-  border-color: transparent;
-  }
-
-  .pic-container {
-    position: relative;
-    height: 300px;
+  .tw {
+  font-size: 3.75rem;
+  line-height: 72px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+  .foto-perfil {
+    position: absolute;
+    z-index: 10;
+    height: 320px;
     width: 280px;
+    top: 0;
+    left: 0;
+    border: 8px solid #030412;
+    color: transparent;
+    object-fit: cover;
+    max-width: 100%;
+  }
 
+  .shadow-img {
+    position: absolute;
+    width: 280px;
+    height: 320px;
+    border: 8px solid transparent;
+    right: 0;
+    bottom: 0;
+    background-color: #374151;
+  }
+
+  .pic-container-hero {
+    position: relative;
+    height: 360px;
+    width: 320px;
+  
   }
 }

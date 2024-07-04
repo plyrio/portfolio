@@ -1,5 +1,3 @@
-@use 'variables';
-
 @mixin apply-theme-colors($colors) {
   @each $name, $color in $colors {
     .bg-#{$name} {
@@ -10,3 +8,5 @@
     }
   }
 }
+
+
