@@ -23,11 +23,10 @@
   @include mixins.apply-theme-colors(variables.$colors-light);
 }
 
-body {
-  padding-top: 80px;
-}
-
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: variables.$font-stack2;
   transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -56,9 +55,6 @@ body {
     background-color: #374151;
   }
 
-  body {
-    background-color: #030412;
-  }
 }
 
 .theme-light {
@@ -78,10 +74,6 @@ body {
 
   .shadow-img {
     background-color: #e5e7eb; //gd200
-  }
-
-  body {
-    background-color: #ffffff;
   }
 }
 
@@ -165,8 +157,6 @@ body {
 
 
   .foto-perfil {
-    position: absolute;
-    z-index: 10;
     height: 280px;
     width: 240px;
     left: 1.25rem;
@@ -177,7 +167,6 @@ body {
   }
 
   .shadow-img {
-    position: absolute;
     width: 280px;
     height: 280px;
     border: 8px solid transparent;
@@ -186,7 +175,6 @@ body {
   }
 
   .pic-container-hero {
-    position: relative;
     height: 300px;
     width: 280px;
   }
@@ -202,8 +190,6 @@ body {
 }
 
  .foto-perfil {
-    position: absolute;
-    z-index: 10;
     height: 320px;
     width: 280px;
     top: 0;
@@ -215,7 +201,6 @@ body {
   }
 
   .shadow-img {
-    position: absolute;
     width: 280px;
     height: 320px;
     border: 8px solid transparent;
@@ -225,7 +210,6 @@ body {
   }
 
   .pic-container-hero {
-    position: relative;
     height: 360px;
     width: 320px;
   }
@@ -241,8 +225,6 @@ body {
   letter-spacing: -.02em;
 }
   .foto-perfil {
-    position: absolute;
-    z-index: 10;
     height: 320px;
     width: 280px;
     top: 0;
@@ -254,7 +236,6 @@ body {
   }
 
   .shadow-img {
-    position: absolute;
     width: 280px;
     height: 320px;
     border: 8px solid transparent;
@@ -264,7 +245,6 @@ body {
   }
 
   .pic-container-hero {
-    position: relative;
     height: 360px;
     width: 320px;
   
