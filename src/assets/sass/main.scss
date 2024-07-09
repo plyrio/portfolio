@@ -24,7 +24,7 @@
 }
 
 body {
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 * {
@@ -40,12 +40,12 @@ body {
 .theme-dark {
   #antes {
     background-color: rgba(3, 4, 18, 1);
-    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
   }
 
   #depois {
     background-color: rgba(3, 4, 18, 0.5);
-    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
   }
 
   .foto-perfil {
@@ -55,17 +55,21 @@ body {
   .shadow-img {
     background-color: #374151;
   }
+
+  body {
+    background-color: #030412;
+  }
 }
 
 .theme-light {
   #antes {
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 2px 3px rgba(3, 4, 18, 0.3);
+    box-shadow: 0 1px 2px rgba(3, 4, 18, 0.3);
   }
 
   #depois {
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 2px 3px rgba(3, 4, 18, 0.1);
+    box-shadow: 0 1px 2px rgba(3, 4, 18, 0.1);
   }
 
   .foto-perfil {
@@ -74,6 +78,10 @@ body {
 
   .shadow-img {
     background-color: #e5e7eb; //gd200
+  }
+
+  body {
+    background-color: #ffffff;
   }
 }
 
