@@ -28,19 +28,21 @@
     <script src="./js/script.js" defer></script>
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
-
     <script type="module" src="./js/script.min.js" defer></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
 
 <body class="text-gd600 theme-dark">
-    <header class="bg-gddefault z-30 w-100 top-0">
-        <nav class="navbar navbar-expand-md fixed-top container-fluid " id="antes">
-            <div class="container-xl">
+    <header class="bg-gddefault z-30 w-100 top-0 p-4 px-md-8">
+        <nav class="navbar navbar-expand-md mx-auto d-flex fixed-top container-fluid p-3 px-md-8" id="antes">
+            <div class="container-xl mx-auto d-flex w-100 align-items-center justify-content-between px-md-8">
                 <a class="navbar-brand text-gd900 align-items-center" href="#">Pedro lyrio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-                    aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-gd900"></span>
-                </button>
+
                 <div class="offcanvas offcanvas-end text-gd600 bg-gddefault" tabindex="-1" id="offcanvasTop"
                     aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
@@ -52,7 +54,7 @@
 
                     <div class="offcanvas-body text-center">
 
-                        <ul class="navbar-nav ms-auto align-items-center">
+                        <ul class="navbar-nav ms-auto align-items-center gap-2">
                             <li class="nav-item">
                                 <a class="nav-link text-gd600" href="#about">Sobre</a>
                             </li>
@@ -89,6 +91,10 @@
                     </div>
 
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-gd900"></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -96,7 +102,7 @@
     <main class="bg-gddefault text-gd600 d-flex flex-column w-100 min-vh-100">
 
         <section class="hero bg-gddefault w-100 py-16 py-md-20 py-lg-24" id="hero">
-            <div class="mx-auto d-flex w-100 flex-column gap-4 px-3 gap-md-5 px-md-4 container-xl">
+            <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="d-flex flex-column gap-5 flex-md-row">
                     <div
                         class="d-flex align-items-center justify-content-center order-md-last flex-md-grow-1 justify-content-md-end">
@@ -107,7 +113,7 @@
                         </div>
                     </div>
                     <div
-                        class="d-flex flex-grow-1 flex-column justify-content-center gap-3 order-md-first align-items-md-start gap-md-5">
+                        class="d-flex flex-grow-1 flex-column justify-content-center gap-8 order-md-first align-items-md-start gap-md-12">
                         <div class="d-flex flex-column gap-2">
                             <div class="text-gd900 tw tw-md tw-lg" id="typewriter"></div>
 
@@ -140,72 +146,80 @@
             </div>
         </section>
 
-        <section class="about bg-gd50 container-fluid" id="about">
-            <div>
+        <section class="about bg-gd50 w-100 py-16 py-md-20 py-lg-24" id="about">
+            <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="text-center align-self-center">
-                    <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded justify-content-center" role="button">Sobre</div>
-                
-            </div>
-            <div class="container-fluid container-xl">
-                <div class="row g-4 my-5">
-                    <div class="col-12 col-md-6 order-last">
-                        <div class="content">
-                            <h4 class="text-gd900 text-center">Curiosidades sobre mim? Aqui você terá isso:</h4>
-                            <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor
-                                incondicional
-                                por no animais. Cães
-                                e
-                                gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível. Quando
-                                não estou
-                                cuidando deles,
-                                você
-                                provavelmente me encontrará imerso em jogos online. Os MMORPGs, como Lineage 2 e Path of
-                                Exile, são
-                                meu refúgio
-                                virtual,
-                                onde posso explorar mundos fantásticos e desfrutar de desafios emocionantes.
-                                <br><br>
-                                Além disso, sou apaixonado por programação e resolver problemas. A capacidade de criar
-                                soluções e
-                                desenvolver
-                                projetos
-                                úteis sempre me fascinou. É por isso que estou empenhado em minha jornada acadêmica em
-                                Análise e
-                                Desenvolvimento de
-                                Sistemas - é a minha maneira de aprimorar minhas habilidades e seguir minha paixão pela
-                                tecnologia.
-                                <br><br>
-                                E quando não estou imerso em linhas de código, me arrisco como um mecânico amador. Gosto
-                                de colocar
-                                as mãos na massa
-                                e
-                                resolver problemas mecânicos simples em casa. Sou daqueles maridos e pais que gostam de
-                                tentar
-                                resolver tudo dentro
-                                de
-                                casa, seja consertando um vazamento na pia ou fazendo pequenos reparos no carro.
-                                <br><br>
-                                Essas são apenas algumas das muitas facetas que compõem quem sou. Espero que tenha
-                                gostado de
-                                conhecer um pouco mais
-                                sobre mim!
-                            </p>
-                        </div>
+                    <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded justify-content-center" role="button">Sobre
                     </div>
-                    <div class="col-12 col-md-6 order-md-first">
-                        <div class="pic-container">
-                            <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio" class="img-fluid mx-auto">
-                        </div>
-                    </div>
-                </div>
 
+                </div>
+                <div class="container-fluid container-xl">
+                    <div class="row g-4 my-5">
+                        <div class="col-12 col-md-6 order-last">
+                            <div class="content">
+                                <h4 class="text-gd900 text-center">Curiosidades sobre mim? Aqui você terá isso:</h4>
+                                <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor
+                                    incondicional
+                                    por no animais. Cães
+                                    e
+                                    gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível.
+                                    Quando
+                                    não estou
+                                    cuidando deles,
+                                    você
+                                    provavelmente me encontrará imerso em jogos online. Os MMORPGs, como Lineage 2 e
+                                    Path of
+                                    Exile, são
+                                    meu refúgio
+                                    virtual,
+                                    onde posso explorar mundos fantásticos e desfrutar de desafios emocionantes.
+                                    <br><br>
+                                    Além disso, sou apaixonado por programação e resolver problemas. A capacidade de
+                                    criar
+                                    soluções e
+                                    desenvolver
+                                    projetos
+                                    úteis sempre me fascinou. É por isso que estou empenhado em minha jornada acadêmica
+                                    em
+                                    Análise e
+                                    Desenvolvimento de
+                                    Sistemas - é a minha maneira de aprimorar minhas habilidades e seguir minha paixão
+                                    pela
+                                    tecnologia.
+                                    <br><br>
+                                    E quando não estou imerso em linhas de código, me arrisco como um mecânico amador.
+                                    Gosto
+                                    de colocar
+                                    as mãos na massa
+                                    e
+                                    resolver problemas mecânicos simples em casa. Sou daqueles maridos e pais que gostam
+                                    de
+                                    tentar
+                                    resolver tudo dentro
+                                    de
+                                    casa, seja consertando um vazamento na pia ou fazendo pequenos reparos no carro.
+                                    <br><br>
+                                    Essas são apenas algumas das muitas facetas que compõem quem sou. Espero que tenha
+                                    gostado de
+                                    conhecer um pouco mais
+                                    sobre mim!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-md-first">
+                            <div class="pic-container">
+                                <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio" class="img-fluid mx-auto">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            </div>
-            
+
         </section>
 
-        <section class="skills bg-gddefault container-fluid" id="skills">
-            <div class="mx-auto d-flex w-100 flex-column gap-4 px-3 gap-md-5 px-md-4 container-xl">
+        <section class="skills bg-gddefault w-100 py-16 py-md-20 py-lg-24" id="skills">
+            <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="row">
                     <div class="row text-center mb-5">
                         <h1>
@@ -266,8 +280,8 @@
             </div>
         </section>
 
-        <section class="works bg-gd50 container-fluid" id="works">
-            <div class="container-fluid">
+        <section class="works bg-gd50 w-100 py-16 py-md-20 py-lg-24" id="works">
+            <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="row">
                     <div class="row text-center">
                         <h1>
@@ -277,106 +291,47 @@
                     <div class="row">
                         <h5>Aqui está um rápido resumo das minhas experiências mais recentes:</h5>
                     </div>
-                </div>
-                <!-- Swiper -->
-                <div class="row">
-                    <div class="container">
-                        <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md-4 mb-4">
-                                            <div class="card">
-                                                <img src="./img/projeto1.jpeg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">API RESTful - CRUD</h5>
-                                                    <p class="card-text">
-                                                        Uma API RESTful foi desenvolvida utilizando o framework Express
-                                                        para lidar com
-                                                        requisições e respostas. O MongoDB, com a ODM Mongoose, foi
-                                                        escolhido como banco de
-                                                        dados, operando no MongoDB Atlas. O Nodemon foi instalado como
-                                                        dependência de
-                                                        <span class="more-text">Lorem ipsum dolor sit amet consectetur
-                                                            adipisicing elit. Esse,
-                                                            similique impedit ut distinctio labore cumque, doloremque
-                                                            earum ullam assumenda
-                                                            molestias ea veniam facilis non error dolorum, velit at
-                                                            reiciendis. Blanditiis
-                                                            itaque ad ut cumque id nisi neque nesciunt? Aliquam cum in
-                                                            quaerat facere dolore
-                                                            minima similique ea ex, laborum quibusdam.</span>
-                                                    </p>
-                                                    <button class="btn btn-primary read-more-btn">Leia mais</button>
-                                                    <div class="card-text fixed-bottom">
-                                                        <div class="row row-cols-4">
-                                                            <img src="./assets/img/tecs/1175029.svg" alt="dofot">
-                                                            <img src="./img/tecs/icons8-expresso-js-32.png"
-                                                                alt="express">
-                                                            <img src="./img/tecs/icons8-carteiro-api-32.png" alt="api">
-                                                            <img src="./img/tecs/icons8-mongodb-a-cross-platform-document-oriented-database-program-32.png"
-                                                                alt="mongodb">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card w-100">
-                                                <img src="./img/projeto1.jpeg" class="card-img-top" alt="...">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">API RESTful - CRUD</h5>
-                                                    <p class="card-text">Uma API RESTful foi desenvolvida utilizando o
-                                                        framework Express para lidar com
-                                                        requisições e respostas. O MongoDB, com a ODM Mongoose, foi
-                                                        escolhido como banco de
-                                                        dados, operando no MongoDB Atlas. O Nodemon foi instalado como
-                                                        dependência de
-                                                        <span class="more-text">Lorem ipsum dolor sit amet consectetur
-                                                            adipisicing elit. Esse,
-                                                            similique impedit ut distinctio labore cumque, doloremque
-                                                            earum ullam assumenda
-                                                            molestias ea veniam facilis non error dolorum, velit at
-                                                            reiciendis. Blanditiis
-                                                            itaque ad ut cumque id nisi neque nesciunt? Aliquam cum in
-                                                            quaerat facere dolore
-                                                            minima similique ea ex, laborum quibusdam.</span>.
-                                                    </p>
-                                                </div>
-                                                <ul class="list-group list-group-flush">
-                                                    <button>
-                                                        <li class="list-group-item btn read-more-btn">An item</li>
-                                                    </button>
-                                                    <li class="list-group-item">A second item</li>
-                                                    <li class="list-group-item">A third item</li>
-                                                </ul>
-                                                <div class="card-body">
-                                                    <a href="#" class="card-link">Card link</a>
-                                                    <a href="#" class="card-link">Another link</a>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                    </div>
+                    <!-- Swiper -->
+                    <div class="row">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide card" style="width: 18rem;">
+                                        <img src="./img/projects/projeto1.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's
+                                                content.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Card link</a>
+                                            <a href="#" class="card-link">Another link</a>
+                                        </div>
+                                    
                                 </div>
-                                <!-- Adicione mais .carousel-item aqui para mais slides -->
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-
                 </div>
         </section>
 
-        <section class="contact bg-gddefault container-fluid" id="contact">
-            <div class="container-fluid">
+        <section class="contact bg-gddefault w-100 py-16 py-md-20 py-lg-24" id="contact">
+            <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="row">
                     <div class="row text-center">
                         <h1>
