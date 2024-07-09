@@ -23,7 +23,9 @@
   @include mixins.apply-theme-colors(variables.$colors-light);
 }
 
-
+body {
+  padding-top: 80px;
+}
 
 * {
   font-family: variables.$font-stack2;
