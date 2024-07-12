@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         } else if (element.classList.contains("bi-brightness-high-fill")) {
             // Mudar para Light
-            element.classList.remove("bi-bightness-high-fill");
+            element.classList.remove("bi-brightness-high-fill");
             element.classList.add("bi-moon-stars");
             
             body.classList.remove("theme-dark");

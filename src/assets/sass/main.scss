@@ -23,9 +23,10 @@
   @include mixins.apply-theme-colors(variables.$colors-light);
 }
 
-
-
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: variables.$font-stack2;
   transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -38,12 +39,12 @@
 .theme-dark {
   #antes {
     background-color: rgba(3, 4, 18, 1);
-    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
   }
 
   #depois {
     background-color: rgba(3, 4, 18, 0.5);
-    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
   }
 
   .foto-perfil {
@@ -53,17 +54,18 @@
   .shadow-img {
     background-color: #374151;
   }
+
 }
 
 .theme-light {
   #antes {
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 2px 3px rgba(3, 4, 18, 0.3);
+    box-shadow: 0 1px 2px rgba(3, 4, 18, 0.3);
   }
 
   #depois {
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 2px 3px rgba(3, 4, 18, 0.1);
+    box-shadow: 0 1px 2px rgba(3, 4, 18, 0.1);
   }
 
   .foto-perfil {
@@ -154,8 +156,6 @@
 
 
   .foto-perfil {
-    position: absolute;
-    z-index: 10;
     height: 280px;
     width: 240px;
     left: 1.25rem;
@@ -166,7 +166,6 @@
   }
 
   .shadow-img {
-    position: absolute;
     width: 280px;
     height: 280px;
     border: 8px solid transparent;
@@ -175,7 +174,6 @@
   }
 
   .pic-container-hero {
-    position: relative;
     height: 300px;
     width: 280px;
   }
@@ -191,8 +189,6 @@
 }
 
  .foto-perfil {
-    position: absolute;
-    z-index: 10;
     height: 320px;
     width: 280px;
     top: 0;
@@ -204,7 +200,6 @@
   }
 
   .shadow-img {
-    position: absolute;
     width: 280px;
     height: 320px;
     border: 8px solid transparent;
@@ -214,7 +209,6 @@
   }
 
   .pic-container-hero {
-    position: relative;
     height: 360px;
     width: 320px;
   }
@@ -230,8 +224,6 @@
   letter-spacing: -.02em;
 }
   .foto-perfil {
-    position: absolute;
-    z-index: 10;
     height: 320px;
     width: 280px;
     top: 0;
@@ -243,7 +235,6 @@
   }
 
   .shadow-img {
-    position: absolute;
     width: 280px;
     height: 320px;
     border: 8px solid transparent;
@@ -253,7 +244,6 @@
   }
 
   .pic-container-hero {
-    position: relative;
     height: 360px;
     width: 320px;
   
