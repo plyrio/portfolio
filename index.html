@@ -37,9 +37,9 @@
 
 </head>
 
-<body class="text-gd600 theme-dark">
-    <header class="bg-gddefault z-30 w-100 top-0 p-4 px-md-8">
-        <nav class="navbar navbar-expand-md mx-auto d-flex fixed-top container-fluid p-3 px-md-8" id="antes">
+<body class="theme-dark text-gd600">
+    <header class="bg-gddefault z-3 w-100 top-0 p-4 px-md-8">
+        <nav class="navbar navbar-expand-md mx-auto d-flex p-3 px-md-8 w-100 fixed-top" id="antes">
             <div class="container-xl mx-auto d-flex w-100 align-items-center justify-content-between px-md-8">
                 <a class="navbar-brand text-gd900 align-items-center" href="#">Pedro lyrio</a>
 
@@ -101,14 +101,14 @@
 
     <main class="bg-gddefault text-gd600 d-flex flex-column w-100 min-vh-100">
 
-        <section class="hero bg-gddefault w-100 py-16 py-md-20 py-lg-24" id="hero">
+        <section class="hero bg-gddefault w-100 py-16 py-md-20 py-lg-24 pt-12" id="hero">
             <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="d-flex flex-column gap-5 flex-md-row">
                     <div
                         class="d-flex align-items-center justify-content-center order-md-last flex-md-grow-1 justify-content-md-end">
 
                         <div class="pic-container-hero position-relative">
-                            <img src="./img/eu.jpg" alt="Imagem de Plyrio" class="foto-perfil position-absolute">
+                            <img src="./img/eu.jpg" alt="Imagem de Plyrio" class="foto-perfil position-absolute z-1">
                             <div class="shadow-img position-absolute"></div>
                         </div>
                     </div>
@@ -280,7 +280,7 @@
             </div>
         </section>
 
-        <section class="works bg-gd50 w-100 py-16 py-md-20 py-lg-24" id="works">
+        <section class="works bg-gd50 w-100 py-16 py-md-20 py-lg-24 pt-12" id="works">
             <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="row justify-content-center gap-6">
                     <div class="align-self-center text-center">
@@ -296,15 +296,15 @@
                     <div class="row justify-content-center">
                         <div class="swiper mySwiper gy-3 my-5">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 p-2">
+                                <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 p-2 d-flex">
                                         <img src="./img/projects/projeto1.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">API_RESTful_Express_MongoDB</h5>
+                                        <div class="card-body w-100 d-flex flex-column">
+                                            <h5 class="card-title py-3">API_RESTful_Express_MongoDB</h5>
                                             <p class="card-text">API RESTful com Node.js, Express e MongoDB, utilizando Mongoose para ODM e MongoDB Atlas. Nodemon para desenvolvimento.
                                             Testado com Postman. Implementa CRUD com endpoints HTTP, respostas JSON e validações simples.</p>
-                                                <div class="d-flex justify-content-between">
+                                                <div class="row gy-3 row-cols-3 row-cols-md-5 justify-content-evenly d-flex align-items-end mt-auto">
                                                     <img src="./img/tech/node-js.png" alt="">
-                                                    <img src="./img/tech/express.png" alt="">
+                                                    <img src="./img/tech/express1.png" alt="">
                                                     <img src="./img/tech/mongodb.png" alt="">
                                                     <img src="./img/tech/postman.png" alt="">
                                                 </div>
@@ -312,20 +312,18 @@
                                         
                                         
                                 </div>
-                                <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 p-2">
+                                <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 p-2 d-flex">
                                     <img src="./img/projects/projeto2.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                                    <div class="card-body w-100 d-flex flex-column">
                                         <h5 class="card-title">Loja Virtual</h5>
                                         <p class="card-text">É uma loja virtual ao estilo marketplace, onde tem produtos proprios e vende tambem de terceiros. Vendendo cursos tambem.</p>
-                                        <div class="d-flex justify-content-between">
+                                        <div class="row gy-3 row-cols-3 row-cols-md-5 justify-content-evenly d-flex align-items-end mt-auto">
                                             <img src="./img/tech/node-js.png" alt="">
-                                            <img src="./img/tech/express.png" alt="">
+                                            <img src="./img/tech/express1.png" alt="">
                                             <img src="./img/tech/react.png" alt="">
                                             <img src="./img/tech/bootstrap.png" alt="">
                                         </div>
                                     </div>
-                                
-                                
                                 </div>
                                 
                             </div>
@@ -336,7 +334,7 @@
             </div>
         </section>
 
-        <section class="contact bg-gddefault w-100 py-16 py-md-20 py-lg-24" id="contact">
+        <section class="contact bg-gddefault w-100 py-16 py-md-20 py-lg-24 pt-12" id="contact">
             <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="row">
                     <div class="row text-center">
@@ -372,9 +370,9 @@
         </section>
     </main>
 
-    <footer class="footer text-bg-dark border-top">
-        <div class="py-3 text-center">
-            <p>Desenvolvido por Pedro lyrio DEV &copy; Copyright 2024</p>
+    <footer class="footer bg-gd50 py-6 w-100 text-gd600">
+        <div class="d-flex align-items-center justify-content-center gap-1">
+            <p class="d-flex align-items-center">Desenvolvido por Pedro lyrio DEV &copy; Copyright 2024</p>
         </div>
     </footer>
 </body>
