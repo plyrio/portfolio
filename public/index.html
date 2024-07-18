@@ -38,11 +38,11 @@
 </head>
 
 <body class="theme-dark text-gd600">
-    <header class="bg-gddefault z-3 w-100 top-0 p-4 px-md-8">
-        <nav class="navbar navbar-expand-md mx-auto d-flex p-3 px-md-8 w-100 fixed-top" id="antes">
-            <div class="container-xl mx-auto d-flex w-100 align-items-center justify-content-between px-md-8">
+    <header class="bg-gddefault z-3 w-100 top-0 sticky-top border-bottom border-opacity-10 border-light">
+        <nav class="navbar navbar-expand-md mx-auto d-flex w-100 align-items-center justify-content-between px-md-8 p-3 "
+            id="antes">
+            <div class="container-xl">
                 <a class="navbar-brand text-gd900 align-items-center" href="#">Pedro lyrio</a>
-
                 <div class="offcanvas offcanvas-end text-gd600 bg-gddefault" tabindex="-1" id="offcanvasTop"
                     aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
@@ -96,12 +96,13 @@
                     <span class="navbar-toggler-icon text-gd900"></span>
                 </button>
             </div>
+            </div>
         </nav>
     </header>
 
     <main class="bg-gddefault text-gd600 d-flex flex-column w-100 min-vh-100">
 
-        <section class="hero bg-gddefault w-100 py-16 py-md-20 py-lg-24 pt-12" id="hero">
+        <section class="hero bg-gddefault w-100 py-16 py-md-20 py-lg-2" id="hero">
             <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="d-flex flex-column gap-5 flex-md-row">
                     <div
@@ -149,69 +150,74 @@
         <section class="about bg-gd50 w-100 py-16 py-md-20 py-lg-24 w-100" id="about">
             <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
                 <div class="text-center align-self-center">
-                    <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded justify-content-center" role="button">Sobre
+                    <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center" role="button">
+                        Sobre
+                    </div>
+                </div>
+                <div class="d-flex w-100 flex-column justify-content-between gap-12 flex-md-row">
+
+                    <div class="d-flex justify-content-center align-self-center order-md-first">
+                        <div class="pic-container-about position-relative">
+                            <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio no about"
+                                class="foto-about position-absolute z-1">
+                            <div class="shadow-img-about position-absolute"></div>
+                        </div>
                     </div>
 
-                </div>
-                <div class="container-fluid container-xl">
-                    <div class="row g-4 my-5">
-                        <div class="col-12 col-md-6 order-last">
-                            <div class="content">
-                                <h4 class="text-gd900 text-center">Curiosidades sobre mim? Aqui você terá isso:</h4>
-                                <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor
-                                    incondicional
-                                    por no animais. Cães
-                                    e
-                                    gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível.
-                                    Quando
-                                    não estou
-                                    cuidando deles,
-                                    você
-                                    provavelmente me encontrará imerso em jogos online. Os MMORPGs, como Lineage 2 e
-                                    Path of
-                                    Exile, são
-                                    meu refúgio
-                                    virtual,
-                                    onde posso explorar mundos fantásticos e desfrutar de desafios emocionantes.
-                                    <br><br>
-                                    Além disso, sou apaixonado por programação e resolver problemas. A capacidade de
-                                    criar
-                                    soluções e
-                                    desenvolver
-                                    projetos
-                                    úteis sempre me fascinou. É por isso que estou empenhado em minha jornada acadêmica
-                                    em
-                                    Análise e
-                                    Desenvolvimento de
-                                    Sistemas - é a minha maneira de aprimorar minhas habilidades e seguir minha paixão
-                                    pela
-                                    tecnologia.
-                                    <br><br>
-                                    E quando não estou imerso em linhas de código, me arrisco como um mecânico amador.
-                                    Gosto
-                                    de colocar
-                                    as mãos na massa
-                                    e
-                                    resolver problemas mecânicos simples em casa. Sou daqueles maridos e pais que gostam
-                                    de
-                                    tentar
-                                    resolver tudo dentro
-                                    de
-                                    casa, seja consertando um vazamento na pia ou fazendo pequenos reparos no carro.
-                                    <br><br>
-                                    Essas são apenas algumas das muitas facetas que compõem quem sou. Espero que tenha
-                                    gostado de
-                                    conhecer um pouco mais
-                                    sobre mim!
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 order-md-first">
-                            <div class="pic-container">
-                                <img src="./img/eudeoculos.jpg" alt="Imagem de Plyrio" class="img-fluid mx-auto">
-                            </div>
+                    <!-- Parei aqui, continuar edição do conteudo do about -->
+                    <div class="d-flex container-xl flex-column gap-6">
+                        <div class="content">
+                            <h4 class="text-gd900 text-center">Curiosidades sobre mim? Aqui você terá isso:</h4>
+                            <p>Bem, deixe-me contar algumas coisas interessantes! Desde criança, sempre tive um amor
+                                incondicional
+                                por no animais. Cães
+                                e
+                                gatos são meus companheiros de vida, e o amor que sinto por eles é indescritível.
+                                Quando
+                                não estou
+                                cuidando deles,
+                                você
+                                provavelmente me encontrará imerso em jogos online. Os MMORPGs, como Lineage 2 e
+                                Path of
+                                Exile, são
+                                meu refúgio
+                                virtual,
+                                onde posso explorar mundos fantásticos e desfrutar de desafios emocionantes.
+                                <br><br>
+                                Além disso, sou apaixonado por programação e resolver problemas. A capacidade de
+                                criar
+                                soluções e
+                                desenvolver
+                                projetos
+                                úteis sempre me fascinou. É por isso que estou empenhado em minha jornada acadêmica
+                                em
+                                Análise e
+                                Desenvolvimento de
+                                Sistemas - é a minha maneira de aprimorar minhas habilidades e seguir minha paixão
+                                pela
+                                tecnologia.
+                                <br><br>
+                                E quando não estou imerso em linhas de código, me arrisco como um mecânico amador.
+                                Gosto
+                                de colocar
+                                as mãos na massa
+                                e
+                                resolver problemas mecânicos simples em casa. Sou daqueles maridos e pais que gostam
+                                de
+                                tentar
+                                resolver tudo dentro
+                                de
+                                casa, seja consertando um vazamento na pia ou fazendo pequenos reparos no carro.
+                                <br><br>
+                                Essas são apenas algumas das muitas facetas que compõem quem sou. Espero que tenha
+                                gostado de
+                                conhecer um pouco mais
+                                sobre mim!
+                            </p>
                         </div>
                     </div>
+
+
 
                 </div>
             </div>
@@ -220,11 +226,11 @@
 
         <section class="skills bg-gddefault w-100 py-16 py-md-20 py-lg-24 w-100" id="skills">
             <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 gap-md-12 px-md-8 container-xl">
-                <div class="row">
-                    <div class="row text-center mb-5">
-                        <h1>
-                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Habilidades</a>
-                        </h1>
+                <div class="text-center align-self-center">
+                    <div class="text-center align-self-center">
+                        <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center"
+                            role="button">Habilidades
+                        </div>
                     </div>
                     <div class="row text-center">
                         <h5>As habilidades, ferramentas e tecnologias nas quais sou realmente bom:</h5>
@@ -285,7 +291,8 @@
                 <div class="row justify-content-center gap-6">
                     <div class="align-self-center text-center">
                         <h1>
-                            <a name="" id="" class="btn text-gd600 bg-gd200 px-4 py-1 rounded justify-content-center" href="#" role="button">Projetos</a>
+                            <a name="" id="" class="btn text-gd600 bg-gd200 px-4 py-1 rounded justify-content-center"
+                                href="#" role="button">Projetos</a>
                         </h1>
                     </div>
                     <div class="row text-center">
@@ -297,27 +304,32 @@
                         <div class="swiper mySwiper gy-3 my-5">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 p-2 d-flex">
-                                        <img src="./img/projects/projeto1.png" class="card-img-top" alt="...">
-                                        <div class="card-body w-100 d-flex flex-column">
-                                            <h5 class="card-title py-3">API_RESTful_Express_MongoDB</h5>
-                                            <p class="card-text">API RESTful com Node.js, Express e MongoDB, utilizando Mongoose para ODM e MongoDB Atlas. Nodemon para desenvolvimento.
-                                            Testado com Postman. Implementa CRUD com endpoints HTTP, respostas JSON e validações simples.</p>
-                                                <div class="row gy-3 row-cols-3 row-cols-md-5 justify-content-evenly d-flex align-items-end mt-auto">
-                                                    <img src="./img/tech/node-js.png" alt="">
-                                                    <img src="./img/tech/express1.png" alt="">
-                                                    <img src="./img/tech/mongodb.png" alt="">
-                                                    <img src="./img/tech/postman.png" alt="">
-                                                </div>
-                                        </div>                          
-                                        
-                                        
+                                    <img src="./img/projects/projeto1.png" class="card-img-top" alt="...">
+                                    <div class="card-body w-100 d-flex flex-column">
+                                        <h5 class="card-title py-3">API_RESTful_Express_MongoDB</h5>
+                                        <p class="card-text">API RESTful com Node.js, Express e MongoDB, utilizando
+                                            Mongoose para ODM e MongoDB Atlas. Nodemon para desenvolvimento.
+                                            Testado com Postman. Implementa CRUD com endpoints HTTP, respostas JSON e
+                                            validações simples.</p>
+                                        <div
+                                            class="row gy-3 row-cols-3 row-cols-md-5 justify-content-evenly d-flex align-items-end mt-auto">
+                                            <img src="./img/tech/node-js.png" alt="">
+                                            <img src="./img/tech/express1.png" alt="">
+                                            <img src="./img/tech/mongodb.png" alt="">
+                                            <img src="./img/tech/postman.png" alt="">
+                                        </div>
+                                    </div>
+
+
                                 </div>
                                 <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 p-2 d-flex">
                                     <img src="./img/projects/projeto2.png" class="card-img-top" alt="...">
                                     <div class="card-body w-100 d-flex flex-column">
                                         <h5 class="card-title">Loja Virtual</h5>
-                                        <p class="card-text">É uma loja virtual ao estilo marketplace, onde tem produtos proprios e vende tambem de terceiros. Vendendo cursos tambem.</p>
-                                        <div class="row gy-3 row-cols-3 row-cols-md-5 justify-content-evenly d-flex align-items-end mt-auto">
+                                        <p class="card-text">É uma loja virtual ao estilo marketplace, onde tem produtos
+                                            proprios e vende tambem de terceiros. Vendendo cursos tambem.</p>
+                                        <div
+                                            class="row gy-3 row-cols-3 row-cols-md-5 justify-content-evenly d-flex align-items-end mt-auto">
                                             <img src="./img/tech/node-js.png" alt="">
                                             <img src="./img/tech/express1.png" alt="">
                                             <img src="./img/tech/react.png" alt="">
@@ -325,7 +337,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>

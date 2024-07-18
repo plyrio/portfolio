@@ -47,11 +47,13 @@
     box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
   }
 
-  .foto-perfil {
+  .foto-perfil,
+  .foto-about {
     border: 8px solid #030412;
   }
 
-  .shadow-img {
+  .shadow-img,
+  .shadow-img-about {
     background-color: #374151;
   }
 
@@ -68,14 +70,17 @@
     box-shadow: 0 1px 2px rgba(3, 4, 18, 0.1);
   }
 
-  .foto-perfil {
+  .foto-perfil,
+  .foto-about {
     border: 8px solid #ffffff;
   }
 
-  .shadow-img {
+  .shadow-img,
+  .shadow-img-about {
     background-color: #e5e7eb; //gd200
   }
 }
+
 
 
 .swiper {
@@ -154,6 +159,7 @@
   margin: 0;
 }
 
+//hero
 
   .foto-perfil {
     height: 280px;
@@ -176,6 +182,29 @@
   .pic-container-hero {
     height: 300px;
     width: 280px;
+  }
+
+//ABOUT
+  .foto-about {
+    height: 360px;
+    width: 280px;
+    left: 1.25rem;
+    border: 8px solid #030412;
+    color: transparent;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .shadow-img-about {
+    width: 320px;
+    height: 360px;
+    border: 8px solid transparent;
+    top: 1.25rem;
+    background-color: #374151;
+  }
+  .pic-container-about {
+    height: 380px;
+    width: 320px;
   }
 }
 
@@ -212,6 +241,30 @@
     height: 360px;
     width: 320px;
   }
+
+
+//ABOUT
+  .foto-about {
+    height: 420px;
+    width: 340px;
+    left: 1.25rem;
+    border: 8px solid #030412;
+    color: transparent;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .shadow-img-about {
+    width: 340px;
+    height: 420px;
+    border: 8px solid transparent;
+    top: 1.25rem;
+    background-color: #374151;
+  }
+  .pic-container-about {
+    height: 460px;
+    width: 380px;
+  }
 }
 
 
@@ -246,6 +299,29 @@
   .pic-container-hero {
     height: 360px;
     width: 320px;
-  
+  }
+
+  //ABOUT
+  .foto-about {
+    height: 480px;
+    width: 400px;
+    left: 1.25rem;
+    border: 8px solid #030412;
+    color: transparent;
+    object-fit: cover;
+    max-width: 100%;
+  }
+
+  .shadow-img-about {
+    width: 400px;
+    height: 480px;
+    border: 8px solid transparent;
+    top: 1.25rem;
+    background-color: #374151;
+  }
+
+  .pic-container-about {
+    height: 520px;
+    width: 440px;
   }
 }
