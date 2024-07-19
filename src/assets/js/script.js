@@ -44,30 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
         themeToggle.addEventListener("click", toggleTheme);
     }
 
-window.addEventListener("scroll", function () {
-        let element = document.getElementById("antes") || document.getElementById("depois");
+    //    window.addEventListener("scroll", function () {
+    let elementAntes = document.getElementById("antes");
+    let elementDepois = document.getElementById("depois");
 
-        if (!element) return;
+    var scrollTop = window.scrollY;
 
-        var scrollTop = window.scrollY;
-        if (scrollTop > 10) {
-            try {
-                if (element.id === "antes") {
-                    element.id = "depois";
-                }
-            } catch (e) {
-                console.error(e);
-            }
-        } else {
-            try {
-                if (element.id === "depois") {
-                    element.id = "antes";
-                }
-            } catch (e) {
-                console.error(e);
-            }
+    try {
+        if (scrollTop > 0 && elementAntes) {
+            elementAntes.id = "depois";
+        } else if (scrollTop === 0 && elementDepois) {
+            elementDepois.id = "antes";
         }
-    });
+    } catch (e) {
+        console.error(e);
+    }
+
 
     document.querySelectorAll('.read-more-btn').forEach(button => {
         button.addEventListener('click', () => {

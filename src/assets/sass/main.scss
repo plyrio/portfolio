@@ -31,7 +31,6 @@
   transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-
 #depois {
   backdrop-filter: blur(48px);
 }
@@ -101,10 +100,7 @@
       display: block;
       object-fit: cover;
     }
-.offcanvas {
-  height: 100vh;
-  width: 80%;
-}
+
 
 .navbar-brand {
   font-family: variables.$font-stack1;
