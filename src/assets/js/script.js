@@ -44,21 +44,21 @@ document.addEventListener("DOMContentLoaded", function () {
         themeToggle.addEventListener("click", toggleTheme);
     }
 
-    //    window.addEventListener("scroll", function () {
-    let elementAntes = document.getElementById("antes");
-    let elementDepois = document.getElementById("depois");
-
-    var scrollTop = window.scrollY;
-
-    try {
-        if (scrollTop > 0 && elementAntes) {
-            elementAntes.id = "depois";
-        } else if (scrollTop === 0 && elementDepois) {
-            elementDepois.id = "antes";
-        }
-    } catch (e) {
-        console.error(e);
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+            var header = document.querySelector('header');
+                
+                    window.addEventListener('scroll', function() {
+                            var scroll = window.scrollY;
+                                    
+                                            if (scroll >= 1) {
+                                                        header.classList.add('backdrop-blur');
+                                                                } else {
+                                                                            header.classList.remove('backdrop-blur');
+                                                                                    }
+                                                                                        });
+                                                                                        });
+                                                                                        
+    })
 
 
     document.querySelectorAll('.read-more-btn').forEach(button => {
@@ -74,10 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
-
-
-});
 
 
 // Swiperjs
