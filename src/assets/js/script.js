@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         typewriter
             .typeString("Oi, eu sou o Pedro Lyrio <span>&#128075</span>")
-        .start();
+            .start();
     }
 
     function toggleTheme() {
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Mudar para Dark
             element.classList.remove("bi-moon-stars");
             element.classList.add("bi-brightness-high-fill");
-            
+
             body.classList.remove("theme-light");
             body.classList.add("theme-dark");
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Mudar para Light
             element.classList.remove("bi-brightness-high-fill");
             element.classList.add("bi-moon-stars");
-            
+
             body.classList.remove("theme-dark");
             body.classList.add("theme-light");
 
@@ -44,58 +44,60 @@ document.addEventListener("DOMContentLoaded", function () {
         themeToggle.addEventListener("click", toggleTheme);
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
-            var header = document.querySelector('header');
-                
-                    window.addEventListener('scroll', function() {
-                            var scroll = window.scrollY;
-                                    
-                                            if (scroll >= 1) {
-                                                        header.classList.add('backdrop-blur');
-                                                                } else {
-                                                                            header.classList.remove('backdrop-blur');
-                                                                                    }
-                                                                                        });
-                                                                                        });
-                                                                                        
-    })
+    document.addEventListener('DOMContentLoaded', function () {
+        var header = document.querySelector('antes');
 
+        window.addEventListener('scroll', function () {
+            var scroll = window.scrollY;
 
-    document.querySelectorAll('.read-more-btn').forEach(button => {
-        button.addEventListener('click', () => {
-            const moreText = button.previousElementSibling.querySelector('.more-text');
-            if (moreText.style.display === 'none' || moreText.style.display === '') {
-                moreText.style.display = 'inline';
-                button.textContent = 'Leia menos';
+            if (scroll >= 1) {
+                header.classList.remove('antes');
+                header.classList.add('depois');
             } else {
-                moreText.style.display = 'none';
-                button.textContent = 'Leia mais';
+                header.classList.remove('depois');
+                header.classList.add('antes');
             }
         });
     });
 
+})
+
+
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const moreText = button.previousElementSibling.querySelector('.more-text');
+        if (moreText.style.display === 'none' || moreText.style.display === '') {
+            moreText.style.display = 'inline';
+            button.textContent = 'Leia menos';
+        } else {
+            moreText.style.display = 'none';
+            button.textContent = 'Leia mais';
+        }
+    });
+});
+
 
 
 // Swiperjs
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
     spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
-    clickable: true,
-      },
+        clickable: true,
+    },
     breakpoints: {
         640: {
-        slidesPerView: 1,
-    spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 20,
         },
-    768: {
-        slidesPerView: 2,
-    spaceBetween: 40,
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
         },
-    1024: {
-        slidesPerView: 2,
-    spaceBetween: 80,
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 80,
         },
-      },
-    });
+    },
+});

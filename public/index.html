@@ -38,21 +38,25 @@
 </head>
 
 <body class="theme-dark text-gd600 bg-gddefault">
-    <header class="bg-gddefault z-2 w-100 top-0 sticky-top backdrop-blur" >
-        <nav class="navbar navbar-expand-md mx-auto d-flex w-100 align-items-center justify-content-between px-md-8 p-3 "
+    <header class="bg-gddefault z-2 w-100 top-0 sticky-top antes" id="antes">
+        <nav class="navbar navbar-expand-md mx-auto d-flex w-100 align-items-center justify-content-between px-md-8 p-3 antes"
            >
             <div class="container-xl">
                 <a class="navbar-brand text-gd900 align-items-center" href="#">Pedro lyrio</a>
-                <div class="offcanvas offcanvas-end text-gd600 bg-gddefault" tabindex="-1" id="offcanvasTop"
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-gd900"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-gd600 bg-gddefault bg" tabindex="-1" id="offcanvasTop"
                     aria-labelledby="offcanvasTopLabel">
-                    <div class="offcanvas-header">
+                    <div class="offcanvas-header bg-gddefault">
                         <a class="navbar-brand offcanvas-title text-gd900" id="offcanvasTopLabel" href="#">Pedro
                             lyrio</a>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close" id="btn-close"></button>
                     </div>
 
-                    <div class="offcanvas-body text-center">
+                    <div class="offcanvas-body text-center bg-gddefault">
 
                         <ul class="navbar-nav ms-auto align-items-center gap-2">
                             <li class="nav-item">
@@ -74,11 +78,6 @@
                             <li class="nav-item">
                                 <button type="button" class="btn btn-moon mx-1 text-gd600 mb-3 my-md-0"
                                     onclick="toggleTheme()" id="toggleTheme">
-
-
-
-
-
                                     <i class="bi bi-brightness-high-fill" id="dark-light"></i>
 
                                 </button>
@@ -91,10 +90,7 @@
                     </div>
 
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-                    aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon text-gd900"></span>
-                </button>
+                
             </div>
             </div>
         </nav>
