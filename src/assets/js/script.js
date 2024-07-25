@@ -44,23 +44,21 @@ document.addEventListener("DOMContentLoaded", function () {
         themeToggle.addEventListener("click", toggleTheme);
     }
 
-    document.addEventListener('DOMContentLoaded', function () {
-        var header = document.querySelector('antes');
+        var header = document.getElementById('scroll-blur');
 
         window.addEventListener('scroll', function () {
             var scroll = window.scrollY;
 
             if (scroll >= 1) {
-                header.classList.remove('antes');
+               header.classList.remove('antes');
                 header.classList.add('depois');
             } else {
                 header.classList.remove('depois');
-                header.classList.add('antes');
+               header.classList.add('antes');
             }
         });
     });
 
-})
 
 
 document.querySelectorAll('.read-more-btn').forEach(button => {
