@@ -138,14 +138,11 @@
   width: 64px;
 }
 
-.tech-content:hover {
-  transform: scale(1.2);
+.tech-icon:hover {
+  transform: scale(1.4);
   transition: 1s;
-
-  p {
-    font-weight: 500;
-  }
 }
+
 
 // Mobile 768px
 @media screen and (max-width: 767px) {
@@ -158,7 +155,7 @@
 
 .offcanvas {
   min-height: 100vh;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 //hero
