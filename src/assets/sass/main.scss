@@ -31,13 +31,6 @@
   transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-body{
-  padding-right: 0 !important;
-}
-
-html {
-  overflow-x: hidden;
-}
 
 .theme-dark {
   .antes {
@@ -155,33 +148,18 @@ html {
 }
 
 // Mobile 768px
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .tw {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
   margin: 0;
 }
-.offcanvas-collapse {
-              position: fixed;
-                          top: 56px;
-                                      /* Height of navbar */
-                                                  bottom: 0;
-                                                              right: 100%;
-                                                                          width: 100%;
-                                                                                      padding-right: 1rem;
-                                                                                                  padding-left: 1rem;
-                                                                                                              overflow-y: auto;
-                                                                                                                          visibility: hidden;
-                                                                                                                                      background-color: #343a40;
-                                                                                                                                                  transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-                                                                                                                                                          }
 
-                                                                                                                                                                  .offcanvas-collapse.open {
-                                                                                                                                                                              visibility: visible;
-                                                                                                                                                                                          transform: translateX(100%);
-                                                                                                                                                                                                  }
-
+.offcanvas {
+  min-height: 100vh;
+  max-width: 300px;
+}
 
 //hero
 

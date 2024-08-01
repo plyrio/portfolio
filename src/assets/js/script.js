@@ -44,28 +44,21 @@ document.addEventListener("DOMContentLoaded", function () {
         themeToggle.addEventListener("click", toggleTheme);
     }
 
-        var header = document.getElementById('scroll-blur');
+    var header = document.getElementById('scroll-blur');
 
-        window.addEventListener('scroll', function () {
-            var scroll = window.scrollY;
+    window.addEventListener('scroll', function () {
+        var scroll = window.scrollY;
 
-            if (scroll >= 1) {
-               header.classList.remove('antes');
-                header.classList.add('depois');
-            } else {
-                header.classList.remove('depois');
-               header.classList.add('antes');
-            }
-        });
+        if (scroll >= 1) {
+            header.classList.remove('antes');
+            header.classList.add('depois');
+        } else {
+            header.classList.remove('depois');
+            header.classList.add('antes');
+        }
     });
+});
 
-document.getElementById('offcanvasTop').addEventListener('show.bs.offcanvas', function () {
-        document.body.classList.add('offcanvas-open');
-        });
-
-        document.getElementById('offcanvasTop').addEventListener('hidden.bs.offcanvas', function () {
-            document.body.classList.remove('offcanvas-open');
-            });
 
 
 document.querySelectorAll('.read-more-btn').forEach(button => {
