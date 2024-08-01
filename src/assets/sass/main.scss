@@ -35,6 +35,10 @@ body{
   padding-right: 0 !important;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .theme-dark {
   .antes {
     //background-color: rgba(3, 4, 18, 1) !important;
@@ -45,6 +49,7 @@ body{
     background-color: rgba(3, 4, 18, 0.5) !important;
     //box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1) !important;
     backdrop-filter: blur(48px) !important;
+    //overflow-x: hidden;
   }
 
   .foto-perfil,
@@ -69,6 +74,7 @@ body{
     background-color: rgba(255, 255, 255, 0.5);
     //box-shadow: 0 1px 2px rgba(3, 4, 18, 0.1);
     backdrop-filter: blur(48px);
+   // overflow-x: hidden;
   }
 
   .foto-perfil,
@@ -156,11 +162,26 @@ body{
   font-weight: 600;
   margin: 0;
 }
-.offcanvas{
-  max-width: 300px;
-  min-height: 100vh;
-  overflow-x: auto;
-}
+.offcanvas-collapse {
+              position: fixed;
+                          top: 56px;
+                                      /* Height of navbar */
+                                                  bottom: 0;
+                                                              right: 100%;
+                                                                          width: 100%;
+                                                                                      padding-right: 1rem;
+                                                                                                  padding-left: 1rem;
+                                                                                                              overflow-y: auto;
+                                                                                                                          visibility: hidden;
+                                                                                                                                      background-color: #343a40;
+                                                                                                                                                  transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+                                                                                                                                                          }
+
+                                                                                                                                                                  .offcanvas-collapse.open {
+                                                                                                                                                                              visibility: visible;
+                                                                                                                                                                                          transform: translateX(100%);
+                                                                                                                                                                                                  }
+
 
 //hero
 

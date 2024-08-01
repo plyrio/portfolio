@@ -59,6 +59,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+document.getElementById('offcanvasTop').addEventListener('show.bs.offcanvas', function () {
+        document.body.classList.add('offcanvas-open');
+        });
+
+        document.getElementById('offcanvasTop').addEventListener('hidden.bs.offcanvas', function () {
+            document.body.classList.remove('offcanvas-open');
+            });
 
 
 document.querySelectorAll('.read-more-btn').forEach(button => {
