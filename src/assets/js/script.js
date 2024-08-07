@@ -74,7 +74,26 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
     });
 });
 
+function openModal(title, description, images) {
+    document.getElementById('projectModalLabel').innerText = title;
+    document.getElementById('modalText').innerText = description;
+    let modalImagesContainer = document.getElementById('modalImages');
+    modalImagesContainer.innerHTML = ''; // Clear any existing images
 
+    // Set the main modal image
+    let mainImage = document.getElementById('modalImage');
+    mainImage.src = images[0];
+
+    // Set the additional images
+    images.forEach((src, index) => {
+        if (index > 0) {
+            let img = document.createElement('img');
+            img.src = src;
+            img.className = 'img-fluid'; // Add any additional classes you want
+            modalImagesContainer.appendChild(img);
+        }
+    });
+}
 
 // Swiperjs
 var swiper = new Swiper(".mySwiper", {
