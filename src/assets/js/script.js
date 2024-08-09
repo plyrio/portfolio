@@ -12,84 +12,96 @@ document.addEventListener("DOMContentLoaded", function () {
             .start();
     }
 
-    function toggleTheme() {
-        const element = document.querySelector("#dark-light");
-        const body = document.body;
-        const closebtn = document.querySelector("#btn-close")
+    // Referências aos elementos
+    const themeToggle = document.querySelector("#toggleTheme");
+    const element = document.querySelector("#dark-light");
+    const body = document.body;
+    const closebtn = document.querySelector("#btn-close");
 
-        if (element.classList.contains("bi-moon-stars")) {
-            // Mudar para Dark
+    // Função para aplicar o tema inicial
+    function applyTheme(theme) {
+        body.classList.remove("theme-light", "theme-dark");
+        body.classList.add(`theme-${theme}`);
+
+        // Atualiza o ícone e o botão de fechar
+        if (theme === "dark") {
             element.classList.remove("bi-moon-stars");
             element.classList.add("bi-brightness-high-fill");
-
-            body.classList.remove("theme-light");
-            body.classList.add("theme-dark");
-
             closebtn.classList.add("btn-close-white");
-
-        } else if (element.classList.contains("bi-brightness-high-fill")) {
-            // Mudar para Light
+        } else {
             element.classList.remove("bi-brightness-high-fill");
             element.classList.add("bi-moon-stars");
-
-            body.classList.remove("theme-dark");
-            body.classList.add("theme-light");
-
             closebtn.classList.remove("btn-close-white");
         }
     }
 
-    const themeToggle = document.querySelector("#toggleTheme");
+    // Função para alternar o tema
+    function toggleTheme() {
+        const currentTheme = body.classList.contains("theme-dark") ? "dark" : "light";
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        applyTheme(newTheme);
+        localStorage.setItem("theme", newTheme);
+    }
+
+    // Aplica o tema preferido no carregamento
+    const preferredTheme = localStorage.getItem("theme") || "light";
+    applyTheme(preferredTheme);
+
+    // Adiciona o listener para alternância de tema
     if (themeToggle) {
         themeToggle.addEventListener("click", toggleTheme);
     }
 
-    var header = document.getElementById('scroll-blur');
 
-    window.addEventListener('scroll', function () {
+
+    var header = document.getElementById("scroll-blur");
+
+    window.addEventListener("scroll", function () {
         var scroll = window.scrollY;
 
         if (scroll >= 1) {
-            header.classList.remove('antes');
-            header.classList.add('depois');
+            header.classList.remove("antes");
+            header.classList.add("depois");
         } else {
-            header.classList.remove('depois');
-            header.classList.add('antes');
+            header.classList.remove("depois");
+            header.classList.add("antes");
         }
     });
 });
 
-
-
-document.querySelectorAll('.read-more-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const moreText = button.previousElementSibling.querySelector('.more-text');
-        if (moreText.style.display === 'none' || moreText.style.display === '') {
-            moreText.style.display = 'inline';
-            button.textContent = 'Leia menos';
+document.querySelectorAll(".read-more-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+        const moreText =
+            button.previousElementSibling.querySelector(".more-text");
+        if (
+            moreText.style.display === "none" ||
+            moreText.style.display === ""
+        ) {
+            moreText.style.display = "inline";
+            button.textContent = "Leia menos";
         } else {
-            moreText.style.display = 'none';
-            button.textContent = 'Leia mais';
+            moreText.style.display = "none";
+            button.textContent = "Leia mais";
         }
     });
 });
 
 function openModal(title, description, images) {
-    document.getElementById('projectModalLabel').innerText = title;
-    document.getElementById('modalText').innerText = description;
-    let modalImagesContainer = document.getElementById('modalImages');
-    modalImagesContainer.innerHTML = ''; // Clear any existing images
+    document.getElementById("projectModalLabel").innerText = title;
+    document.getElementById("modalText").innerText = description;
+    let modalImagesContainer = document.getElementById("modalImages");
+    modalImagesContainer.innerHTML = ""; // Clear any existing images
 
     // Set the main modal image
-    let mainImage = document.getElementById('modalImage');
+    let mainImage = document.getElementById("modalImage");
     mainImage.src = images[0];
 
     // Set the additional images
     images.forEach((src, index) => {
         if (index > 0) {
-            let img = document.createElement('img');
+            let img = document.createElement("img");
             img.src = src;
-            img.className = 'img-fluid'; // Add any additional classes you want
+            img.className = "img-fluid"; // Add any additional classes you want
             modalImagesContainer.appendChild(img);
         }
     });
