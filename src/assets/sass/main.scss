@@ -16,7 +16,9 @@
 }
 
 // Aplicar cores para o tema escuro
+.theme-dark {
 @include mixins.apply-theme-colors(variables.$colors-dark);
+}
 
 // Aplicar cores para o tema claro
 .theme-light {
