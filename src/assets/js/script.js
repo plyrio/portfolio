@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         typewriter
-            .typeString("Oi, eu sou o Pedro Lyrio <span>&#128075</span>")
+            .typeString("Oi, eu sou o Pedro <i class='fas fa-hand-wave'></i>")
             .start();
     }
 
@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Atualiza o ícone e o botão de fechar
         if (theme === "dark") {
-            element.classList.remove("bi-moon-stars");
-            element.classList.add("bi-brightness-high-fill");
+            element.classList.remove("icon-moon-star");
+            element.classList.add("icon-sun");
             closebtn.classList.add("btn-close-white");
         } else {
-            element.classList.remove("bi-brightness-high-fill");
-            element.classList.add("bi-moon-stars");
+            element.classList.remove("icon-sun");
+            element.classList.add("icon-moon-star");
             closebtn.classList.remove("btn-close-white");
         }
     }

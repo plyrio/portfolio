@@ -17,7 +17,7 @@
 
 // Aplicar cores para o tema escuro
 .theme-dark {
-@include mixins.apply-theme-colors(variables.$colors-dark);
+  @include mixins.apply-theme-colors(variables.$colors-dark);
 }
 
 // Aplicar cores para o tema claro
@@ -33,13 +33,22 @@
   transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+.icon-moon-star, .icon-sun {
+  font-size: 30px;
+}
+
 
 .theme-dark {
+  .antes {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.05);
+  }
 
   .depois {
     background-color: rgba(3, 4, 18, 0.5);
-    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(48px) !important;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(48px);
   }
 
   .foto-perfil,
@@ -55,10 +64,15 @@
 }
 
 .theme-light {
- 
+  .antes {
+    border-bottom: 1px solid rgba(3, 4, 18, 0.05);
+    box-shadow: 0 1px 2px rgba(3, 4, 18, 0.05);
+  }
+
   .depois {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 1px 2px rgba(3, 4, 18, 0.1);
+    border-bottom: 1px solid rgba(3, 4, 18, 0.1);
     backdrop-filter: blur(48px);
   }
 
@@ -76,23 +90,23 @@
 
 
 .swiper {
-      width: 100%;
-      height: 100%;
-    }
+  width: 100%;
+  height: 100%;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-height: 100%;
-    }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+}
 
-    .swiper-slide img {
-      display: block;
-      object-fit: cover;
-    }
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
 
 
 .navbar-brand {
@@ -139,18 +153,18 @@
 // Mobile 768px
 @media screen and (max-width: 767px) {
   .tw {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 600;
-  margin: 0;
-}
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+  }
 
-.offcanvas {
-  min-height: 100vh;
-  max-width: 400px;
-}
+  .offcanvas {
+    min-height: 100vh;
+    max-width: 400px;
+  }
 
-//hero
+  //hero
 
   .foto-perfil {
     height: 280px;
@@ -175,7 +189,7 @@
     width: 280px;
   }
 
-//ABOUT
+  //ABOUT
   .foto-about {
     height: 360px;
     width: 280px;
@@ -193,6 +207,7 @@
     top: 1.25rem;
     background-color: #374151;
   }
+
   .pic-container-about {
     height: 380px;
     width: 320px;
@@ -202,13 +217,13 @@
 //Tablet
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .tw {
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: -.02em;
-}
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -.02em;
+  }
 
- .foto-perfil {
+  .foto-perfil {
     height: 320px;
     width: 280px;
     top: 0;
@@ -234,7 +249,7 @@
   }
 
 
-//ABOUT
+  //ABOUT
   .foto-about {
     height: 420px;
     width: 340px;
@@ -252,6 +267,7 @@
     top: 1.25rem;
     background-color: #374151;
   }
+
   .pic-container-about {
     height: 460px;
     width: 380px;
@@ -262,11 +278,12 @@
 //Telas Grandes
 @media screen and (min-width: 1024px) {
   .tw {
-  font-size: 3.75rem;
-  line-height: 72px;
-  font-weight: 700;
-  letter-spacing: -.02em;
-}
+    font-size: 3.75rem;
+    line-height: 72px;
+    font-weight: 700;
+    letter-spacing: -.02em;
+  }
+
   .foto-perfil {
     height: 320px;
     width: 280px;
