@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         typewriter
-            .typeString("Oi, eu sou o Pedro <i class='fas fa-hand-wave'></i>")
+            .typeString("Oi, eu sou Pedro <span class='wave'>👋</span> ")
             .start();
     }
 
