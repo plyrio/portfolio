@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const typewriter = new Typewriter(tpwriter, {
             autoStart: true,
             delay: 120,
+            cursor: "",
         });
 
         typewriter
