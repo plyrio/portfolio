@@ -1,115 +1,52 @@
 document.addEventListener("DOMContentLoaded", function () {
     const tpwriter = document.getElementById("typewriter");
-
-    if (tpwriter) {
-        const typewriter = new Typewriter(tpwriter, {
-            autoStart: true,
-            delay: 120,
-            cursor: "",
-        });
-
-        typewriter
-            .typeString("Oi, eu sou Pedro <span class='wave'>👋</span> ")
-            .start();
-    }
-
-    // Referências aos elementos
     const themeToggle = document.querySelector("#toggleTheme");
     const element = document.querySelector("#dark-light");
     const body = document.body;
     const closebtn = document.querySelector("#btn-close");
+    const header = document.getElementById("scroll-blur");
 
-    // Função para aplicar o tema inicial
+    ;
+    
+    // Typewriter initialization
+    if (tpwriter) {
+      new Typewriter(tpwriter, {
+            autoStart: true,
+            cursor: "",
+        }).typeString("Oi, eu sou Pedro <div class='wave'>👋</div>").start();
+    }
+ 
+
+    // Theme application
     function applyTheme(theme) {
-        body.classList.remove("theme-light", "theme-dark");
-        body.classList.add(`theme-${theme}`);
-
-        // Atualiza o ícone e o botão de fechar
-        if (theme === "dark") {
-            element.classList.remove("icon-moon-star");
-            element.classList.add("icon-sun");
-            closebtn.classList.add("btn-close-white");
-        } else {
-            element.classList.remove("icon-sun");
-            element.classList.add("icon-moon-star");
-            closebtn.classList.remove("btn-close-white");
-        }
+        body.classList.toggle("theme-dark", theme === "dark");
+        body.classList.toggle("theme-light", theme === "light");
+        element.classList.toggle("icon-sun", theme === "dark");
+        element.classList.toggle("icon-moon-star", theme === "light");
+        closebtn.classList.toggle("btn-close-white", theme === "dark");
     }
 
-    // Função para alternar o tema
+    // Toggle theme
     function toggleTheme() {
-        const currentTheme = body.classList.contains("theme-dark") ? "dark" : "light";
-        const newTheme = currentTheme === "dark" ? "light" : "dark";
+        const newTheme = body.classList.contains("theme-dark") ? "light" : "dark";
         applyTheme(newTheme);
         localStorage.setItem("theme", newTheme);
     }
 
-    // Aplica o tema preferido no carregamento
-    const preferredTheme = localStorage.getItem("theme") || "light";
-    applyTheme(preferredTheme);
+    // Apply preferred theme on load
+    applyTheme(localStorage.getItem("theme") || "light");
 
-    // Adiciona o listener para alternância de tema
-    if (themeToggle) {
-        themeToggle.addEventListener("click", toggleTheme);
-    }
-
-
-
-    var header = document.getElementById("scroll-blur");
+    // Add event listeners
+    themeToggle?.addEventListener("click", toggleTheme);
 
     window.addEventListener("scroll", function () {
-        var scroll = window.scrollY;
-
-        if (scroll >= 1) {
-            header.classList.remove("antes");
-            header.classList.add("depois");
-        } else {
-            header.classList.remove("depois");
-            header.classList.add("antes");
-        }
+        header.classList.toggle("depois", window.scrollY >= 1);
+        header.classList.toggle("antes", window.scrollY < 1);
     });
-});
+});;
 
-document.querySelectorAll(".read-more-btn").forEach((button) => {
-    button.addEventListener("click", () => {
-        const moreText =
-            button.previousElementSibling.querySelector(".more-text");
-        if (
-            moreText.style.display === "none" ||
-            moreText.style.display === ""
-        ) {
-            moreText.style.display = "inline";
-            button.textContent = "Leia menos";
-        } else {
-            moreText.style.display = "none";
-            button.textContent = "Leia mais";
-        }
-    });
-});
-
-function openModal(title, description, images) {
-    document.getElementById("projectModalLabel").innerText = title;
-    document.getElementById("modalText").innerText = description;
-    let modalImagesContainer = document.getElementById("modalImages");
-    modalImagesContainer.innerHTML = ""; // Clear any existing images
-
-    // Set the main modal image
-    let mainImage = document.getElementById("modalImage");
-    mainImage.src = images[0];
-
-    // Set the additional images
-    images.forEach((src, index) => {
-        if (index > 0) {
-            let img = document.createElement("img");
-            img.src = src;
-            img.className = "img-fluid"; // Add any additional classes you want
-            modalImagesContainer.appendChild(img);
-        }
-    });
-}
-
-// Swiperjs
-var swiper = new Swiper(".mySwiper", {
+// Swiperjs initialization
+new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     pagination: {
@@ -117,17 +54,8 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     breakpoints: {
-        640: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-        },
-        1024: {
-            slidesPerView: 2,
-            spaceBetween: 80,
-        },
+        640: { slidesPerView: 1, spaceBetween: 20 },
+        768: { slidesPerView: 2, spaceBetween: 40 },
+        1024: { slidesPerView: 2, spaceBetween: 80 },
     },
 });
