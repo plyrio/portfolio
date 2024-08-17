@@ -7,8 +7,6 @@
 
 
 // Importa as variáveis e utilitários personalizados
-@import "custom";
-
 :root {
   @each $spacer, $value in $spacers {
     --theme-spacer-#{$spacer}: #{$value};
@@ -32,6 +30,7 @@
   font-family: variables.$font-stack2;
   transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
+
 
 .icon-moon-star, .icon-sun, .icon-linkedin, .icon-github{
   font-size: 1.5rem;
@@ -58,6 +57,10 @@
 
 
 .theme-dark {
+  .navbar-brand {
+  font-family: variables.$font-stack1;
+  text-shadow: #ffffff 1px 0 3px;
+}
   .antes {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 1px 2px rgba(255, 255, 255, 0.05);
@@ -80,9 +83,38 @@
     background-color: #374151;
   }
 
+  .custom-button {
+  background-color: #1f2937; /* Cor equivalente ao bg-gray-100 */
+  padding: 0.375rem; /* Equivalente ao p-1.5 */
+  border-radius: 0.5rem; /* Equivalente ao rounded-lg */
+  transition: background-color 0.2s; /* Equivalente ao transition-colors duration-200 */
+}
+
+.custom-button:hover {
+  background-color: #1f2937; /* Cor equivalente ao hover:bg-gray-100 */
+}
+
+.custom-button:active {
+  background-color: #374151; /* Cor equivalente ao active:bg-gray-200 */
+}
+
+.custom-button svg {
+  stroke: #d1d5db; /* Cor equivalente ao stroke-gray-600 */
+  width: 2rem; /* Equivalente ao w-8 */
+  height: 2rem; /* Equivalente ao h-8 */
+}
+
+.custom-button:hover svg {
+  stroke: #e5e7eb; /* Cor equivalente ao hover:stroke-gray-700 */
+}
+
 }
 
 .theme-light {
+    .navbar-brand {
+  font-family: variables.$font-stack1;
+  text-shadow: #030412 1px 0 3px;
+}
   .antes {
     border-bottom: 1px solid rgba(3, 4, 18, 0.05);
     box-shadow: 0 1px 2px rgba(3, 4, 18, 0.05);
@@ -104,8 +136,57 @@
   .shadow-img-about {
     background-color: #e5e7eb; //gd200
   }
+
+  .custom-button {
+  background-color: #f3f4f6; /* Cor equivalente ao bg-gray-100 */
+  padding: 0.375rem; /* Equivalente ao p-1.5 */
+  border-radius: 0.5rem; /* Equivalente ao rounded-lg */
+  transition: background-color 0.2s; /* Equivalente ao transition-colors duration-200 */
 }
 
+.custom-button:hover {
+  background-color: #f3f4f6; /* Cor equivalente ao hover:bg-gray-100 */
+}
+
+.custom-button:active {
+  background-color: #e5e7eb; /* Cor equivalente ao active:bg-gray-200 */
+}
+
+.custom-button svg {
+  stroke: #4b5563; /* Cor equivalente ao stroke-gray-600 */
+  width: 2rem; /* Equivalente ao w-8 */
+  height: 2rem; /* Equivalente ao h-8 */
+}
+
+.custom-button:hover svg {
+  stroke: #374151; /* Cor equivalente ao hover:stroke-gray-700 */
+}
+}
+
+.custom-button {
+  background-color: #f3f4f6; /* Cor equivalente ao bg-gray-100 */
+  padding: 0.375rem; /* Equivalente ao p-1.5 */
+  border-radius: 0.5rem; /* Equivalente ao rounded-lg */
+  transition: background-color 0.2s; /* Equivalente ao transition-colors duration-200 */
+}
+
+.custom-button:hover {
+  background-color: #f3f4f6; /* Cor equivalente ao hover:bg-gray-100 */
+}
+
+.custom-button:active {
+  background-color: #e5e7eb; /* Cor equivalente ao active:bg-gray-200 */
+}
+
+.custom-button svg {
+  stroke: #4b5563; /* Cor equivalente ao stroke-gray-600 */
+  width: 2rem; /* Equivalente ao w-8 */
+  height: 2rem; /* Equivalente ao h-8 */
+}
+
+.custom-button:hover svg {
+  stroke: #374151; /* Cor equivalente ao hover:stroke-gray-700 */
+}
 
 
 .swiper {
@@ -127,11 +208,13 @@
   object-fit: cover;
 }
 
-
-.navbar-brand {
-  font-family: variables.$font-stack1;
-  text-shadow: #d1d5dd 1px 0 3px;
+.hw-6 {
+  height: 24px;
+  width: 24px;
 }
+
+
+
 
 
 
@@ -171,6 +254,7 @@
 
 // Mobile 768px
 @media screen and (max-width: 767px) {
+
   .tw {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -235,6 +319,23 @@
 
 //Tablet
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .fs-md-4 {
+    font-size: 1.25rem;
+  }
+  
+   .fs-md-1 {
+    font-size: 2.25rem !important;
+  }
+
+
+.tracking-negative {
+  letter-spacing: -0.02em;
+}
+  .hw-md-8 {
+    height: 32px;
+    width: 32px;
+  }
+
   .tw {
     font-size: 3rem;
     line-height: 1;
@@ -296,6 +397,23 @@
 
 //Telas Grandes
 @media screen and (min-width: 1024px) {
+  .fs-md-4 {
+    font-size: 1.25rem;
+  }
+  
+   .fs-md-1 {
+    font-size: 2.25rem !important;
+  }
+
+
+.tracking-negative {
+  letter-spacing: -0.02em;
+}
+  .hw-md-8 {
+    height: 32px;
+    width: 32px;
+  }
+
   .tw {
     font-size: 3.75rem;
     line-height: 72px;
