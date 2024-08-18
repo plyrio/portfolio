@@ -25,10 +25,6 @@ const paths = {
         src: 'src/assets/js/**/*.js',
         dest: 'public/js',
     },
-    images: {
-        src: 'src/assets/img/**/*.{jpg,jpeg,png,svg,gif}',
-        dest: 'public/img',
-    },
     html: {
         src: 'src/**/*.html',
         dest: 'public',
@@ -71,18 +67,12 @@ export function scripts() {
         .pipe(bs.stream());
 }
 
-// Otimizar imagens
-export function images() {
-    return gulp
-        .src(paths.images.src)
-        .pipe(imagemin())
-        .pipe(gulp.dest(paths.images.dest));
-}
 
 // Copiar e modificar HTML para usar versões minificadas
 export function html() {
     return gulp
         .src(paths.html.src)
+        .pipe(replace('<img', '<img loading="lazy"'))
         .pipe(replace('style.css', 'style.min.css'))
         .pipe(replace('typewriter.js', 'typewriter.min.js'))
         .pipe(replace('theme-toggle.js', 'theme-toggle.min.js'))
@@ -102,14 +92,13 @@ export function serve() {
 
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.scripts.src, scripts);
-    gulp.watch(paths.images.src, images);
     gulp.watch(paths.html.src, html).on('change', bs.reload);
 }
 
 // Tarefa para construir o projeto
 export const build = gulp.series(
     clean,
-    gulp.parallel(styles, scripts, images, html)
+    gulp.parallel(styles, scripts, html)
 );
 
 // Tarefa padrão para iniciar o servidor e assistir a mudanças
