@@ -73,7 +73,10 @@ export function html() {
     return gulp
         .src(paths.html.src)
         .pipe(replace('style.css', 'style.min.css'))
-        .pipe(replace('script.js', 'script.min.js'))
+        .pipe(replace('typewriter.js', 'typewriter.min.js'))
+        .pipe(replace('theme-toggle.js', 'theme-toggle.min.js'))
+        .pipe(replace('scroll-blur.js', 'scroll-blur.min.js'))
+        .pipe(replace('swiper-init.js', 'swiper-init.min.js'))
         .pipe(gulp.dest(paths.html.dest))
         .pipe(bs.stream());
 }
