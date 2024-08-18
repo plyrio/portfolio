@@ -10,6 +10,8 @@ import autoprefixer from 'gulp-autoprefixer';
 import imagemin from 'gulp-imagemin';
 import ghPages from 'gh-pages';
 import replace from 'gulp-replace';
+import postcss from 'gulp-postcss';
+import purgecss from '@fullhuman/postcss-purgecss';
 
 const sass = gulpSass(dartSass);
 const bs = browserSync.create();
@@ -43,6 +45,15 @@ export function styles() {
     return gulp
         .src(paths.styles.src)
         .pipe(sass().on('error', sass.logError))
+        .pipe(postcss([
+            purgecss({
+                content: [
+                    'src/**/*.html',
+                    'src/**/*.js',
+                ],
+                defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+            })
+        ]))
         .pipe(autoprefixer())
         .pipe(cleanCSS())
         .pipe(rename('style.min.css'))

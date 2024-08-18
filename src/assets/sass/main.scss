@@ -1,17 +1,7 @@
 @use "variables";
 @use "mixins";
 
-@import "../../../node_modules/bootstrap/scss/functions";
-@import "../../../node_modules/bootstrap/scss/variables";
-@import "../../../node_modules/bootstrap/scss/mixins";
 
-
-// Importa as variáveis e utilitários personalizados
-:root {
-  @each $spacer, $value in $spacers {
-    --theme-spacer-#{$spacer}: #{$value};
-  }
-}
 
 // Aplicar cores para o tema escuro
 .theme-dark {
