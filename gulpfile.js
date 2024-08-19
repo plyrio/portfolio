@@ -78,6 +78,7 @@ export function html() {
         .pipe(replace('theme-toggle.js', 'theme-toggle.min.js'))
         .pipe(replace('scroll-blur.js', 'scroll-blur.min.js'))
         .pipe(replace('swiper-init.js', 'swiper-init.min.js'))
+        .pipe(replace('copy-fun.js', 'copy-fun.min.js'))
         .pipe(gulp.dest(paths.html.dest))
         .pipe(bs.stream());
 }

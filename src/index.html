@@ -44,7 +44,7 @@
     <script src="./js/theme-toggle.js" type="module" defer></script>
     <script src="./js/scroll-blur.js" type="module" defer></script>
     <script src="./js/swiper-init.js" type="module" defer></script>
-    
+    <script src="./js/copy-fun.js" type="module" defer></script>
 
 </head>
 
@@ -117,7 +117,7 @@
                     <div
                         class="d-flex flex-grow-1 flex-column justify-content-center gap-8 order-md-first align-items-md-start">
                         <div class="d-flex flex-column gap-2">
-                            <div class="text-gd900 tw t" id="typewriter"></div>
+                     <div class="text-gd900 tw " id="typewriter"></div>
 
                             <p class="hero-p text-gd600 lh-base">
                                 Sou um desenvolvedor full stack em formação,
@@ -281,6 +281,27 @@
                             <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995531/git_ymcyvo.png" alt="GIT" class="tech-icon mb-2"  />
                             <p class="text-gd600">Git</p>
                         </div>
+                        <div class="col tech-content">
+                            <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086590/icons8-tailwindcss-96_rzdpnm.png" alt="TAILWINDCSS" class="tech-icon mb-2"  />
+                            <p class="text-gd600">Tailwind Css</p>
+                        </div>
+                        <div class="col tech-content">
+                            <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-texto-datilografado-96_lxgljp.png" alt="TYPESCRIPT" class="tech-icon mb-2"  />
+                            <p class="text-gd600">Typescript</p>
+                        </div>
+                        <div class="col tech-content">
+                            <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-carregou-96_e5tu3k.png" alt="NESTJS" class="tech-icon mb-2"  />
+                            <p class="text-gd600">Nest js</p>
+                        </div>
+                        <div class="col tech-content">
+                            <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-prisma-orma-96_jz2evw.png" alt="PRISMA" class="tech-icon mb-2"  />
+                            <p class="text-gd600">Prisma</p>
+                        </div>
+                        <div class="col tech-content">
+                            <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-postgres-96_n7y411.png" alt="POATGRESQL" class="tech-icon mb-2"  />
+                            <p class="text-gd600">Postgresql</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -365,17 +386,16 @@
             </div>
         </section>
 
-        <section class="contact bg-gddefault w-100 py-20 py-lg-24 pt-12" id="contact">
+        <section class="contact bg-gddefault w-100 py-20 py-lg-24" id="contact">
             <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
                 <div class="d-flex flex-column align-items-center gap-4">
-                    <div class="row text-center">
-                        <h1>
-                            <a name="" id="" class="btn text-gd600 bg-gd200" href="#" role="button">Contato</a>
-                        </h1>
+                    <div class="text-center align-swlf-center">
+                        <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center"
+                            role="button">
+                            Entre em Contato
+                        </div>
                     </div>
-                    <p class="fw-normal fs-5 text-center custom-md-text-xl" style="max-width: 576px;">What’s next? Feel
-                        free to reach out to me if you are
-                        looking for a developer, have a query, or simply want to connect.</p>
+                    <p class="fw-normal fs-5 text-center custom-md-text-xl text-gd600" style="max-width: 576px;">O que vem a seguir? Sinta-se à vontade para entrar em contato comigo se estiver procurando um desenvolvedor, tiver alguma dúvida ou simplesmente quiser se conectar.</p>
                 </div>
                 <div class="d-flex flex-column align-items-center gap-6 gap-md-12">
                     <div class="d-flex flex-column align-items-center gap-md-4">
@@ -386,10 +406,10 @@
                                 <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                                 <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                             </svg>
-                            <h2 class="fs-5 fw-semibold tracking-negative fs-md-1 text-gd900">
+                            <h2 class="fs-5 fw-semibold tracking-negative fs-md-1 text-gd900 contatoemail">
                                 pedrolyrio@ucl.br</h2>
                             <button
-                                class="btn position-relative d-flex justifyc-content-center align-items-center text-gd600 custom-button"><svg
+                                class="btn position-relative d-flex justify-content-center align-items-center text-gd600 custom-button copy-btn" id="copyemail"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-copy">
@@ -404,9 +424,9 @@
                                     d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                                 </path>
                             </svg>
-                            <h2 class=" fs-5 fw-semibold tracking-negative fs-md-1 text-gd900">+55 27
+                            <h2 class=" fs-5 fw-semibold tracking-negative fs-md-1 text-gd900 contatotel">+55 27
                                 98869-3416</h2><button
-                                class="btn position-relative d-flex justifyc-content-center align-items-center text-gd600 custom-button"><svg
+                                class="btn position-relative d-flex justify-content-center align-items-center text-gd600 custom-button copy-btn" id="copytel"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-copy">
@@ -416,35 +436,19 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column align-items-center gap-2">
-                        <p class="text-normal text-base text-center">You may also find me on these platforms!</p>
-                        <div class="flex gap-1"><button
-                                class="btn relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-github">
-                                    <path
-                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-                                    </path>
-                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                </svg></button><button
-                                class="btn relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-twitter">
-                                    <path
-                                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
-                                    </path>
-                                </svg></button><button
-                                class="btn relative flex justify-center items-center hover:bg-gray-100 active:bg-gray-200 rounded-lg p-1.5 transition-colors duration-200 [&amp;_svg]:stroke-gray-600 [&amp;_svg]:hover:stroke-gray-700 [&amp;_svg]:w-6 [&amp;_svg]:h-6"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-figma">
-                                    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
-                                    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
-                                    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
-                                    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
-                                    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
-                                </svg></button></div>
+                        <p class="fw-normal text-center text-gd600">Você também pode me encontrar nessas plataformas!</p>
+                        <div class="d-flex gap-1">
+                            <button class="btn">
+                                <a class="text-decoration-none text-gd600" href="https://github.com/plyrio"><i
+                                        class="icon-github"></i></a>
+                            </button>
+                            <button class="btn ">
+                                <a class="text-decoration-none text-gd600" href="https://www.linkedin.com/in/plyrio"><i
+                                        class="icon-linkedin"></i></a>
+                            </button>
+
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
