@@ -25,6 +25,45 @@
 .icon-moon-star, .icon-sun, .icon-linkedin, .icon-github{
   font-size: 1.5rem;
 } 
+.icon-dot {
+  font-size: 0; /* Reseta o tamanho da fonte */
+  width: 10px; /* Largura original do ícone */
+  height: 10px; /* Altura original do ícone */
+  background-color: #00a676; /* Cor do ícone */
+  border-radius: 50%; /* Para manter o formato circular */
+  display: inline-block;
+  position: relative;
+}
+
+.icon-dot::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #00a676;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  animation: ripple 2s infinite;
+}
+
+@keyframes ripple {
+  0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.5;
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+  }
+}
+
+.just {
+  text-align: justify !important;
+  }
+
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
@@ -181,20 +220,6 @@
   width: 24px;
 }
 
-
-
-
-
-
-.spinner-grow {
-  width: 15px;
-  height: 15px;
-}
-
-.bi-dot {
-  color: #1cb43d;
-}
-
 .card-text .more-text {
   display: none;
 }
@@ -207,7 +232,6 @@
     }
   }
 }
-
 
 .tech-icon {
   height: 64px;
