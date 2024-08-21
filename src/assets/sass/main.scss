@@ -22,9 +22,15 @@
 }
 
 
-.icon-moon-star, .icon-sun, .icon-linkedin, .icon-github{
+.icon-moon-star, .icon-sun, .icon-linkedin, .icon-github {
   font-size: 1.5rem;
 } 
+.icon-menu, .icon-x {
+  font-size: 1.70rem;
+}
+
+
+
 .icon-dot {
   font-size: 0;
   width: 10px;
@@ -242,6 +248,23 @@
   transform: scale(1.4);
   transition: 1s;
 }
+
+/* Estilo da tag <a> para garantir que ela respeite o tamanho do pai */
+.navbar-brand {
+    display: inline-block;
+    max-width: 160px;
+    height: auto; 
+}
+
+/* Estilo para a imagem da Brand ser responsiva */
+.brand-icon {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain; /* Garante que a imagem se ajuste bem à área */
+}
+
+
 
 
 // Mobile 768px
