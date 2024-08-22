@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
         element.classList.toggle("icon-sun", theme === "dark");
         element.classList.toggle("icon-moon-star", theme === "light");
 
-        favicon.href = theme === "dark" ? "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724266397/4_yoxeqm.png" : "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724266396/3_tc1gnn.png";
+        favicon.href = theme === "dark" ? "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724326794/5_wn6vhe.png" : "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724326794/4_cg8tol.png";
         if (logomark) {
-        logomark.src = theme === "dark" ? "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724270319/Pl_8_qfvnt4.png" : "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724270319/Pl_9_ayrbyz.png";
+        logomark.src = theme === "dark" ? "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724326820/Pl_11_wrznzp.png" : "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724326821/Pl_10_rthobz.png";
         }
         if (logomarkOff) {
-        logomarkOff.src = theme === "dark" ? "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724270319/Pl_8_qfvnt4.png" : "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724270319/Pl_9_ayrbyz.png";
+        logomarkOff.src = theme === "dark" ? "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724326820/Pl_11_wrznzp.png" : "https://res.cloudinary.com/dn5yfai0g/image/upload/v1724326821/Pl_10_rthobz.png";
             }
     
     }
