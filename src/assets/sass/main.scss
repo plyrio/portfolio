@@ -216,19 +216,29 @@
   max-height: 100%;
 }
 
+.swiper-slide {
+    max-width: 100%;
+}
+
 .swiper-slide img {
   display: block;
   object-fit: cover;
 }
+
+.card {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
 
 .hw-6 {
   height: 24px;
   width: 24px;
 }
 
-.card-text .more-text {
-  display: none;
-}
 
 .footer {
   div {
@@ -262,6 +272,15 @@
     height: auto;
     display: block;
     object-fit: contain; /* Garante que a imagem se ajuste bem à área */
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* Limita o texto a 3 linhas */
+    -webkit-box-orient: vertical;
+    white-space: normal;
 }
 
 
