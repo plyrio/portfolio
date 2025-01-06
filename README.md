@@ -20,7 +20,17 @@ Acesse o portfólio online: [plyrio.github.io/portfolio](https://plyrio.github.i
 
 ## 📂 Estrutura do Projeto
 ```
-portfolio/ ├── src/ │   ├── assets/ │   │   ├── sass/         # Arquivos SCSS │   │   ├── js/           # Scripts JavaScript │   ├── index.html        # HTML principal ├── public/ │   ├── css/              # CSS gerado │   ├── js/               # Scripts minificados │   ├── index.html        # Arquivos prontos para produção ├── gulpfile.js           # Configuração do Gulp └── package.json          # Configurações do projeto
+portfolio/ 
+├── src/ 
+│   ├── assets/ 
+│   │   ├── sass/         # Arquivos SCSS 
+│   │   ├── js/           # Scripts JavaScript 
+│   ├── index.html        # HTML principal 
+├── public/ 
+│   ├── css/              # CSS gerado 
+│   ├── js/               # Scripts minificados 
+│   ├── index.html        # Arquivos prontos para produção 
+├── gulpfile.js           # Configuração do Gulp └── package.json          # Configurações do projeto
 ```
 
 ## 🚀 Funcionalidades
@@ -72,15 +82,15 @@ Todo o conteúdo otimizado da pasta public é enviado para o GitHub Pages.
 **Pedro Lyrio (Plyrio Dev)**
 Desenvolvedor Front-end apaixonado por tecnologias modernas e design funcional.
 
-LinkedIn
+[LinkedIn](https://www.linkedin.com/in/plyrio)
 
-Portfólio
+[Portfólio](https://plyrio.github.io/portfolio/)
 
 
 
 ---
-```
+
 Este projeto é aberto para contribuições e melhorias. Sinta-se à vontade para enviar pull requests ou reportar problemas!
-```
+
 
 
