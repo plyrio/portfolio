@@ -1,8 +1,6 @@
 @use "variables";
 @use "mixins";
 
-
-
 // Aplicar cores para o tema escuro
 .theme-dark {
   @include mixins.apply-theme-colors(variables.$colors-dark);
@@ -21,15 +19,16 @@
   transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-
-.icon-moon-star, .icon-sun, .icon-linkedin, .icon-github {
+.icon-moon-star,
+.icon-sun,
+.icon-linkedin,
+.icon-github {
   font-size: 1.5rem;
-} 
-.icon-menu, .icon-x {
-  font-size: 1.70rem;
 }
-
-
+.icon-menu,
+.icon-x {
+  font-size: 1.7rem;
+}
 
 .icon-dot {
   font-size: 0;
@@ -42,7 +41,7 @@
 }
 
 .icon-dot::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -57,46 +56,59 @@
 
 @keyframes ripple {
   0% {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
   }
   100% {
-      transform: translate(-50%, -50%) scale(3);
-      opacity: 0;
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
   }
 }
 
 .just {
   text-align: justify !important;
-  }
-
+}
 
 .wave {
-  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving :) */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
-  
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
 
 .theme-dark {
   .navbar-brand {
-  font-family: variables.$font-stack1;
-  text-shadow: #ffffff 1px 0 3px;
-}
+    font-family: variables.$font-stack1;
+    text-shadow: #ffffff 1px 0 3px;
+  }
   .antes {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 1px 2px rgba(255, 255, 255, 0.05);
@@ -120,37 +132,36 @@
   }
 
   .custom-button {
-  background-color: #030412; /* Cor equivalente ao bg-gray-100 */
-  padding: 0.375rem; /* Equivalente ao p-1.5 */
-  border-radius: 0.5rem; /* Equivalente ao rounded-lg */
-  transition: background-color 0.2s; /* Equivalente ao transition-colors duration-200 */
-}
+    background-color: #030412;
+    padding: 0.375rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
 
-.custom-button:hover {
-  background-color: #1f2937; /* Cor equivalente ao hover:bg-gray-100 */
-}
+  .custom-button:hover {
+    background-color: #1f2937;
+  }
 
-.custom-button:active {
-  background-color: #374151; /* Cor equivalente ao active:bg-gray-200 */
-}
+  .custom-button:active {
+    background-color: #374151;
+  }
 
-.custom-button svg {
-  stroke: #d1d5db; /* Cor equivalente ao stroke-gray-600 */
-  width: 2rem; /* Equivalente ao w-8 */
-  height: 2rem; /* Equivalente ao h-8 */
-}
+  .custom-button svg {
+    stroke: #d1d5db;
+    width: 2rem;
+    height: 2rem;
+  }
 
-.custom-button:hover svg {
-  stroke: #e5e7eb; /* Cor equivalente ao hover:stroke-gray-700 */
-}
-
+  .custom-button:hover svg {
+    stroke: #e5e7eb;
+  }
 }
 
 .theme-light {
-    .navbar-brand {
-  font-family: variables.$font-stack1;
-  text-shadow: #030412 1px 0 3px;
-}
+  .navbar-brand {
+    font-family: variables.$font-stack1;
+    text-shadow: #030412 1px 0 3px;
+  }
   .antes {
     border-bottom: 1px solid rgba(3, 4, 18, 0.05);
     box-shadow: 0 1px 2px rgba(3, 4, 18, 0.05);
@@ -174,33 +185,30 @@
   }
 
   .custom-button {
-  background-color: #ffffff; /* Cor equivalente ao bg-gray-100 */
-  padding: 0.375rem; /* Equivalente ao p-1.5 */
-  border-radius: 0.5rem; /* Equivalente ao rounded-lg */
-  transition: background-color 0.2s; /* Equivalente ao transition-colors duration-200 */
+    background-color: #ffffff;
+    padding: 0.375rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+  }
+
+  .custom-button:hover {
+    background-color: #f3f4f6;
+  }
+
+  .custom-button:active {
+    background-color: #e5e7eb;
+  }
+
+  .custom-button svg {
+    stroke: #4b5563;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .custom-button:hover svg {
+    stroke: #374151;
+  }
 }
-
-.custom-button:hover {
-  background-color: #f3f4f6; /* Cor equivalente ao hover:bg-gray-100 */
-}
-
-.custom-button:active {
-  background-color: #e5e7eb; /* Cor equivalente ao active:bg-gray-200 */
-}
-
-.custom-button svg {
-  stroke: #4b5563; /* Cor equivalente ao stroke-gray-600 */
-  width: 2rem; /* Equivalente ao w-8 */
-  height: 2rem; /* Equivalente ao h-8 */
-}
-
-.custom-button:hover svg {
-  stroke: #374151; /* Cor equivalente ao hover:stroke-gray-700 */
-}
-}
-
-
-
 
 .swiper {
   width: 100%;
@@ -217,7 +225,7 @@
 }
 
 .swiper-slide {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .swiper-slide img {
@@ -226,19 +234,15 @@
 }
 
 .card {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .hw-6 {
   height: 24px;
   width: 24px;
 }
-
 
 .footer {
   div {
@@ -261,34 +265,30 @@
 
 /* Estilo da tag <a> para garantir que ela respeite o tamanho do pai */
 .navbar-brand {
-    display: inline-block;
-    max-width: 160px;
-    height: auto; 
+  display: inline-block;
+  max-width: 160px;
+  height: auto;
 }
 
 /* Estilo para a imagem da Brand ser responsiva */
 .brand-icon {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain; /* Garante que a imagem se ajuste bem à área */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* Garante que a imagem se ajuste bem à área */
 }
 
 .card-text {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 7; /* Limita o texto a 3 linhas */
-    -webkit-box-orient: vertical;
-    white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* Limita o texto a X linhas */
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
-
-
-
 
 // Mobile 768px
 @media screen and (max-width: 767px) {
-
   .tw {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -360,15 +360,14 @@
   .fs-md-4 {
     font-size: 1.25rem;
   }
-  
-   .fs-md-1 {
+
+  .fs-md-1 {
     font-size: 2.25rem !important;
   }
 
-
-.tracking-negative {
-  letter-spacing: -0.02em;
-}
+  .tracking-negative {
+    letter-spacing: -0.02em;
+  }
   .hw-md-8 {
     height: 32px;
     width: 32px;
@@ -378,7 +377,7 @@
     font-size: 3rem;
     line-height: 1;
     font-weight: 700;
-    letter-spacing: -.02em;
+    letter-spacing: -0.02em;
   }
 
   .wave {
@@ -411,7 +410,6 @@
     width: 320px;
   }
 
-
   //ABOUT
   .foto-about {
     height: 420px;
@@ -437,21 +435,19 @@
   }
 }
 
-
 //Telas Grandes
 @media screen and (min-width: 1024px) {
   .fs-md-4 {
     font-size: 1.25rem;
   }
-  
-   .fs-md-1 {
+
+  .fs-md-1 {
     font-size: 2.25rem !important;
   }
 
-
-.tracking-negative {
-  letter-spacing: -0.02em;
-}
+  .tracking-negative {
+    letter-spacing: -0.02em;
+  }
   .hw-md-8 {
     height: 32px;
     width: 32px;
@@ -461,7 +457,7 @@
     font-size: 3.75rem;
     line-height: 72px;
     font-weight: 700;
-    letter-spacing: -.02em;
+    letter-spacing: -0.02em;
   }
 
   .wave {

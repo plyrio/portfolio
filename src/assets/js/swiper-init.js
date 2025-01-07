@@ -1,7 +1,7 @@
 new Swiper(".mySwiper", {
     slidesPerView: 1,
     spaceBetween: 10,
-    autoplay: true,
+    autoplay: false,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
