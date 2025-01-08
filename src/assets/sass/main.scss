@@ -281,11 +281,24 @@
 .card-text {
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 10; /* Limita o texto a X linhas */
+  
   -webkit-box-orient: vertical;
   white-space: normal;
 }
+
+.btn:hover {
+  border: 2px solid #bfbfbf;
+}
+
+// .nav-item:hover { 
+
+//   box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+// -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+// -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+// }
+
+
+
 
 // Mobile 768px
 @media screen and (max-width: 767px) {
