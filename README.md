@@ -1,6 +1,6 @@
 # Portfólio - Plyrio Dev
 
-Este é o repositório do portfólio de **Pedro Lyrio (Plyrio Dev)**, desenvolvido utilizando ferramentas modernas para um layout otimizado e responsivo. O projeto é construído com HTML, SCSS, JavaScript e automatizado com Gulp.
+Este repositório foi desenvolvido por **Pedro Lyrio (Plyrio Dev)**, utilizando ferramentas modernas para um layout otimizado e responsivo. O projeto é construído com HTML, SCSS, JavaScript e automatizado com Gulp.
 
 ## 🛠️ Tecnologias Utilizadas
 
