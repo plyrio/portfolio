@@ -24,11 +24,12 @@ a, button, .tech-icon, .foto-perfil, .shadow-img {
 }
 
 .hero-p {
-  will-change: contents;
+  font-display: swap;
+  will-change: transform;
   text-rendering: optimizeLegibility;
-  transform: translateZ(0);
-  word-break: break-word;
-  overflow-wrap: break-word;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.6;
+  max-width: 65ch;
 }
 
 .icon-moon-star,
