@@ -49,7 +49,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:wght@100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'" />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet" />
+    </noscript>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.min.css" />
@@ -171,9 +178,15 @@
               class="d-flex align-items-center justify-content-center order-md-last flex-md-grow-1 justify-content-md-end">
               <div class="pic-container-hero position-relative">
                 <img loading="lazy"
-                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995449/eu_giazie.jpg"
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/f_auto,q_auto,w_600/v1723995449/eu_giazie.jpg"
+                  sizes="(max-width: 768px) 400px, 600px"
                   alt="Imagem de Plyrio"
+                  width="600"
+                  height="600"
+                  loading="eager"
+                  fetchpriority="high"
                   class="foto-perfil position-absolute z-1" />
+
                 <div class="shadow-img position-absolute"></div>
               </div>
             </div>
