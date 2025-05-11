@@ -1,621 +1,898 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Plyrio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio de Plyrio</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="path/to/favicon.ico"
+      type="image/x-icon"
+      id="favicon" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="path/to/favicon.ico" type="image/x-icon" id="favicon" />
+    <!-- Preload and Preconnect for critical resources -->
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      as="script" />
+    <link
+      rel="preload"
+      href="https://unpkg.com/swiper@11/swiper-bundle.min.js"
+      as="script" />
+    <link
+      rel="preload"
+      href="https://unpkg.com/typewriter-effect@latest/dist/core.js"
+      as="script" />
 
-  <!-- Preload and Preconnect for critical resources -->
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" as="script" />
-  <link rel="preload" href="https://unpkg.com/swiper@11/swiper-bundle.min.js" as="script" />
-  <link rel="preload" href="https://unpkg.com/typewriter-effect@latest/dist/core.js" as="script" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Lucide Icons -->
+    <link
+      href="https://unpkg.com/lucide-static@latest/font/lucide.css"
+      rel="stylesheet" />
 
-  <!-- Lucide Icons -->
-  <link href="https://unpkg.com/lucide-static@latest/font/lucide.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
 
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:wght@100..900&display=swap"
-    rel="stylesheet" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css" />
+    <!-- Scripts -->
+    <script
+      src="https://unpkg.com/typewriter-effect@latest/dist/core.js"
+      async></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer></script>
+    <script
+      src="https://unpkg.com/swiper@11/swiper-bundle.min.js"
+      defer></script>
+    <script src="./js/typewriter.js" type="module" defer></script>
+    <script src="./js/theme-toggle.js" type="module" defer></script>
+    <script src="./js/scroll-blur.js" type="module" defer></script>
+    <script src="./js/swiper-init.js" type="module" defer></script>
+    <script src="./js/copy-fun.js" type="module" defer></script>
+  </head>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" async></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-  <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js" defer></script>
-  <script src="./js/typewriter.js" type="module" defer></script>
-  <script src="./js/theme-toggle.js" type="module" defer></script>
-  <script src="./js/scroll-blur.js" type="module" defer></script>
-  <script src="./js/swiper-init.js" type="module" defer></script>
-  <script src="./js/copy-fun.js" type="module" defer></script>
-</head>
-
-<body class="theme-dark text-gd600 bg-gddefault w-100">
-  <header class="w-100 fixed-top bg-gddefault antes" id="scroll-blur">
-    <nav
-      class="navbar navbar-expand-md mx-auto d-flex w-100 align-items-center justify-content-between px-md-6 p-3 p-md-2 container-xl h-100">
-      <a class="navbar-brand align-items-center" href="#"><img rel="icon"
-          src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724269790/Pl_7_kaq0pe.png" class="brand-icon"
-          id="logomark" alt="logo de Pedro Lyrio" /></a>
-      <button class="btn d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-        aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-menu text-gd900"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-gd600 bg-gddefault w-100 h-100" tabindex="-1" id="offcanvasTop">
-        <div class="offcanvas-header justify-content-between">
-          <a class="navbar-brand offcanvas-title" id="offcanvasTopLabel" href="#"><img rel="icon"
-              src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724270319/Pl_8_qfvnt4.png" class="brand-icon"
-              id="logomarkOff" alt="logo de Pedro Lyrio" /></a>
-          <button type="button" class="btn icon-x text-gd900" data-bs-dismiss="offcanvas" aria-label="Close"
-            id="btn-close"></button>
-        </div>
-
-        <div class="offcanvas-body align-items-center gap-4 d-flex-md ms-md-auto">
-          <ul class="navbar-nav d-flex list-unstyled align-items-center gap-4">
-            <li class="nav-item">
-              <a class="nav-link text-gd600" href="#about">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-gd600" href="#skills">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-gd600" href="#works">Trabalhos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-gd600" href="#contact">Contato</a>
-            </li>
-          </ul>
-          <div class="vr d-none d-md-flex h-100 text-gd900 align-self-center"></div>
-          <hr class="d-md-none text-gd900" />
-
-          <div class="d-flex flex-md-row flex-column align-items-center gap-2 gap-md-4">
-            <button type="button"
-              class="btn d-flex position-relative justify-content-center align-items-center text-gd600"
-              id="toggleTheme">
-              <i class="icon-sun" id="dark-light"></i>
-            </button>
-
-            <a class="btn bg-gd900 text-gd50 d-inline-flex align-items-center justify-content-center w-100 rounded-4"
-              href="https://res.cloudinary.com/dn5yfai0g/image/upload/v1743451698/CV_Pedro_Henrique_Lyrio_Gon%C3%A7alves_nxfj40.pdf"
-              target="_blank">
-              Download CV
-            </a>
+  <body class="theme-dark text-gd600 bg-gddefault w-100">
+    <header class="w-100 fixed-top bg-gddefault antes" id="scroll-blur">
+      <nav
+        class="navbar navbar-expand-md mx-auto d-flex w-100 align-items-center justify-content-between px-md-6 p-3 p-md-2 container-xl h-100">
+        <a class="navbar-brand align-items-center" href="#"
+          ><img
+            rel="icon"
+            src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724269790/Pl_7_kaq0pe.png"
+            class="brand-icon"
+            id="logomark"
+            alt="logo de Pedro Lyrio"
+        /></a>
+        <button
+          class="btn d-md-none"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="icon-menu text-gd900"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-gd600 bg-gddefault w-100 h-100"
+          tabindex="-1"
+          id="offcanvasTop">
+          <div class="offcanvas-header justify-content-between">
+            <a
+              class="navbar-brand offcanvas-title"
+              id="offcanvasTopLabel"
+              href="#"
+              ><img
+                rel="icon"
+                src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724270319/Pl_8_qfvnt4.png"
+                class="brand-icon"
+                id="logomarkOff"
+                alt="logo de Pedro Lyrio"
+            /></a>
+            <button
+              type="button"
+              class="btn icon-x text-gd900"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              id="btn-close"></button>
           </div>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <main class="bg-gddefault text-gd600 d-flex flex-column w-100 min-vh-100 pt-18 pt-md-22">
-    <section class="hero bg-gddefault w-100 py-20 py-lg-2" id="hero">
-      <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
-        <div class="d-flex flex-column gap-5 flex-md-row">
           <div
-            class="d-flex align-items-center justify-content-center order-md-last flex-md-grow-1 justify-content-md-end">
-            <div class="pic-container-hero position-relative">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995449/eu_giazie.jpg"
-                alt="Imagem de Plyrio" class="foto-perfil position-absolute z-1" />
-              <div class="shadow-img position-absolute"></div>
-            </div>
-          </div>
-          <div class="d-flex flex-grow-1 flex-column justify-content-center gap-8 order-md-first align-items-md-start">
-            <div class="d-flex flex-column gap-2">
-              <div class="text-gd900 tw" id="typewriter"></div>
+            class="offcanvas-body align-items-center gap-4 d-flex-md ms-md-auto">
+            <ul
+              class="navbar-nav d-flex list-unstyled align-items-center gap-4">
+              <li class="nav-item">
+                <a class="nav-link text-gd600" href="#about">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-gd600" href="#skills">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-gd600" href="#works">Trabalhos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-gd600" href="#contact">Contato</a>
+              </li>
+            </ul>
+            <div
+              class="vr d-none d-md-flex h-100 text-gd900 align-self-center"></div>
+            <hr class="d-md-none text-gd900" />
 
-              <p class="hero-p text-gd600 lh-base just">
-                Sou um desenvolvedor em formação, com foco em back-end e interesse crescente em aplicações fullstack, utilizando
-                tecnologias como Node.js, React.js e TypeScript. Com experiência acadêmica na criação de aplicações modernas, acessíveis
-                e responsivas, busco aprender continuamente e enfrentar novos desafios. Estou em transição de carreira e à procura de
-                minha primeira oportunidade profissional, além de estar disponível para projetos freelancer. Fique à vontade para
-                explorar meus projetos e entrar em contato!
-              </p>
-            </div>
-            <div class="d-flex flex-column gap-2">
-              <div class="d-flex gap-2 align-items-center">
-                <i class="icon-map-pin text-gd600"></i>
-                <p class="mb-0 text-gd600">Vila Velha - ES</p>
-              </div>
-              <div class="d-flex gap-2 align-items-center">
-                <i class="icon-dot text-esmerald500"></i>
-                <p class="mb-0 text-gd600">Disponivel para novos projetos</p>
-              </div>
-            </div>
-            <div class="d-flex gap-1">
-              <button class="btn">
-                <a class="text-decoration-none text-gd600" href="https://github.com/plyrio" target="_blank"><i
-                    class="icon-github"></i></a>
+            <div
+              class="d-flex flex-md-row flex-column align-items-center gap-2 gap-md-4">
+              <button
+                type="button"
+                class="btn d-flex position-relative justify-content-center align-items-center text-gd600"
+                id="toggleTheme">
+                <i class="icon-sun" id="dark-light"></i>
               </button>
-              <button class="btn">
-                <a class="text-decoration-none text-gd600" href="https://www.linkedin.com/in/plyrio" target="_blank"><i
-                    class="icon-linkedin"></i></a>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="about bg-gd50 w-100 py-20 py-lg-24" id="about">
-      <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
-        <div class="text-center align-self-center">
-          <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center" role="button">
-            Sobre
-          </div>
-        </div>
-        <div class="d-flex w-100 flex-column justify-content-between gap-12 flex-md-row">
-          <div class="d-flex justify-content-center order-md-first">
-            <div class="pic-container-about position-relative">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995449/eudeoculos_dfo28t.jpg"
-                alt="Imagem de Plyrio no about" class="foto-about position-absolute z-1" />
-              <div class="shadow-img-about position-absolute bg-gd200"></div>
+              <a
+                class="btn bg-gd900 text-gd50 d-inline-flex align-items-center justify-content-center w-100 rounded-4"
+                href="https://res.cloudinary.com/dn5yfai0g/image/upload/v1746962829/Pedro_Henrique_Lyrio_Goncalves_Curriculo_Desenvolvedor_Frontend_Junior_lcwv7b.pdf"
+                target="_blank">
+                Download CV
+              </a>
             </div>
           </div>
-          <div class="d-flex container-xl flex-column gap-6">
-            <div class="content">
-              <h4 class="text-gd900 text-center">
-                Curiosidades sobre mim? Aqui você terá isso:
-              </h4>
-              <div class="text-gd600 just">
-                <p class="text-gd600 just">Sou um desenvolvedor apaixonado por tecnologia, especializado em Front-end, com experiência também em Back-end e aplicações Full Stack. Minha stack principal inclui React.js, Next.js, Node.js e Nest.js, e estou sempre buscando criar soluções modernas, eficientes e escaláveis.
-                </p>
-                <p class="text-gd600 just">
-                  Meu foco vai além do código: desenvolvo interfaces intuitivas, melhoro a experiência do usuário e garanto um design funcional aliado a um código limpo e de alto desempenho.
-                </p>
-                <p class="text-gd600 just">Minha jornada na programação começou no final de 2023, durante projetos acadêmicos. Desde então, venho aprimorando minhas habilidades, enfrentando desafios reais e construindo projetos que refletem minha evolução. Acredito no aprendizado contínuo e na importância de me manter atualizado com as melhores práticas do mercado.
-                </p>
-                <p class="text-gd600 just">Resumo sobre mim:</p>
-                <ul class="text-gd600">
-                  <li class="text-gd600">
-                    Em transição de carreira e em busca da primeira oportunidade na área de desenvolvimento;
-                  </li>
-                  <li class="text-gd600">
-                    Especializando-me em Front-end com React.js, Next.js, TypeScript e TailwindCSS;
-                  </li>
-                  <li class="text-gd600">
-                    Formado em Análise e Desenvolvimento de Sistemas;
-                  </li>
-                  <li class="text-gd600">
-                    Disponível para projetos como freelancer.
-                  </li>
-                </ul>
-                <p class="text-gd600 just">Curiosidades sobre mim:</p>
-                <ul class="text-gd600">
-                  <li class="text-gd600">
-                    Pai dedicado, nada me inspira mais do que passar tempo de qualidade com meu filho;
-                  </li>
-                  <li class="text-gd600">
-                    Apaixonado por MMORPGs, especialmente Lineage 2 e Path of Exile;
-                  </li>
-                  <li class="text-gd600">
-                   Torcedor fiel do Botafogo
-                   </li>
-                  <li class="text-gd600">
-                    Mecânico amador por hobby, gosto de desmontar e consertar coisas
-                  </li>
-                </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      class="bg-gddefault text-gd600 d-flex flex-column w-100 min-vh-100 pt-18 pt-md-22">
+      <section class="hero bg-gddefault w-100 py-20 py-lg-2" id="hero">
+        <div
+          class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
+          <div class="d-flex flex-column gap-5 flex-md-row">
+            <div
+              class="d-flex align-items-center justify-content-center order-md-last flex-md-grow-1 justify-content-md-end">
+              <div class="pic-container-hero position-relative">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995449/eu_giazie.jpg"
+                  alt="Imagem de Plyrio"
+                  class="foto-perfil position-absolute z-1" />
+                <div class="shadow-img position-absolute"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div
+              class="d-flex flex-grow-1 flex-column justify-content-center gap-8 order-md-first align-items-md-start">
+              <div class="d-flex flex-column gap-2">
+                <div class="text-gd900 tw" id="typewriter"></div>
 
-    <section class="skills bg-gddefault w-100 py-20 py-lg-24" id="skills">
-      <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
-        <div class="d-flex flex-column align-items-center gap-4">
-          <div class="text-center align-self-center">
-            <div class="text-center align-self-center">
-              <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center" role="button">
-                Habilidades
+                <p class="hero-p text-gd600 lh-base just">
+                  Desenvolvedor Front-end especializado em React.js, Next.js e
+                  TypeScript, com experiência na criação de aplicações modernas,
+                  responsivas e acessíveis. Em transição de carreira, busco
+                  minha primeira oportunidade profissional para aplicar meus
+                  conhecimentos em projetos desafiadores, combinando boas
+                  práticas de desenvolvimento e aprendizado contínuo. Explore
+                  meus projetos e vamos conversar!
+                </p>
               </div>
-            </div>
-          </div>
-          <div class="text-center">
-            <h5 class="text-gd900">
-              As habilidades, ferramentas, tecnologias nas quais eu conheço e
-              tenho domínio:
-            </h5>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="row text-center gy-3 row-cols-3 row-cols-md-5 justify-content-center">
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724105143/icons8-javascript-96_s47sok.png"
-                alt="JAVASCRIPT" class="tech-icon mb-2" />
-              <p class="text-gd600">JavaScript</p>
-            </div>
-            <div class="col tech-content">
-              <img
-                src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-texto-datilografado-96_lxgljp.png"
-                alt="TYPESCRIPT" class="tech-icon mb-2" />
-              <p class="text-gd600">Typescript</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/node-js_vznvlf.png" alt="NODEJS"
-                class="tech-icon mb-2" />
-              <p class="text-gd600">Node.js</p>
-            </div>
-
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995531/express1_hr9d1d.png"
-                alt="EXPRESSJS" class="tech-icon tech-icon-b mb-2" />
-              <p class="text-gd600">Express.js</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-carregou-96_e5tu3k.png"
-                alt="NESTJS" class="tech-icon mb-2" />
-              <p class="text-gd600">Nest.js</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-prisma-orma-96_jz2evw.png"
-                alt="PRISMA" class="tech-icon mb-2" />
-              <p class="text-gd600">Prisma.io</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995525/react_div12c.png" alt="REACTJS"
-                class="tech-icon mb-2" />
-              <p class="text-gd600">React</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995525/sqlite_avqbxi.png" alt="SQLITE"
-                class="tech-icon mb-2" />
-              <p class="text-gd600">SQLite</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995528/mongodb_u4nyei.png" alt="MONGODB"
-                class="tech-icon mb-2" />
-              <p class="text-gd600">MongoBD</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-postgres-96_n7y411.png"
-                alt="POATGRESQL" class="tech-icon mb-2" />
-              <p class="text-gd600">PostgreSQL</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/postman_zsnd3k.png" alt="POSTMAN"
-                class="tech-icon mb-2" />
-              <p class="text-gd600">Postman</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995525/sass_xmxmyu.png" alt="SASS"
-                class="tech-icon mb-2" />
-              <p class="text-gd600">SASS</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995524/bootstrap_nrvhw7.png"
-                alt="BOOTSTRAP 5" class="tech-icon mb-2" />
-              <p class="text-gd600">Bootstrap 5</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086590/icons8-tailwindcss-96_rzdpnm.png"
-                alt="TAILWINDCSS" class="tech-icon mb-2" />
-              <p class="text-gd600">Tailwindcss</p>
-            </div>
-            <div class="col tech-content">
-              <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995531/git_ymcyvo.png" alt="GIT"
-                class="tech-icon mb-2" />
-              <p class="text-gd600">Git</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="works bg-gd50 w-100 py-20 py-lg-24" id="works">
-      <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
-        <div class="d-flex flex-column align-items-center gap-4">
-          <div class="text-center align-self-center">
-            <div class="text-center align-self-center">
-              <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center" role="button">
-                Trabalhos & Projetos
-              </div>
-            </div>
-          </div>
-          <div class="text-center">
-            <h5 class="text-gd600">
-              Aqui está um rápido resumo das minhas experiências mais
-              recentes:
-            </h5>
-          </div>
-        </div>
-
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper py-14">
-           
-                     <!-- Projeto 1 -->
-            <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 d-flex shadow card-wrapper">
-              <div class="card-body w-100 d-flex flex-column">
-                <div class="card-img">
-                  <img loading="lazy" src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1743440397/Component_1_2_swzzwe.png"
-                    class="img-fluid" alt="imagem do projeto 3, Sistema de Clinica Odontologica" />
+              <div class="d-flex flex-column gap-2">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="icon-map-pin text-gd600"></i>
+                  <p class="mb-0 text-gd600">Vila Velha - ES</p>
                 </div>
-                <h5 class="card-title py-3">
-                  Sistema de Clínica Odontológica
-                </h5>
-                <p class="card-text just">Desenvolvida com Next.js, NestJS, Prisma ORM e Tailwind CSS. Utiliza Turborepo para otimizar o monorepo, garantindo modularidade e escalabilidade. A API é documentada com Swagger e validada com Zod, enquanto a interface web é responsiva e dinâmica. O projeto segue boas práticas com ESLint e Prettier, promovendo consistência e manutenção eficiente.
-                </p>
-                <div class="d-flex flex-wrap container gap-2 justify-content-center mt-auto">
-                  <button class="btn d-flex align-items-center ps-1 py-1 shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img loading="lazy" class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/node-js_vznvlf.png"
-                      alt="Node.js" />
-                    Node.js
-                  </button>
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img loading="lazy" class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-texto-datilografado-96_lxgljp.png"
-                      alt="Typescript" />
-                    Typescript
-                  </button>
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="icon-dot text-esmerald500"></i>
+                  <p class="mb-0 text-gd600">Disponivel para novos projetos</p>
+                </div>
+              </div>
+              <div class="d-flex gap-1">
+                <button class="btn">
+                  <a
+                    class="text-decoration-none text-gd600"
+                    href="https://github.com/plyrio"
+                    target="_blank"
+                    ><i class="icon-github"></i
+                  ></a>
+                </button>
+                <button class="btn">
+                  <a
+                    class="text-decoration-none text-gd600"
+                    href="https://www.linkedin.com/in/plyrio"
+                    target="_blank"
+                    ><i class="icon-linkedin"></i
+                  ></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img loading="lazy" class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1743449797/nextjs_ez8fep.svg"
-                      alt="" />
+      <section class="about bg-gd50 w-100 py-20 py-lg-24" id="about">
+        <div
+          class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
+          <div class="text-center align-self-center">
+            <div
+              class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center"
+              role="button">
+              Sobre
+            </div>
+          </div>
+          <div
+            class="d-flex w-100 flex-column justify-content-between gap-12 flex-md-row">
+            <div class="d-flex justify-content-center order-md-first">
+              <div class="pic-container-about position-relative">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995449/eudeoculos_dfo28t.jpg"
+                  alt="Imagem de Plyrio no about"
+                  class="foto-about position-absolute z-1" />
+                <div class="shadow-img-about position-absolute bg-gd200"></div>
+              </div>
+            </div>
+            <div class="d-flex container-xl flex-column gap-6">
+              <div class="content">
+                <h4 class="text-gd900 text-center">
+                  Curiosidades sobre mim? Aqui você terá isso:
+                </h4>
+                <div class="text-gd600 just">
+                  <p class="text-gd600 just">
+                    Desenvolvedor Front-end especializado em React.js, Next.js e
+                    TypeScript, com experiência em Node.js para aplicações
+                    completas. Dedico-me a criar interfaces intuitivas, com
+                    código limpo e alta performance, aliando design funcional à
+                    melhor experiência do usuário.
+                  </p>
+                  <p class="text-gd600 just">
+                    Em transição de carreira após me formar em Análise e
+                    Desenvolvimento de Sistemas, busco minha primeira
+                    oportunidade profissional ou projetos freelancer para
+                    transformar ideias em soluções escaláveis.
+                  </p>
+                  <p class="text-gd600 just">
+                    Quando não estou codando, sou pai dedicado, mecânico de
+                    hobby e jogador de MMORPGs (Lineage 2 e Path of Exile fan!).
+                    Vamos conversar?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills bg-gddefault w-100 py-20 py-lg-24" id="skills">
+        <div
+          class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
+          <div class="d-flex flex-column align-items-center gap-4">
+            <div class="text-center align-self-center">
+              <div class="text-center align-self-center">
+                <div
+                  class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center"
+                  role="button">
+                  Habilidades
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h5 class="text-gd900">
+                As habilidades, ferramentas, tecnologias nas quais eu conheço e
+                tenho domínio:
+              </h5>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div
+              class="row text-center gy-3 row-cols-3 row-cols-md-5 justify-content-center">
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724105143/icons8-javascript-96_s47sok.png"
+                  alt="JAVASCRIPT"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">JavaScript</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-texto-datilografado-96_lxgljp.png"
+                  alt="TYPESCRIPT"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">Typescript</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/node-js_vznvlf.png"
+                  alt="NODEJS"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">Node.js</p>
+              </div>
+
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995531/express1_hr9d1d.png"
+                  alt="EXPRESSJS"
+                  class="tech-icon tech-icon-b mb-2" />
+                <p class="text-gd600">Express.js</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-carregou-96_e5tu3k.png"
+                  alt="NESTJS"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">Nest.js</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-prisma-orma-96_jz2evw.png"
+                  alt="PRISMA"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">Prisma.io</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995525/react_div12c.png"
+                  alt="REACTJS"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">React</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995525/sqlite_avqbxi.png"
+                  alt="SQLITE"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">SQLite</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995528/mongodb_u4nyei.png"
+                  alt="MONGODB"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">MongoBD</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-postgres-96_n7y411.png"
+                  alt="POATGRESQL"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">PostgreSQL</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/postman_zsnd3k.png"
+                  alt="POSTMAN"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">Postman</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995525/sass_xmxmyu.png"
+                  alt="SASS"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">SASS</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995524/bootstrap_nrvhw7.png"
+                  alt="BOOTSTRAP 5"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">Bootstrap 5</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086590/icons8-tailwindcss-96_rzdpnm.png"
+                  alt="TAILWINDCSS"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">Tailwindcss</p>
+              </div>
+              <div class="col tech-content">
+                <img
+                  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995531/git_ymcyvo.png"
+                  alt="GIT"
+                  class="tech-icon mb-2" />
+                <p class="text-gd600">Git</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works bg-gd50 w-100 py-20 py-lg-24" id="works">
+        <div
+          class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
+          <div class="d-flex flex-column align-items-center gap-4">
+            <div class="text-center align-self-center">
+              <div class="text-center align-self-center">
+                <div
+                  class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center"
+                  role="button">
+                  Trabalhos & Projetos
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h5 class="text-gd600">
+                Aqui está um rápido resumo das minhas experiências mais
+                recentes:
+              </h5>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper py-14">
+              <!-- Projeto 1 -->
+              <div
+                class="swiper-slide card bg-gd100 text-gd600 rounded-4 d-flex shadow card-wrapper">
+                <div class="card-body w-100 d-flex flex-column">
+                  <div class="card-img">
+                    <img
+                      loading="lazy"
+                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1743440397/Component_1_2_swzzwe.png"
+                      class="img-fluid"
+                      alt="imagem do projeto 3, Sistema de Clinica Odontologica" />
+                  </div>
+                  <h5 class="card-title py-3">
+                    Sistema de Clínica Odontológica
+                  </h5>
+                  <p class="card-text just">
+                    Desenvolvida com Next.js, NestJS, Prisma ORM e Tailwind CSS.
+                    Utiliza Turborepo para otimizar o monorepo, garantindo
+                    modularidade e escalabilidade. A API é documentada com
+                    Swagger e validada com Zod, enquanto a interface web é
+                    responsiva e dinâmica. O projeto segue boas práticas com
+                    ESLint e Prettier, promovendo consistência e manutenção
+                    eficiente.
+                  </p>
+                  <div
+                    class="d-flex flex-wrap container gap-2 justify-content-center mt-auto">
+                    <button
+                      class="btn d-flex align-items-center ps-1 py-1 shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        loading="lazy"
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/node-js_vznvlf.png"
+                        alt="Node.js" />
+                      Node.js
+                    </button>
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        loading="lazy"
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-texto-datilografado-96_lxgljp.png"
+                        alt="Typescript" />
+                      Typescript
+                    </button>
+
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        loading="lazy"
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1743449797/nextjs_ez8fep.svg"
+                        alt="" />
                       Next.js
-                  </button>
+                    </button>
 
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img loading="lazy" class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086590/icons8-tailwindcss-96_rzdpnm.png"
-                      alt="Tailwindcss" />
-                    TailwindCSS
-                  </button>
-                  
-                            <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img loading="lazy" class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-carregou-96_e5tu3k.png"
-                      alt="NestJS" />
-                   NestJS
-                  </button>
-                                                      <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img loading="lazy" class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-prisma-orma-96_jz2evw.png"
-                      alt="Prisma.io" />
-                   Prisma.io
-                  </button>
-                  
-                                                      <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img loading="lazy" class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-postgres-96_n7y411.png"
-                      alt="PostgreSQL" />
-                   PostgreSQL
-                  </button>
-                                                      <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img loading="lazy" class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1743450208/swagger_or0mwy.svg"
-                      alt="Swagger" />
-                   Swagger
-                  </button>
-                  
-                  
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        loading="lazy"
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086590/icons8-tailwindcss-96_rzdpnm.png"
+                        alt="Tailwindcss" />
+                      TailwindCSS
+                    </button>
+
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        loading="lazy"
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-carregou-96_e5tu3k.png"
+                        alt="NestJS" />
+                      NestJS
+                    </button>
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        loading="lazy"
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-prisma-orma-96_jz2evw.png"
+                        alt="Prisma.io" />
+                      Prisma.io
+                    </button>
+
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        loading="lazy"
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-postgres-96_n7y411.png"
+                        alt="PostgreSQL" />
+                      PostgreSQL
+                    </button>
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        loading="lazy"
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1743450208/swagger_or0mwy.svg"
+                        alt="Swagger" />
+                      Swagger
+                    </button>
+                  </div>
+                  <div class="d-flex flex-row w-100 gap-2 pt-3 mt-2">
+                    <a
+                      href="https://github.com/plyrio/clinica-odonto-fullstack#"
+                      target="_blank"
+                      class="btn fw-bold text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md"
+                      >Repositório</a
+                    >
+                    <a
+                      href="https://cof-frontend-plyrio.vercel.app/"
+                      target="_blank"
+                      class="btn fw-bold text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md"
+                      >Demo</a
+                    >
+                  </div>
                 </div>
-                <div class="pt-3 mt-2">
-                  <a href="https://github.com/plyrio/clinica-odonto-fullstack#" target="_blank"
-                    class="btn text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md">Acessar
-                    Repositório</a>
+              </div>
+
+              <!-- Projeto 2 -->
+              <div
+                class="swiper-slide card bg-gd100 text-gd600 rounded-4 d-flex shadow card-wrapper">
+                <div class="card-body w-100 d-flex flex-column">
+                  <div class="card-img">
+                    <img
+                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1736299988/Component_1_light_szl7oo.png"
+                      class="img-fluid"
+                      alt="Imagem do Projeto 2, Portfólio pessoal"
+                      id="projeto2" />
+                  </div>
+                  <h5 class="card-title py-3">Portfólio Pessoal</h5>
+                  <p class="card-text just">
+                    Desenvolvido com HTML, SCSS, JavaScript e automatizado com
+                    Gulp. Oferece um layout responsivo e otimizado, utilizando
+                    Bootstrap 5 para o design, Lucide para ícones, Swiper.js
+                    para carrosséis, Typewriter Effect para animações de texto,
+                    Gulp para automação de tarefas de build, otimização de CSS e
+                    deploy no Github Pages.
+                  </p>
+                  <div
+                    class="d-flex flex-wrap container gap-2 justify-content-center mt-auto">
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724105143/icons8-javascript-96_s47sok.png"
+                        alt="Imagem de JavaScript" />
+                      JavaScript
+                    </button>
+                    <button
+                      class="btn d-flex align-items-center ps-1 py-1 shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="20"
+                        height="20"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995524/bootstrap_nrvhw7.png"
+                        alt="Imagem de Bootstrap 5" />
+                      Bootstrap 5
+                    </button>
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/node-js_vznvlf.png"
+                        alt="Imagem de Node.js" />
+                      Node.js
+                    </button>
+
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1736286430/Gulp.js_aywzq5.svg"
+                        alt="Imagem de Gulp" />
+                      Gulp
+                    </button>
+
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995525/sass_xmxmyu.png"
+                        alt="Imagem de SASS" />
+                      SASS
+                    </button>
+                  </div>
+                  <div class="d-flex flex-row w-100 gap-2 pt-3 mt-2">
+                    <a
+                      href="https://github.com/plyrio/portfolio"
+                      target="_blank"
+                      class="btn fw-bold text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md"
+                      >Repositório</a
+                    >
+                    <a
+                      href="https://plyrio.github.io/portfolio/"
+                      target="_blank"
+                      class="btn fw-bold text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md"
+                      >Demo</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Projeto 3 -->
+              <div
+                class="swiper-slide card bg-gd100 text-gd600 rounded-4 d-flex shadow card-wrapper">
+                <div class="card-body w-100 d-flex flex-column">
+                  <div class="card-img">
+                    <img
+                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995486/projeto1_ywpnsz.png"
+                      class="img-fluid"
+                      alt="imagem do projeto 1, API restful" />
+                  </div>
+                  <h5 class="card-title py-3">
+                    Sistema Gerenciador de Tarefas
+                  </h5>
+                  <p class="card-text just">
+                    Desenvolvi uma API completa para gerenciamento de tarefas,
+                    implementando operações CRUD com documentação interativa via
+                    Swagger. Utilizei Clean Architecture e princípios SOLID para
+                    criar uma solução modular, escalável e de fácil manutenção,
+                    garantindo alta organização do código e flexibilidade para
+                    futuras expansões.
+                  </p>
+                  <div
+                    class="d-flex flex-wrap container gap-2 justify-content-center mt-auto">
+                    <button
+                      class="btn d-flex align-items-center ps-1 py-1 shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/node-js_vznvlf.png"
+                        alt="Imagem de Node.js" />
+                      Node.js
+                    </button>
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995531/express1_hr9d1d.png"
+                        alt="Imagem de Express.js" />
+                      Express.js
+                    </button>
+
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995528/mongodb_u4nyei.png"
+                        alt="Imagem de MongoDb" />
+
+                      MongoDB
+                    </button>
+
+                    <button
+                      class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
+                      <img
+                        class="me-1"
+                        width="24"
+                        height="24"
+                        src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724086589/icons8-texto-datilografado-96_lxgljp.png"
+                        alt="Imagem de Typescript" />
+                      Typescript
+                    </button>
+                  </div>
+                  <div class="d-flex flex-row w-100 gap-2 pt-3 mt-2">
+                    <a
+                      href="https://github.com/plyrio/TaskManagementSystem"
+                      target="_blank"
+                      class="btn fw-bold text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md"
+                      >Repositório</a
+                    >
+                    <a
+                      href="https://tms-plyrio.onrender.com/api"
+                      target="_blank"
+                      class="btn fw-bold text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md"
+                      >Demo</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          
 
-            <!-- Projeto 2 -->
-            <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 d-flex shadow card-wrapper">
-              <div class="card-body w-100 d-flex flex-column">
-                <div class="card-img">
-                  <img  src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1736299988/Component_1_light_szl7oo.png"
-                    class="img-fluid" alt="Imagem do Projeto 2, Portfólio pessoal" id="projeto2" />
-                </div>
-                <h5 class="card-title py-3">Portfólio Pessoal</h5>
-                <p class="card-text just">
-                  Desenvolvido com HTML, SCSS, JavaScript e automatizado com
-                  Gulp. Oferece um layout responsivo e otimizado, utilizando
-                  Bootstrap 5 para o design, Lucide para ícones, Swiper.js
-                  para carrosséis, Typewriter Effect para animações de texto,
-                  Gulp para automação de tarefas de build, otimização de CSS e
-                  deploy no Github Pages.
-                </p>
-                <div class="d-flex flex-wrap container gap-2 justify-content-center mt-auto">
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1724105143/icons8-javascript-96_s47sok.png"
-                      alt="Imagem de JavaScript" />
-                    JavaScript
-                  </button>
-                  <button class="btn d-flex align-items-center ps-1 py-1 shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="20" height="20"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995524/bootstrap_nrvhw7.png"
-                      alt="Imagem de Bootstrap 5" />
-                    Bootstrap 5
-                  </button>
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/node-js_vznvlf.png"
-                      alt="Imagem de Node.js" />
-                    Node.js
-                  </button>
-
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1736286430/Gulp.js_aywzq5.svg"
-                      alt="Imagem de Gulp" />
-                    Gulp
-                  </button>
-
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995525/sass_xmxmyu.png"
-                      alt="Imagem de SASS" />
-                    SASS
-                  </button>
-                </div>
-                <div class="pt-3 mt-2">
-                  <a href="https://github.com/plyrio/portfolio" target="_blank"
-                    class="btn text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md">Acessar
-                    Repositório</a>
-                </div>
-              </div>
-            </div>
-            
-                        <!-- Projeto 3 -->
-            <div class="swiper-slide card bg-gd100 text-gd600 rounded-4 d-flex shadow card-wrapper">
-              <div class="card-body w-100 d-flex flex-column">
-                <div class="card-img">
-                  <img src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995486/projeto1_ywpnsz.png"
-                    class="img-fluid" alt="imagem do projeto 1, API restful" />
-                </div>
-                <h5 class="card-title py-3">
-                  API RESTful com Express e MongoDB
-                </h5>
-                <p class="card-text just">
-                  API RESTful simples com Node.js, Express e MongoDB. Utiliza
-                  Mongoose como ODM para interagir com MongoDB Atlas.
-                  Implementa operações CRUD com validações, respostas JSON, e
-                  desenvolvimento com Nodemon. Testado no Postman.
-                </p>
-                <div class="d-flex flex-wrap container gap-2 justify-content-center mt-auto">
-                  <button class="btn d-flex align-items-center ps-1 py-1 shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/node-js_vznvlf.png"
-                      alt="Node.js" />
-                    Node.js
-                  </button>
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995531/express1_hr9d1d.png"
-                      alt="Express.js" />
-                    Express.js
-                  </button>
-
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995528/mongodb_u4nyei.png"
-                      alt="MongoDb" />
-
-                    MongoDB
-                  </button>
-
-                  <button class="btn ps-1 py-1 d-flex align-items-center shadow-md rounded-pill text-gd600 bg-gd200">
-                    <img class="me-1" width="24" height="24"
-                      src="https://res.cloudinary.com/dn5yfai0g/image/upload/v1723995527/postman_zsnd3k.png"
-                      alt="Postman" />
-                    Postman
-                  </button>
-                </div>
-                <div class="pt-3 mt-2">
-                  <a href="https://github.com/plyrio/API_RESTful_Express_MongoDB" target="_blank"
-                    class="btn text-decoration-none text-gd600 bg-gd200 py-1 rounded-pill justify-content-center w-100 shadow-md">Acessar
-                    Repositório</a>
-                </div>
-              </div>
-            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="contact bg-gddefault w-100 py-20 py-lg-24" id="contact">
-      <div class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
-        <div class="d-flex flex-column align-items-center gap-4">
-          <div class="text-center align-swlf-center">
-            <div class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center" role="button">
-              Entre em Contato
+      <section class="contact bg-gddefault w-100 py-20 py-lg-24" id="contact">
+        <div
+          class="mx-auto d-flex w-100 flex-column gap-6 px-4 px-md-8 container-xl">
+          <div class="d-flex flex-column align-items-center gap-4">
+            <div class="text-center align-swlf-center">
+              <div
+                class="btn text-gd600 bg-gd200 px-4 py-1 rounded-pill justify-content-center"
+                role="button">
+                Entre em Contato
+              </div>
             </div>
-          </div>
-          <p class="fw-normal fs-5 text-center custom-md-text-xl text-gd600" style="max-width: 576px">
-            O que vem a seguir? Sinta-se à vontade para entrar em contato
-            comigo se estiver procurando um desenvolvedor, tiver alguma dúvida
-            ou simplesmente quiser se conectar.
-          </p>
-        </div>
-        <div class="d-flex flex-column align-items-center gap-6 gap-md-12">
-          <div class="d-flex flex-column align-items-center gap-md-4">
-            <div class="d-flex align-items-center gap-4 gap-md-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="hw-6 hw-md-8 text-gd900">
-                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg>
-              <h2 class="fs-5 fw-semibold tracking-negative fs-md-1 text-gd900 contatoemail">
-                pedrolyrio@ucl.br
-              </h2>
-              <button
-                class="btn position-relative d-flex justify-content-center align-items-center text-gd600 custom-button copy-btn"
-                id="copyemail">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-copy">
-                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
-                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
-                </svg>
-              </button>
-            </div>
-            <div class="d-flex align-items-center gap-4 gap-md-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="hw-6 hw-md-8 text-gd900">
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                </path>
-              </svg>
-              <h2 class="fs-5 fw-semibold tracking-negative fs-md-1 text-gd900 contatotel">
-                +55 27 98869-3416
-              </h2>
-              <button
-                class="btn position-relative d-flex justify-content-center align-items-center text-gd600 custom-button copy-btn"
-                id="copytel">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="lucide lucide-copy">
-                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
-                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="d-flex flex-column align-items-center gap-2">
-            <p class="fw-normal text-center text-gd600">
-              Você também pode me encontrar nessas plataformas!
+            <p
+              class="fw-normal fs-5 text-center custom-md-text-xl text-gd600"
+              style="max-width: 576px">
+              O que vem a seguir? Sinta-se à vontade para entrar em contato
+              comigo se estiver procurando um desenvolvedor, tiver alguma dúvida
+              ou simplesmente quiser se conectar.
             </p>
-            <div class="d-flex gap-1">
-              <button class="btn">
-                <a class="text-decoration-none text-gd600" href="https://github.com/plyrio" target="_blank"><i
-                    class="icon-github"></i></a>
-              </button>
-              <button class="btn">
-                <a class="text-decoration-none text-gd600" href="https://www.linkedin.com/in/plyrio" target="_blank"><i
-                    class="icon-linkedin"></i></a>
-              </button>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-6 gap-md-12">
+            <div class="d-flex flex-column align-items-center gap-md-4">
+              <div class="d-flex align-items-center gap-4 gap-md-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="hw-6 hw-md-8 text-gd900">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <h2
+                  class="fs-5 fw-semibold tracking-negative fs-md-1 text-gd900 contatoemail">
+                  pedrolyrio@ucl.br
+                </h2>
+                <button
+                  class="btn position-relative d-flex justify-content-center align-items-center text-gd600 custom-button copy-btn"
+                  id="copyemail">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-copy">
+                    <rect
+                      width="14"
+                      height="14"
+                      x="8"
+                      y="8"
+                      rx="2"
+                      ry="2"></rect>
+                    <path
+                      d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="d-flex align-items-center gap-4 gap-md-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="hw-6 hw-md-8 text-gd900">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <h2
+                  class="fs-5 fw-semibold tracking-negative fs-md-1 text-gd900 contatotel">
+                  +55 27 98869-3416
+                </h2>
+                <button
+                  class="btn position-relative d-flex justify-content-center align-items-center text-gd600 custom-button copy-btn"
+                  id="copytel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-copy">
+                    <rect
+                      width="14"
+                      height="14"
+                      x="8"
+                      y="8"
+                      rx="2"
+                      ry="2"></rect>
+                    <path
+                      d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-2">
+              <p class="fw-normal text-center text-gd600">
+                Você também pode me encontrar nessas plataformas!
+              </p>
+              <div class="d-flex gap-1">
+                <button class="btn">
+                  <a
+                    class="text-decoration-none text-gd600"
+                    href="https://github.com/plyrio"
+                    target="_blank"
+                    ><i class="icon-github"></i
+                  ></a>
+                </button>
+                <button class="btn">
+                  <a
+                    class="text-decoration-none text-gd600"
+                    href="https://www.linkedin.com/in/plyrio"
+                    target="_blank"
+                    ><i class="icon-linkedin"></i
+                  ></a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-gd50 py-6 w-100 text-gd600">
+      <div class="d-flex w-100 align-items-center justify-content-center gap-1">
+        <p class="d-flex align-items-center text-gd900 text-center">
+          Pedro lyrio &copy; 2025
+        </p>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer bg-gd50 py-6 w-100 text-gd600">
-    <div class="d-flex w-100 align-items-center justify-content-center gap-1">
-      <p class="d-flex align-items-center text-gd900 text-center">
-        Pedro lyrio &copy; 2025
-      </p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
