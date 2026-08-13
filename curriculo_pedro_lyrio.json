@@ -1,0 +1,78 @@
+{
+  "personal_info": {
+    "name": "Pedro Henrique Lyrio Gonçalves",
+    "title": "Desenvolvedor Backend (Node.js | TypeScript | NestJS)",
+    "location": "Vila Velha - ES",
+    "work_preference": "Remoto",
+    "contact": {
+      "email": "pedrohlyriog@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/plyrio",
+      "github": "https://github.com/plyrio"
+    }
+  },
+  "summary": "Desenvolvedor Backend com foco em Node.js e TypeScript, especializado na construção de APIS REST seguras, bem estruturadas e fáceis de manter. Experiência prática com NestJS, autenticação baseada em JWT, Prisma ORM e organização de código seguindo Clean Architecture e Domain-Driven Design (DDD). Atuo com forte foco em separação de responsabilidades, testabilidade e evolução contínua do sistema.",
+  "skills": [
+    "Node.js",
+    "TypeScript",
+    "NestJS",
+    "Express",
+    "APIs REST",
+    "Autenticação JWT",
+    "Prisma ORM",
+    "PostgreSQL",
+    "MongoDB",
+    "Clean Architecture",
+    "DDD",
+    "SOLID",
+    "Git",
+    "Swagger",
+    "Zod"
+  ],
+  "projects": [
+    {
+      "title": "ShieldAuth - API de Autenticação",
+      "description": "Desenvolvimento de API de autenticação e autorização utilizando NestJS e TypeScript com persistência de dados via Prisma ORM.",
+      "highlights": [
+        "Desenvolvimento de API de autenticação e autorização utilizando NestJS e TypeScript",
+        "Implementação de autenticação baseada em JWT",
+        "Persistência de dados com Prisma ORM",
+        "Aplicação de Clean Architecture e DDD pragmático",
+        "Estrutura pensada para facilitar testes, manutenção e evolução do sistema"
+      ],
+      "github": "https://github.com/plyrio/ShieldAuth",
+      "tech_stack": [
+        "NestJS",
+        "TypeScript",
+        "JWT",
+        "Prisma ORM",
+        "Clean Architecture",
+        "DDD"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Vix Transportes Dedicados",
+      "role": "Motorista Operador de Varredeira",
+      "period": "05/2022 - Atual",
+      "description": "Atuação em ambientes industriais com processos rigorosos, normas e auditorias. Forte foco em qualidade, segurança, conformidade e cumprimento de prazos. Disciplina, responsabilidade e atenção a processos aplicadas hoje no desenvolvimento de software."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
+      "institution": "Estácio de Sá",
+      "period": "2022 a 2024"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Programação com JavaScript e Node.js (Back-end)",
+      "issuer": "IFES"
+    },
+    {
+      "title": "Programação Básica de Aplicativos Web (Front-end)",
+      "issuer": "IFES"
+    }
+  ]
+}
