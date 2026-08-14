@@ -3,7 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # ou main, depende da sua branch
+      - master
+
+permissions:
+  contents: write
 
 jobs:
   deploy:
@@ -14,7 +17,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - run: npm install
       - run: npm run build
